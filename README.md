@@ -1,6 +1,6 @@
-# COREPaperRepro
+# CORERepro
 
-COREPaperRepro contains the reproducibility package for CORE Paper. It includes the paper source, generated result macros, benchmark configuration files, analysis scripts, selected generated reports, and submission-facing artifacts needed to inspect and rerun the reported evidence.
+CORERepro contains the reproducibility package for CORE Paper. It includes the paper source, generated result macros, benchmark configuration files, analysis scripts, selected generated reports, and submission-facing artifacts needed to inspect and rerun the reported evidence.
 
 Source snapshot:
 
