@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.venv/
+*.egg-info/
+
+__pycache__/
+*.pyc
+
+paper/build/*
+!paper/build/
+!paper/build/manuscript.pdf
+
+tickets/
+plans/
+inbox/

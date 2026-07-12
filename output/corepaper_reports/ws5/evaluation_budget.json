@@ -1,0 +1,59 @@
+{
+  "suites": [
+    {
+      "suite_name": "ws3-external-baselines",
+      "suite_dir": "output/corepaper_logs/experiments/external_latest",
+      "total_runs": 20,
+      "successful_runs": 20,
+      "failed_runs": 0,
+      "duration_seconds": 0.75,
+      "mean_run_seconds": 0.0371,
+      "runs_per_second": 26.667
+    },
+    {
+      "suite_name": "ws5-ablation",
+      "suite_dir": "output/corepaper_logs/experiments/ablation_latest",
+      "total_runs": 20,
+      "successful_runs": 20,
+      "failed_runs": 0,
+      "duration_seconds": 0.748,
+      "mean_run_seconds": 0.0371,
+      "runs_per_second": 26.738
+    },
+    {
+      "suite_name": "ws5-robustness",
+      "suite_dir": "output/corepaper_logs/experiments/robustness_latest",
+      "total_runs": 54,
+      "successful_runs": 54,
+      "failed_runs": 0,
+      "duration_seconds": 2.034,
+      "mean_run_seconds": 0.0373,
+      "runs_per_second": 26.549
+    },
+    {
+      "suite_name": "ws5-software-transfer",
+      "suite_dir": "output/corepaper_logs/experiments/software_transfer_latest",
+      "total_runs": 42,
+      "successful_runs": 42,
+      "failed_runs": 0,
+      "duration_seconds": 1.617,
+      "mean_run_seconds": 0.0382,
+      "runs_per_second": 25.974
+    },
+    {
+      "suite_name": "ws5-sim2sim-transfer",
+      "suite_dir": "output/corepaper_logs/experiments/sim2sim_latest",
+      "total_runs": 12,
+      "successful_runs": 12,
+      "failed_runs": 0,
+      "duration_seconds": 0.456,
+      "mean_run_seconds": 0.0377,
+      "runs_per_second": 26.316
+    }
+  ],
+  "totals": {
+    "total_runs": 148,
+    "duration_seconds": 5.605,
+    "runs_per_second": 26.405
+  }
+}

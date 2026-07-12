@@ -1,0 +1,41 @@
+{
+  "suite_name": "ws3-cross-embodiment-proxy-recent-baselines",
+  "tasks": [
+    "pick_cube",
+    "stack_cube",
+    "peg_insert",
+    "drawer_open",
+    "door_unlock",
+    "button_press"
+  ],
+  "variants": [
+    "baseline",
+    "ext1",
+    "ext2",
+    "latency_aware",
+    "adaptmanip",
+    "robust_cp",
+    "method"
+  ],
+  "scenarios": [
+    "nominal",
+    "shifted"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "source_embodiment": "franka",
+  "target_embodiments": [
+    "franka",
+    "ur5",
+    "xarm",
+    "kinova"
+  ]
+}

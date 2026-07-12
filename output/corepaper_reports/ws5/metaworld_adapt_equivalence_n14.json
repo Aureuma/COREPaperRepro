@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-03-02T08:20:14Z",
+  "input_json": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_results.json",
+  "suite_name": "ws3-metaworld-seedexp-adaptmanip-method",
+  "scenario": "shifted",
+  "reference_variant": "method",
+  "comparator_variant": "adaptmanip",
+  "n_shared_seeds": 14,
+  "shared_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "equivalence_margin_abs": 0.05,
+  "bootstrap_samples": 10000,
+  "metrics": [
+    {
+      "metric": "mean_seed_success",
+      "observed_delta": 0.07857142857142857,
+      "ci90_low": 0.035714285714285705,
+      "ci90_high": 0.12142857142857143,
+      "ci95_low": 0.028571428571428564,
+      "ci95_high": 0.1357142857142857,
+      "bootstrap_prob_le_neg_margin": 0.0,
+      "bootstrap_prob_ge_pos_margin": 0.8561,
+      "equivalence_supported": false
+    },
+    {
+      "metric": "cvar40_seed_success",
+      "observed_delta": 0.1333333333333333,
+      "ci90_low": 0.050000000000000044,
+      "ci90_high": 0.2,
+      "ci95_low": 0.03333333333333344,
+      "ci95_high": 0.21666666666666667,
+      "bootstrap_prob_le_neg_margin": 0.0,
+      "bootstrap_prob_ge_pos_margin": 0.9507,
+      "equivalence_supported": false
+    }
+  ],
+  "summary": {
+    "mean_equivalence_supported": false,
+    "cvar_equivalence_supported": false,
+    "both_metrics_equivalence_supported": false,
+    "interpretation": "Equivalence is only supported when the 90% bootstrap CI lies fully inside [-margin, +margin] for the target metric."
+  }
+}

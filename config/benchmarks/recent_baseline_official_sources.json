@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "updated_utc": "2026-02-25T00:00:00Z",
+  "sources": {
+    "latency_aware": {
+      "arxiv_id": "2602.14255v1",
+      "paper_title": "A Latency-Aware Framework for Visuomotor Policy Learning on Industrial Robots",
+      "official_repo_url": null,
+      "availability_status": "not_found_public_release",
+      "notes": "No official repository URL was found in the curated metadata/source snapshot at this checkpoint; rerun this audit each cycle and update when a public release appears."
+    }
+  }
+}

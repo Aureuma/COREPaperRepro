@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corepaper"
+dynamic = ["version"]
+description = "Automation and reproducibility tooling for the CORE Paper ecosystem."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "boto3>=1.42.55",
+  "cairosvg>=2.8.2",
+  "numpy>=1.26,<3",
+  "packaging>=24,<27",
+]
+
+[project.optional-dependencies]
+metaworld = [
+  "metaworld",
+]
+
+[project.scripts]
+corepaper = "corepaper_tasks:main"
+
+[tool.setuptools]
+py-modules = ["corepaper_tasks"]
+
+[tool.uv]
+managed = true
+
+[tool.setuptools.dynamic]
+version = {file = ["VERSION"]}

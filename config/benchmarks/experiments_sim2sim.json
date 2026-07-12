@@ -1,0 +1,565 @@
+{
+  "suite_name": "ws5-sim2sim-transfer",
+  "runs": [
+    {
+      "id": "SIM-mujoco-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s1 --variant baseline --scenario SIM-mujoco --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s2 --variant baseline --scenario SIM-mujoco --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s3 --variant baseline --scenario SIM-mujoco --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s4 --variant baseline --scenario SIM-mujoco --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s5 --variant baseline --scenario SIM-mujoco --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s6 --variant baseline --scenario SIM-mujoco --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s7 --variant baseline --scenario SIM-mujoco --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s8 --variant baseline --scenario SIM-mujoco --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s9 --variant baseline --scenario SIM-mujoco --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s10 --variant baseline --scenario SIM-mujoco --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s11 --variant baseline --scenario SIM-mujoco --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s12 --variant baseline --scenario SIM-mujoco --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s13 --variant baseline --scenario SIM-mujoco --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-baseline-s14 --variant baseline --scenario SIM-mujoco --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s1 --variant ext2 --scenario SIM-mujoco --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s2 --variant ext2 --scenario SIM-mujoco --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s3 --variant ext2 --scenario SIM-mujoco --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s4 --variant ext2 --scenario SIM-mujoco --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s5 --variant ext2 --scenario SIM-mujoco --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s6 --variant ext2 --scenario SIM-mujoco --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s7 --variant ext2 --scenario SIM-mujoco --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s8 --variant ext2 --scenario SIM-mujoco --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s9 --variant ext2 --scenario SIM-mujoco --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s10 --variant ext2 --scenario SIM-mujoco --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s11 --variant ext2 --scenario SIM-mujoco --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s12 --variant ext2 --scenario SIM-mujoco --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s13 --variant ext2 --scenario SIM-mujoco --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-ext2-s14 --variant ext2 --scenario SIM-mujoco --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s1 --variant latency_aware --scenario SIM-mujoco --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s2 --variant latency_aware --scenario SIM-mujoco --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s3 --variant latency_aware --scenario SIM-mujoco --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s4 --variant latency_aware --scenario SIM-mujoco --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s5 --variant latency_aware --scenario SIM-mujoco --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s6 --variant latency_aware --scenario SIM-mujoco --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s7 --variant latency_aware --scenario SIM-mujoco --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s8 --variant latency_aware --scenario SIM-mujoco --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s9 --variant latency_aware --scenario SIM-mujoco --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s10 --variant latency_aware --scenario SIM-mujoco --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s11 --variant latency_aware --scenario SIM-mujoco --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s12 --variant latency_aware --scenario SIM-mujoco --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s13 --variant latency_aware --scenario SIM-mujoco --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-latency_aware-s14 --variant latency_aware --scenario SIM-mujoco --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s1 --variant method --scenario SIM-mujoco --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s2 --variant method --scenario SIM-mujoco --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s3 --variant method --scenario SIM-mujoco --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s4 --variant method --scenario SIM-mujoco --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s5 --variant method --scenario SIM-mujoco --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s6 --variant method --scenario SIM-mujoco --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s7 --variant method --scenario SIM-mujoco --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s8 --variant method --scenario SIM-mujoco --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s9 --variant method --scenario SIM-mujoco --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s10 --variant method --scenario SIM-mujoco --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s11 --variant method --scenario SIM-mujoco --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s12 --variant method --scenario SIM-mujoco --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s13 --variant method --scenario SIM-mujoco --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-mujoco-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-mujoco-method-s14 --variant method --scenario SIM-mujoco --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s1 --variant baseline --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s2 --variant baseline --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s3 --variant baseline --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s4 --variant baseline --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s5 --variant baseline --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s6 --variant baseline --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s7 --variant baseline --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s8 --variant baseline --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s9 --variant baseline --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s10 --variant baseline --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s11 --variant baseline --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s12 --variant baseline --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s13 --variant baseline --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-baseline-s14 --variant baseline --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s1 --variant ext2 --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s2 --variant ext2 --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s3 --variant ext2 --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s4 --variant ext2 --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s5 --variant ext2 --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s6 --variant ext2 --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s7 --variant ext2 --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s8 --variant ext2 --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s9 --variant ext2 --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s10 --variant ext2 --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s11 --variant ext2 --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s12 --variant ext2 --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s13 --variant ext2 --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-ext2-s14 --variant ext2 --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s1 --variant latency_aware --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s2 --variant latency_aware --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s3 --variant latency_aware --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s4 --variant latency_aware --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s5 --variant latency_aware --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s6 --variant latency_aware --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s7 --variant latency_aware --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s8 --variant latency_aware --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s9 --variant latency_aware --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s10 --variant latency_aware --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s11 --variant latency_aware --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s12 --variant latency_aware --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s13 --variant latency_aware --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-latency_aware-s14 --variant latency_aware --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s1 --variant method --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s2 --variant method --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s3 --variant method --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s4 --variant method --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s5 --variant method --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s6 --variant method --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s7 --variant method --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s8 --variant method --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s9 --variant method --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s10 --variant method --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s11 --variant method --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s12 --variant method --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s13 --variant method --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "SIM-isaac-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id SIM-isaac-method-s14 --variant method --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    }
+  ]
+}

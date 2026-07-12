@@ -1,0 +1,272 @@
+{
+  "suite": "output/corepaper_logs/experiments/library_lane_latest",
+  "stress_scenarios": [
+    "R4-hard",
+    "S1-hard",
+    "S2-high",
+    "S3-severe",
+    "SIM-isaac"
+  ],
+  "reference_group": "method",
+  "scenario_summary": {
+    "R4-hard": {
+      "method": {
+        "n": 10,
+        "mean": 0.6387700000000002,
+        "std": 0.002140638534020474,
+        "ci95": 0.0013267815092671926,
+        "worst": 0.6351,
+        "cvar40": 0.6368
+      },
+      "rllib_sac": {
+        "n": 10,
+        "mean": 0.61963,
+        "std": 0.0031383116480043975,
+        "ci95": 0.001945145711765581,
+        "worst": 0.614,
+        "cvar40": 0.6166
+      },
+      "sb3_ppo": {
+        "n": 10,
+        "mean": 0.61323,
+        "std": 0.0036368637282386267,
+        "ci95": 0.0022541514924935956,
+        "worst": 0.6087,
+        "cvar40": 0.609525
+      }
+    },
+    "S1-hard": {
+      "method": {
+        "n": 10,
+        "mean": 0.6488200000000001,
+        "std": 0.003080692562828464,
+        "ci95": 0.001909433032778747,
+        "worst": 0.6437,
+        "cvar40": 0.64615
+      },
+      "rllib_sac": {
+        "n": 10,
+        "mean": 0.63201,
+        "std": 0.0031370368184004444,
+        "ci95": 0.001944355564190869,
+        "worst": 0.6273,
+        "cvar40": 0.628975
+      },
+      "sb3_ppo": {
+        "n": 10,
+        "mean": 0.62365,
+        "std": 0.0018428540666887195,
+        "ci95": 0.0011422127842238765,
+        "worst": 0.6208,
+        "cvar40": 0.621975
+      }
+    },
+    "S2-high": {
+      "method": {
+        "n": 10,
+        "mean": 0.68309,
+        "std": 0.002087768612125837,
+        "ci95": 0.0012940123921783499,
+        "worst": 0.6805,
+        "cvar40": 0.680925
+      },
+      "rllib_sac": {
+        "n": 10,
+        "mean": 0.6692800000000001,
+        "std": 0.002781606250592162,
+        "ci95": 0.0017240574159039347,
+        "worst": 0.666,
+        "cvar40": 0.66645
+      },
+      "sb3_ppo": {
+        "n": 10,
+        "mean": 0.6627099999999999,
+        "std": 0.002917552246509236,
+        "ci95": 0.001808317617136004,
+        "worst": 0.6579,
+        "cvar40": 0.659775
+      }
+    },
+    "S3-severe": {
+      "method": {
+        "n": 10,
+        "mean": 0.69798,
+        "std": 0.0022587115304477765,
+        "ci95": 0.001399963910645948,
+        "worst": 0.6943,
+        "cvar40": 0.6956500000000001
+      },
+      "rllib_sac": {
+        "n": 10,
+        "mean": 0.683,
+        "std": 0.0028782710859897296,
+        "ci95": 0.0017839709016062447,
+        "worst": 0.6793,
+        "cvar40": 0.680175
+      },
+      "sb3_ppo": {
+        "n": 10,
+        "mean": 0.6809499999999999,
+        "std": 0.002575202257428871,
+        "ci95": 0.0015961268955401696,
+        "worst": 0.6774,
+        "cvar40": 0.67815
+      }
+    },
+    "SIM-isaac": {
+      "method": {
+        "n": 10,
+        "mean": 0.68154,
+        "std": 0.003967982974873888,
+        "ci95": 0.0024593813278049443,
+        "worst": 0.6747,
+        "cvar40": 0.677975
+      },
+      "rllib_sac": {
+        "n": 10,
+        "mean": 0.6662100000000001,
+        "std": 0.0035034744659171472,
+        "ci95": 0.002171475971161867,
+        "worst": 0.6615,
+        "cvar40": 0.6632
+      },
+      "sb3_ppo": {
+        "n": 10,
+        "mean": 0.65971,
+        "std": 0.0027922312861859274,
+        "ci95": 0.0017306428811924798,
+        "worst": 0.6558,
+        "cvar40": 0.6572
+      }
+    },
+    "nominal": {
+      "method": {
+        "n": 10,
+        "mean": 0.74792,
+        "std": 0.003959741854661166,
+        "ci95": 0.0024542734285776273,
+        "worst": 0.743,
+        "cvar40": 0.7447250000000001
+      },
+      "rllib_sac": {
+        "n": 10,
+        "mean": 0.74226,
+        "std": 0.004234829132063986,
+        "ci95": 0.0026247742895554134,
+        "worst": 0.7355,
+        "cvar40": 0.73855
+      },
+      "sb3_ppo": {
+        "n": 10,
+        "mean": 0.74,
+        "std": 0.002750353512631512,
+        "ci95": 0.001704686768229811,
+        "worst": 0.7352,
+        "cvar40": 0.737475
+      }
+    }
+  },
+  "stress_aggregate": {
+    "method": {
+      "n": 50,
+      "mean": 0.6700400000000002,
+      "std": 0.022797457788811745,
+      "ci95": 0.006319132902542881,
+      "worst": 0.6351,
+      "cvar40": 0.6437950000000001
+    },
+    "rllib_sac": {
+      "n": 50,
+      "mean": 0.6540260000000002,
+      "std": 0.02445989478843327,
+      "ci95": 0.006779936929028178,
+      "worst": 0.614,
+      "cvar40": 0.62582
+    },
+    "sb3_ppo": {
+      "n": 50,
+      "mean": 0.64805,
+      "std": 0.025859433600186388,
+      "ci95": 0.007167869295683339,
+      "worst": 0.6087,
+      "cvar40": 0.6184399999999999
+    }
+  },
+  "stress_ranking": [
+    {
+      "variant": "method",
+      "n": 50,
+      "mean": 0.6700400000000002,
+      "std": 0.022797457788811745,
+      "ci95": 0.006319132902542881,
+      "worst": 0.6351,
+      "cvar40": 0.6437950000000001
+    },
+    {
+      "variant": "rllib_sac",
+      "n": 50,
+      "mean": 0.6540260000000002,
+      "std": 0.02445989478843327,
+      "ci95": 0.006779936929028178,
+      "worst": 0.614,
+      "cvar40": 0.62582
+    },
+    {
+      "variant": "sb3_ppo",
+      "n": 50,
+      "mean": 0.64805,
+      "std": 0.025859433600186388,
+      "ci95": 0.007167869295683339,
+      "worst": 0.6087,
+      "cvar40": 0.6184399999999999
+    }
+  ],
+  "comparisons": [
+    {
+      "reference_group": "method",
+      "comparator_group": "sb3_ppo",
+      "n_reference": 50,
+      "n_comparator": 50,
+      "reference_mean": 0.6700400000000002,
+      "comparator_mean": 0.64805,
+      "delta_mean": 0.021990000000000176,
+      "reference_worst": 0.6351,
+      "comparator_worst": 0.6087,
+      "delta_worst": 0.02639999999999998,
+      "reference_cvar40": 0.6437950000000001,
+      "comparator_cvar40": 0.6184399999999999,
+      "delta_cvar40": 0.02535500000000024,
+      "delta_ci95_halfwidth": 0.009555615672472392,
+      "cohen_d": 0.9020957199893049,
+      "p_two_sided": 2.5e-05,
+      "permutation_mode": "monte_carlo",
+      "permutation_total_combinations": 100891344545564193334812497256,
+      "permutation_samples_used": 200000
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "rllib_sac",
+      "n_reference": 50,
+      "n_comparator": 50,
+      "reference_mean": 0.6700400000000002,
+      "comparator_mean": 0.6540260000000002,
+      "delta_mean": 0.016013999999999973,
+      "reference_worst": 0.6351,
+      "comparator_worst": 0.614,
+      "delta_worst": 0.021100000000000008,
+      "reference_cvar40": 0.6437950000000001,
+      "comparator_cvar40": 0.62582,
+      "delta_cvar40": 0.017975000000000074,
+      "delta_ci95_halfwidth": 0.009268170553113492,
+      "cohen_d": 0.677316840904613,
+      "p_two_sided": 0.00099,
+      "permutation_mode": "monte_carlo",
+      "permutation_total_combinations": 100891344545564193334812497256,
+      "permutation_samples_used": 200000
+    }
+  ],
+  "guidance": [
+    "Keep CORE as primary method claim: top stress aggregate across comparators.",
+    "Report stress aggregate and reliability-floor metrics jointly; avoid mean-only framing."
+  ]
+}

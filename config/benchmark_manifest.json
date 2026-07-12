@@ -1,0 +1,46 @@
+{
+  "updated_at": "2026-02-17",
+  "project": "CORE Paper",
+  "tasks": [
+    {
+      "id": "task_contact_shift_smoke",
+      "name": "Contact-Rich Manipulation Shifted-Condition Smoke Benchmark",
+      "type": "simulation",
+      "status": "active"
+    }
+  ],
+  "baselines": [
+    {
+      "id": "baseline_policy",
+      "name": "Baseline Policy (deterministic stochastic software benchmark)",
+      "paper_ref": "internal-smoke-baseline",
+      "code_ref": "scripts/experiments/software_benchmark.py",
+      "reproduction_status": "reproduced"
+    },
+    {
+      "id": "core_method",
+      "name": "CORE Method (deterministic stochastic software benchmark)",
+      "paper_ref": "internal-core-method",
+      "code_ref": "scripts/experiments/software_benchmark.py",
+      "reproduction_status": "reproduced"
+    }
+  ],
+  "metrics": [
+    {
+      "name": "success_rate",
+      "aggregation": "mean_over_seeds",
+      "goal": "maximize"
+    },
+    {
+      "name": "runtime_seconds",
+      "aggregation": "mean_over_runs",
+      "goal": "minimize"
+    }
+  ],
+  "evaluation_policy": {
+    "num_seeds": 5,
+    "fixed_seed_list": [1, 2, 3, 4, 5],
+    "compute_budget_rule": "same_budget_for_all_methods",
+    "reporting_rule": "mean_std_and_ci"
+  }
+}

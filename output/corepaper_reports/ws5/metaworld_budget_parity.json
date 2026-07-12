@@ -1,0 +1,83 @@
+{
+  "generated_at_utc": "2026-03-02T08:20:14Z",
+  "reference_variant": "method",
+  "rows": [
+    {
+      "result_json": "output/corepaper_reports/ws3/metaworld_seedexp_latency_method_results.json",
+      "suite_name": "ws3-metaworld-seedexp-latency_aware-method",
+      "comparator": "latency_aware",
+      "reference_variant": "method",
+      "max_steps_per_episode": 80,
+      "extra_monitor_episodes": 0,
+      "reference_episodes": 140,
+      "comparator_episodes": 140,
+      "delta_episodes": 0,
+      "reference_total_steps": 11200.0,
+      "comparator_total_steps": 11200.0,
+      "delta_total_steps": 0.0,
+      "reference_mean_steps": 80.0,
+      "comparator_mean_steps": 80.0,
+      "delta_mean_steps": 0.0
+    },
+    {
+      "result_json": "output/corepaper_reports/ws3/metaworld_seedexp_latency_method_n30_results.json",
+      "suite_name": "ws3-metaworld-seedexp-latency_aware-method",
+      "comparator": "latency_aware",
+      "reference_variant": "method",
+      "max_steps_per_episode": 80,
+      "extra_monitor_episodes": 0,
+      "reference_episodes": 300,
+      "comparator_episodes": 300,
+      "delta_episodes": 0,
+      "reference_total_steps": 24000.0,
+      "comparator_total_steps": 24000.0,
+      "delta_total_steps": 0.0,
+      "reference_mean_steps": 80.0,
+      "comparator_mean_steps": 80.0,
+      "delta_mean_steps": 0.0
+    },
+    {
+      "result_json": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_results.json",
+      "suite_name": "ws3-metaworld-seedexp-adaptmanip-method",
+      "comparator": "adaptmanip",
+      "reference_variant": "method",
+      "max_steps_per_episode": 80,
+      "extra_monitor_episodes": 0,
+      "reference_episodes": 140,
+      "comparator_episodes": 140,
+      "delta_episodes": 0,
+      "reference_total_steps": 11200.0,
+      "comparator_total_steps": 11200.0,
+      "delta_total_steps": 0.0,
+      "reference_mean_steps": 80.0,
+      "comparator_mean_steps": 80.0,
+      "delta_mean_steps": 0.0
+    },
+    {
+      "result_json": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_n30_results.json",
+      "suite_name": "ws3-metaworld-seedexp-adaptmanip-method",
+      "comparator": "adaptmanip",
+      "reference_variant": "method",
+      "max_steps_per_episode": 80,
+      "extra_monitor_episodes": 0,
+      "reference_episodes": 300,
+      "comparator_episodes": 300,
+      "delta_episodes": 0,
+      "reference_total_steps": 24000.0,
+      "comparator_total_steps": 24000.0,
+      "delta_total_steps": 0.0,
+      "reference_mean_steps": 80.0,
+      "comparator_mean_steps": 80.0,
+      "delta_mean_steps": 0.0
+    }
+  ],
+  "summary": {
+    "n_rows": 4,
+    "max_abs_delta_episodes": 0,
+    "max_abs_delta_total_steps": 0.0,
+    "max_abs_delta_mean_steps": 0.0,
+    "max_extra_monitor_episodes": 0,
+    "all_episode_deltas_zero": true,
+    "all_total_step_deltas_zero": true
+  }
+}

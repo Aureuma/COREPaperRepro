@@ -1,0 +1,160 @@
+{
+  "source_logs": [
+    "output/corepaper_logs/experiments/external_latest",
+    "output/corepaper_logs/experiments/robustness_latest",
+    "output/corepaper_logs/experiments/software_transfer_latest",
+    "output/corepaper_logs/experiments/sim2sim_latest",
+    "output/corepaper_logs/experiments/recent_baselines_latest"
+  ],
+  "n_rows": 984,
+  "split": {
+    "method": "seed-parity",
+    "n_train": 474,
+    "n_holdout": 510,
+    "train_fraction": 0.8
+  },
+  "assumption_fit": {
+    "c_u": 1.019102,
+    "c_0": 0.00412,
+    "coverage_quantile": 0.95,
+    "empirical_coverage": 0.945098,
+    "max_violation": 0.006296
+  },
+  "in_sample_fit": {
+    "empirical_coverage": 0.949367,
+    "max_violation": 0.003955
+  },
+  "holdout_metrics": {
+    "mae_residual": 0.004934,
+    "rmse_residual": 0.005784
+  },
+  "linear_relation": {
+    "slope": 0.990397,
+    "intercept": 0.001141,
+    "pearson_r": 0.997254
+  },
+  "binned_scatter": [
+    {
+      "bin": 1,
+      "u_mean": 0.000644,
+      "e_mean": 0.002291,
+      "count": 211
+    },
+    {
+      "bin": 2,
+      "u_mean": 0.024057,
+      "e_mean": 0.024389,
+      "count": 27
+    },
+    {
+      "bin": 3,
+      "u_mean": 0.044229,
+      "e_mean": 0.043356,
+      "count": 32
+    },
+    {
+      "bin": 4,
+      "u_mean": 0.060222,
+      "e_mean": 0.060077,
+      "count": 172
+    },
+    {
+      "bin": 5,
+      "u_mean": 0.076439,
+      "e_mean": 0.076559,
+      "count": 275
+    },
+    {
+      "bin": 6,
+      "u_mean": 0.101632,
+      "e_mean": 0.104155,
+      "count": 20
+    },
+    {
+      "bin": 7,
+      "u_mean": 0.112483,
+      "e_mean": 0.113484,
+      "count": 157
+    },
+    {
+      "bin": 8,
+      "u_mean": 0.128164,
+      "e_mean": 0.127677,
+      "count": 90
+    }
+  ],
+  "per_variant": [
+    {
+      "variant": "adaptmanip",
+      "n": 84,
+      "u_mean": 0.071971,
+      "e_mean": 0.072343,
+      "u_max": 0.119771,
+      "e_max": 0.1272
+    },
+    {
+      "variant": "baseline",
+      "n": 165,
+      "u_mean": 0.067158,
+      "e_mean": 0.067256,
+      "u_max": 0.13985,
+      "e_max": 0.1446
+    },
+    {
+      "variant": "constrained_flow",
+      "n": 84,
+      "u_mean": 0.070703,
+      "e_mean": 0.071139,
+      "u_max": 0.113901,
+      "e_max": 0.1195
+    },
+    {
+      "variant": "ext1",
+      "n": 89,
+      "u_mean": 0.073508,
+      "e_mean": 0.073092,
+      "u_max": 0.12924,
+      "e_max": 0.1351
+    },
+    {
+      "variant": "ext2",
+      "n": 117,
+      "u_mean": 0.062038,
+      "e_mean": 0.062762,
+      "u_max": 0.122913,
+      "e_max": 0.1288
+    },
+    {
+      "variant": "history_keyframe",
+      "n": 84,
+      "u_mean": 0.073934,
+      "e_mean": 0.074213,
+      "u_max": 0.123595,
+      "e_max": 0.1317
+    },
+    {
+      "variant": "latency_aware",
+      "n": 112,
+      "u_mean": 0.061874,
+      "e_mean": 0.062153,
+      "u_max": 0.123594,
+      "e_max": 0.1276
+    },
+    {
+      "variant": "method",
+      "n": 165,
+      "u_mean": 0.054292,
+      "e_mean": 0.05593,
+      "u_max": 0.113752,
+      "e_max": 0.124
+    },
+    {
+      "variant": "robust_cp",
+      "n": 84,
+      "u_mean": 0.069545,
+      "e_mean": 0.070069,
+      "u_max": 0.116741,
+      "e_max": 0.1214
+    }
+  ]
+}

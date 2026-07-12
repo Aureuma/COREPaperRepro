@@ -1,0 +1,34 @@
+{
+  "summary_json": "output/corepaper_reports/ws3/external_baseline_summary.json",
+  "targets_json": "config/benchmarks/baseline_calibration_targets.json",
+  "rows": [
+    {
+      "group": "baseline",
+      "target_mean": 0.712,
+      "observed_mean": 0.71194,
+      "abs_error": 5.999999999994898e-05,
+      "tolerance_abs": 0.005,
+      "status": "PASS",
+      "source": "internal benchmark reference profile"
+    },
+    {
+      "group": "ext1",
+      "target_mean": 0.73,
+      "observed_mean": 0.73078,
+      "abs_error": 0.0007800000000000029,
+      "tolerance_abs": 0.005,
+      "status": "PASS",
+      "source": "external reference profile ext1 (literature-aligned)"
+    },
+    {
+      "group": "ext2",
+      "target_mean": 0.743,
+      "observed_mean": 0.744,
+      "abs_error": 0.0010000000000000009,
+      "tolerance_abs": 0.005,
+      "status": "PASS",
+      "source": "external reference profile ext2 (literature-aligned)"
+    }
+  ],
+  "all_required_pass": true
+}

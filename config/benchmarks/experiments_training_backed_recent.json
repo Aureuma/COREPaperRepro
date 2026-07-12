@@ -1,0 +1,1445 @@
+{
+  "suite_name": "ws5-training-backed-recent",
+  "runs": [
+    {
+      "id": "train-nominal-baseline-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s1 --variant baseline --scenario nominal --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s2 --variant baseline --scenario nominal --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s3 --variant baseline --scenario nominal --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s4 --variant baseline --scenario nominal --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s5 --variant baseline --scenario nominal --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s6 --variant baseline --scenario nominal --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s7 --variant baseline --scenario nominal --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-baseline-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-baseline-s8 --variant baseline --scenario nominal --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s1 --variant ext2 --scenario nominal --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s2 --variant ext2 --scenario nominal --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s3 --variant ext2 --scenario nominal --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s4 --variant ext2 --scenario nominal --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s5 --variant ext2 --scenario nominal --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s6 --variant ext2 --scenario nominal --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s7 --variant ext2 --scenario nominal --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-ext2-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-ext2-s8 --variant ext2 --scenario nominal --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s1 --variant latency_aware --scenario nominal --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s2 --variant latency_aware --scenario nominal --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s3 --variant latency_aware --scenario nominal --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s4 --variant latency_aware --scenario nominal --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s5 --variant latency_aware --scenario nominal --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s6 --variant latency_aware --scenario nominal --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s7 --variant latency_aware --scenario nominal --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-latency_aware-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-latency_aware-s8 --variant latency_aware --scenario nominal --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s1 --variant adaptmanip --scenario nominal --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s2 --variant adaptmanip --scenario nominal --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s3 --variant adaptmanip --scenario nominal --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s4 --variant adaptmanip --scenario nominal --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s5 --variant adaptmanip --scenario nominal --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s6 --variant adaptmanip --scenario nominal --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s7 --variant adaptmanip --scenario nominal --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-adaptmanip-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-adaptmanip-s8 --variant adaptmanip --scenario nominal --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s1 --variant robust_cp --scenario nominal --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s2 --variant robust_cp --scenario nominal --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s3 --variant robust_cp --scenario nominal --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s4 --variant robust_cp --scenario nominal --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s5 --variant robust_cp --scenario nominal --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s6 --variant robust_cp --scenario nominal --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s7 --variant robust_cp --scenario nominal --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-robust_cp-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-robust_cp-s8 --variant robust_cp --scenario nominal --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s1 --variant method --scenario nominal --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s2 --variant method --scenario nominal --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s3 --variant method --scenario nominal --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s4 --variant method --scenario nominal --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s5 --variant method --scenario nominal --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s6 --variant method --scenario nominal --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s7 --variant method --scenario nominal --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-nominal-method-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-nominal-method-s8 --variant method --scenario nominal --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s1 --variant baseline --scenario R4-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s2 --variant baseline --scenario R4-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s3 --variant baseline --scenario R4-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s4 --variant baseline --scenario R4-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s5 --variant baseline --scenario R4-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s6 --variant baseline --scenario R4-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s7 --variant baseline --scenario R4-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-baseline-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-baseline-s8 --variant baseline --scenario R4-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s1 --variant ext2 --scenario R4-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s2 --variant ext2 --scenario R4-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s3 --variant ext2 --scenario R4-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s4 --variant ext2 --scenario R4-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s5 --variant ext2 --scenario R4-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s6 --variant ext2 --scenario R4-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s7 --variant ext2 --scenario R4-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-ext2-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-ext2-s8 --variant ext2 --scenario R4-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s1 --variant latency_aware --scenario R4-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s2 --variant latency_aware --scenario R4-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s3 --variant latency_aware --scenario R4-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s4 --variant latency_aware --scenario R4-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s5 --variant latency_aware --scenario R4-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s6 --variant latency_aware --scenario R4-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s7 --variant latency_aware --scenario R4-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-latency_aware-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-latency_aware-s8 --variant latency_aware --scenario R4-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s1 --variant adaptmanip --scenario R4-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s2 --variant adaptmanip --scenario R4-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s3 --variant adaptmanip --scenario R4-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s4 --variant adaptmanip --scenario R4-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s5 --variant adaptmanip --scenario R4-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s6 --variant adaptmanip --scenario R4-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s7 --variant adaptmanip --scenario R4-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-adaptmanip-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-adaptmanip-s8 --variant adaptmanip --scenario R4-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s1 --variant robust_cp --scenario R4-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s2 --variant robust_cp --scenario R4-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s3 --variant robust_cp --scenario R4-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s4 --variant robust_cp --scenario R4-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s5 --variant robust_cp --scenario R4-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s6 --variant robust_cp --scenario R4-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s7 --variant robust_cp --scenario R4-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-robust_cp-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-robust_cp-s8 --variant robust_cp --scenario R4-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s1 --variant method --scenario R4-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s2 --variant method --scenario R4-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s3 --variant method --scenario R4-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s4 --variant method --scenario R4-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s5 --variant method --scenario R4-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s6 --variant method --scenario R4-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s7 --variant method --scenario R4-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-R4-hard-method-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-R4-hard-method-s8 --variant method --scenario R4-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s1 --variant baseline --scenario S1-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s2 --variant baseline --scenario S1-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s3 --variant baseline --scenario S1-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s4 --variant baseline --scenario S1-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s5 --variant baseline --scenario S1-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s6 --variant baseline --scenario S1-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s7 --variant baseline --scenario S1-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-baseline-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-baseline-s8 --variant baseline --scenario S1-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s1 --variant ext2 --scenario S1-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s2 --variant ext2 --scenario S1-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s3 --variant ext2 --scenario S1-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s4 --variant ext2 --scenario S1-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s5 --variant ext2 --scenario S1-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s6 --variant ext2 --scenario S1-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s7 --variant ext2 --scenario S1-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-ext2-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-ext2-s8 --variant ext2 --scenario S1-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s1 --variant latency_aware --scenario S1-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s2 --variant latency_aware --scenario S1-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s3 --variant latency_aware --scenario S1-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s4 --variant latency_aware --scenario S1-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s5 --variant latency_aware --scenario S1-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s6 --variant latency_aware --scenario S1-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s7 --variant latency_aware --scenario S1-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-latency_aware-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-latency_aware-s8 --variant latency_aware --scenario S1-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s1 --variant adaptmanip --scenario S1-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s2 --variant adaptmanip --scenario S1-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s3 --variant adaptmanip --scenario S1-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s4 --variant adaptmanip --scenario S1-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s5 --variant adaptmanip --scenario S1-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s6 --variant adaptmanip --scenario S1-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s7 --variant adaptmanip --scenario S1-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-adaptmanip-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-adaptmanip-s8 --variant adaptmanip --scenario S1-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s1 --variant robust_cp --scenario S1-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s2 --variant robust_cp --scenario S1-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s3 --variant robust_cp --scenario S1-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s4 --variant robust_cp --scenario S1-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s5 --variant robust_cp --scenario S1-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s6 --variant robust_cp --scenario S1-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s7 --variant robust_cp --scenario S1-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-robust_cp-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-robust_cp-s8 --variant robust_cp --scenario S1-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s1 --variant method --scenario S1-hard --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s2 --variant method --scenario S1-hard --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s3 --variant method --scenario S1-hard --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s4 --variant method --scenario S1-hard --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s5 --variant method --scenario S1-hard --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s6 --variant method --scenario S1-hard --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s7 --variant method --scenario S1-hard --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S1-hard-method-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S1-hard-method-s8 --variant method --scenario S1-hard --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s1 --variant baseline --scenario S2-high --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s2 --variant baseline --scenario S2-high --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s3 --variant baseline --scenario S2-high --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s4 --variant baseline --scenario S2-high --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s5 --variant baseline --scenario S2-high --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s6 --variant baseline --scenario S2-high --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s7 --variant baseline --scenario S2-high --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-baseline-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-baseline-s8 --variant baseline --scenario S2-high --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s1 --variant ext2 --scenario S2-high --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s2 --variant ext2 --scenario S2-high --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s3 --variant ext2 --scenario S2-high --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s4 --variant ext2 --scenario S2-high --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s5 --variant ext2 --scenario S2-high --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s6 --variant ext2 --scenario S2-high --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s7 --variant ext2 --scenario S2-high --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-ext2-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-ext2-s8 --variant ext2 --scenario S2-high --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s1 --variant latency_aware --scenario S2-high --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s2 --variant latency_aware --scenario S2-high --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s3 --variant latency_aware --scenario S2-high --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s4 --variant latency_aware --scenario S2-high --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s5 --variant latency_aware --scenario S2-high --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s6 --variant latency_aware --scenario S2-high --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s7 --variant latency_aware --scenario S2-high --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-latency_aware-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-latency_aware-s8 --variant latency_aware --scenario S2-high --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s1 --variant adaptmanip --scenario S2-high --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s2 --variant adaptmanip --scenario S2-high --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s3 --variant adaptmanip --scenario S2-high --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s4 --variant adaptmanip --scenario S2-high --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s5 --variant adaptmanip --scenario S2-high --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s6 --variant adaptmanip --scenario S2-high --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s7 --variant adaptmanip --scenario S2-high --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-adaptmanip-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-adaptmanip-s8 --variant adaptmanip --scenario S2-high --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s1 --variant robust_cp --scenario S2-high --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s2 --variant robust_cp --scenario S2-high --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s3 --variant robust_cp --scenario S2-high --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s4 --variant robust_cp --scenario S2-high --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s5 --variant robust_cp --scenario S2-high --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s6 --variant robust_cp --scenario S2-high --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s7 --variant robust_cp --scenario S2-high --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-robust_cp-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-robust_cp-s8 --variant robust_cp --scenario S2-high --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s1 --variant method --scenario S2-high --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s2 --variant method --scenario S2-high --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s3 --variant method --scenario S2-high --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s4 --variant method --scenario S2-high --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s5 --variant method --scenario S2-high --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s6 --variant method --scenario S2-high --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s7 --variant method --scenario S2-high --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S2-high-method-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S2-high-method-s8 --variant method --scenario S2-high --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s1 --variant baseline --scenario S3-severe --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s2 --variant baseline --scenario S3-severe --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s3 --variant baseline --scenario S3-severe --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s4 --variant baseline --scenario S3-severe --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s5 --variant baseline --scenario S3-severe --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s6 --variant baseline --scenario S3-severe --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s7 --variant baseline --scenario S3-severe --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-baseline-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-baseline-s8 --variant baseline --scenario S3-severe --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s1 --variant ext2 --scenario S3-severe --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s2 --variant ext2 --scenario S3-severe --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s3 --variant ext2 --scenario S3-severe --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s4 --variant ext2 --scenario S3-severe --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s5 --variant ext2 --scenario S3-severe --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s6 --variant ext2 --scenario S3-severe --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s7 --variant ext2 --scenario S3-severe --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-ext2-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-ext2-s8 --variant ext2 --scenario S3-severe --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s1 --variant latency_aware --scenario S3-severe --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s2 --variant latency_aware --scenario S3-severe --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s3 --variant latency_aware --scenario S3-severe --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s4 --variant latency_aware --scenario S3-severe --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s5 --variant latency_aware --scenario S3-severe --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s6 --variant latency_aware --scenario S3-severe --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s7 --variant latency_aware --scenario S3-severe --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-latency_aware-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-latency_aware-s8 --variant latency_aware --scenario S3-severe --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s1 --variant adaptmanip --scenario S3-severe --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s2 --variant adaptmanip --scenario S3-severe --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s3 --variant adaptmanip --scenario S3-severe --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s4 --variant adaptmanip --scenario S3-severe --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s5 --variant adaptmanip --scenario S3-severe --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s6 --variant adaptmanip --scenario S3-severe --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s7 --variant adaptmanip --scenario S3-severe --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-adaptmanip-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-adaptmanip-s8 --variant adaptmanip --scenario S3-severe --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s1 --variant robust_cp --scenario S3-severe --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s2 --variant robust_cp --scenario S3-severe --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s3 --variant robust_cp --scenario S3-severe --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s4 --variant robust_cp --scenario S3-severe --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s5 --variant robust_cp --scenario S3-severe --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s6 --variant robust_cp --scenario S3-severe --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s7 --variant robust_cp --scenario S3-severe --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-robust_cp-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-robust_cp-s8 --variant robust_cp --scenario S3-severe --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s1 --variant method --scenario S3-severe --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s2 --variant method --scenario S3-severe --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s3 --variant method --scenario S3-severe --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s4 --variant method --scenario S3-severe --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s5 --variant method --scenario S3-severe --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s6 --variant method --scenario S3-severe --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s7 --variant method --scenario S3-severe --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-S3-severe-method-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-S3-severe-method-s8 --variant method --scenario S3-severe --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s1 --variant baseline --scenario SIM-isaac --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s2 --variant baseline --scenario SIM-isaac --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s3 --variant baseline --scenario SIM-isaac --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s4 --variant baseline --scenario SIM-isaac --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s5 --variant baseline --scenario SIM-isaac --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s6 --variant baseline --scenario SIM-isaac --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s7 --variant baseline --scenario SIM-isaac --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-baseline-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-baseline-s8 --variant baseline --scenario SIM-isaac --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s1 --variant ext2 --scenario SIM-isaac --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s2 --variant ext2 --scenario SIM-isaac --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s3 --variant ext2 --scenario SIM-isaac --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s4 --variant ext2 --scenario SIM-isaac --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s5 --variant ext2 --scenario SIM-isaac --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s6 --variant ext2 --scenario SIM-isaac --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s7 --variant ext2 --scenario SIM-isaac --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-ext2-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-ext2-s8 --variant ext2 --scenario SIM-isaac --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s1 --variant latency_aware --scenario SIM-isaac --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s2 --variant latency_aware --scenario SIM-isaac --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s3 --variant latency_aware --scenario SIM-isaac --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s4 --variant latency_aware --scenario SIM-isaac --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s5 --variant latency_aware --scenario SIM-isaac --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s6 --variant latency_aware --scenario SIM-isaac --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s7 --variant latency_aware --scenario SIM-isaac --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-latency_aware-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-latency_aware-s8 --variant latency_aware --scenario SIM-isaac --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s1 --variant adaptmanip --scenario SIM-isaac --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s2 --variant adaptmanip --scenario SIM-isaac --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s3 --variant adaptmanip --scenario SIM-isaac --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s4 --variant adaptmanip --scenario SIM-isaac --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s5 --variant adaptmanip --scenario SIM-isaac --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s6 --variant adaptmanip --scenario SIM-isaac --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s7 --variant adaptmanip --scenario SIM-isaac --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-adaptmanip-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-adaptmanip-s8 --variant adaptmanip --scenario SIM-isaac --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s1 --variant robust_cp --scenario SIM-isaac --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s2 --variant robust_cp --scenario SIM-isaac --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s3 --variant robust_cp --scenario SIM-isaac --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s4 --variant robust_cp --scenario SIM-isaac --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s5 --variant robust_cp --scenario SIM-isaac --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s6 --variant robust_cp --scenario SIM-isaac --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s7 --variant robust_cp --scenario SIM-isaac --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-robust_cp-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-robust_cp-s8 --variant robust_cp --scenario SIM-isaac --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s1",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s1 --variant method --scenario SIM-isaac --seed 1 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s2",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s2 --variant method --scenario SIM-isaac --seed 2 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s3",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s3 --variant method --scenario SIM-isaac --seed 3 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s4",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s4 --variant method --scenario SIM-isaac --seed 4 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s5",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s5 --variant method --scenario SIM-isaac --seed 5 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s6",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s6 --variant method --scenario SIM-isaac --seed 6 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s7",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s7 --variant method --scenario SIM-isaac --seed 7 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    },
+    {
+      "id": "train-SIM-isaac-method-s8",
+      "command": "python3 scripts/experiments/training_backed_benchmark.py --run-id train-SIM-isaac-method-s8 --variant method --scenario SIM-isaac --seed 8 --train-steps 80 --eval-episodes 50",
+      "expected_status": 0
+    }
+  ]
+}

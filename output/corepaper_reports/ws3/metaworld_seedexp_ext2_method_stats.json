@@ -1,0 +1,98 @@
+{
+  "input_json": "output/corepaper_reports/ws3/metaworld_seedexp_ext2_method_results.json",
+  "scenario": "shifted",
+  "reference_group": "method",
+  "variant_summary": {
+    "ext2": {
+      "n_episodes": 140,
+      "n_seeds": 14,
+      "mean_success": 0.44285714285714284,
+      "worst_seed_mean": 0.3,
+      "cvar40_seed": 0.3499999999999999,
+      "mean_steps": 80.0,
+      "success_per_1k_steps": 5.535714285714286,
+      "seed_means": [
+        0.5,
+        0.3,
+        0.5,
+        0.4,
+        0.4,
+        0.4,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.6,
+        0.4,
+        0.6,
+        0.3
+      ]
+    },
+    "method": {
+      "n_episodes": 140,
+      "n_seeds": 14,
+      "mean_success": 0.7071428571428572,
+      "worst_seed_mean": 0.5,
+      "cvar40_seed": 0.6166666666666667,
+      "mean_steps": 80.0,
+      "success_per_1k_steps": 8.839285714285714,
+      "seed_means": [
+        0.5,
+        0.6,
+        0.7,
+        0.7,
+        0.6,
+        0.8,
+        0.6,
+        0.8,
+        0.7,
+        0.8,
+        0.8,
+        0.8,
+        0.7,
+        0.8
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "reference_group": "method",
+      "comparator_group": "ext2",
+      "n_reference": 140,
+      "n_comparator": 140,
+      "reference_mean": 0.7071428571428572,
+      "comparator_mean": 0.44285714285714284,
+      "delta_mean": 0.26428571428571435,
+      "reference_worst_seed_mean": 0.5,
+      "comparator_worst_seed_mean": 0.3,
+      "delta_worst_seed_mean": 0.2,
+      "reference_cvar40_seed": 0.6166666666666667,
+      "comparator_cvar40_seed": 0.3499999999999999,
+      "delta_cvar40_seed": 0.2666666666666668,
+      "delta_ci95_halfwidth": 0.11199370485905696,
+      "cohen_d": 0.552824304200297,
+      "p_two_sided": 5e-06,
+      "p_two_sided_mean": 5e-06,
+      "p_two_sided_worst_seed": 0.002135,
+      "p_two_sided_cvar40_seed": 1e-05,
+      "permutation_mode": "monte_carlo",
+      "permutation_mode_mean": "monte_carlo",
+      "permutation_mode_worst_seed": "monte_carlo",
+      "permutation_mode_cvar40_seed": "monte_carlo",
+      "permutation_total_combinations": 92549072262470879878244758693221706389840827423788740485341931505471061141310470440,
+      "permutation_total_combinations_mean": 92549072262470879878244758693221706389840827423788740485341931505471061141310470440,
+      "permutation_total_combinations_worst_seed": 40116600,
+      "permutation_total_combinations_cvar40_seed": 40116600,
+      "permutation_samples_used": 200000,
+      "permutation_samples_used_mean": 200000,
+      "permutation_samples_used_worst_seed": 200000,
+      "permutation_samples_used_cvar40_seed": 200000
+    }
+  ],
+  "compute_profile": {
+    "total_episodes_all_scenarios": 280,
+    "total_episodes_scenario": 280,
+    "training_loop": "none (evaluation-only benchmark slice)",
+    "gpu_hours": 0.0
+  }
+}

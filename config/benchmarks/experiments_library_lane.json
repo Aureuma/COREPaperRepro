@@ -1,0 +1,905 @@
+{
+  "suite_name": "ws5-library-lane",
+  "runs": [
+    {
+      "id": "lib-nominal-sb3_ppo-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s1 --variant sb3_ppo --scenario nominal --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s2 --variant sb3_ppo --scenario nominal --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s3 --variant sb3_ppo --scenario nominal --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s4 --variant sb3_ppo --scenario nominal --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s5 --variant sb3_ppo --scenario nominal --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s6 --variant sb3_ppo --scenario nominal --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s7 --variant sb3_ppo --scenario nominal --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s8 --variant sb3_ppo --scenario nominal --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s9 --variant sb3_ppo --scenario nominal --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-sb3_ppo-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-sb3_ppo-s10 --variant sb3_ppo --scenario nominal --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s1 --variant rllib_sac --scenario nominal --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s2 --variant rllib_sac --scenario nominal --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s3 --variant rllib_sac --scenario nominal --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s4 --variant rllib_sac --scenario nominal --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s5 --variant rllib_sac --scenario nominal --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s6 --variant rllib_sac --scenario nominal --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s7 --variant rllib_sac --scenario nominal --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s8 --variant rllib_sac --scenario nominal --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s9 --variant rllib_sac --scenario nominal --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-rllib_sac-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-rllib_sac-s10 --variant rllib_sac --scenario nominal --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s1 --variant method --scenario nominal --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s2 --variant method --scenario nominal --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s3 --variant method --scenario nominal --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s4 --variant method --scenario nominal --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s5 --variant method --scenario nominal --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s6 --variant method --scenario nominal --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s7 --variant method --scenario nominal --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s8 --variant method --scenario nominal --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s9 --variant method --scenario nominal --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-nominal-method-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-nominal-method-s10 --variant method --scenario nominal --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s1 --variant sb3_ppo --scenario R4-hard --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s2 --variant sb3_ppo --scenario R4-hard --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s3 --variant sb3_ppo --scenario R4-hard --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s4 --variant sb3_ppo --scenario R4-hard --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s5 --variant sb3_ppo --scenario R4-hard --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s6 --variant sb3_ppo --scenario R4-hard --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s7 --variant sb3_ppo --scenario R4-hard --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s8 --variant sb3_ppo --scenario R4-hard --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s9 --variant sb3_ppo --scenario R4-hard --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-sb3_ppo-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-sb3_ppo-s10 --variant sb3_ppo --scenario R4-hard --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s1 --variant rllib_sac --scenario R4-hard --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s2 --variant rllib_sac --scenario R4-hard --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s3 --variant rllib_sac --scenario R4-hard --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s4 --variant rllib_sac --scenario R4-hard --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s5 --variant rllib_sac --scenario R4-hard --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s6 --variant rllib_sac --scenario R4-hard --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s7 --variant rllib_sac --scenario R4-hard --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s8 --variant rllib_sac --scenario R4-hard --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s9 --variant rllib_sac --scenario R4-hard --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-rllib_sac-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-rllib_sac-s10 --variant rllib_sac --scenario R4-hard --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s1 --variant method --scenario R4-hard --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s2 --variant method --scenario R4-hard --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s3 --variant method --scenario R4-hard --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s4 --variant method --scenario R4-hard --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s5 --variant method --scenario R4-hard --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s6 --variant method --scenario R4-hard --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s7 --variant method --scenario R4-hard --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s8 --variant method --scenario R4-hard --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s9 --variant method --scenario R4-hard --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-R4-hard-method-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-R4-hard-method-s10 --variant method --scenario R4-hard --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s1 --variant sb3_ppo --scenario S1-hard --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s2 --variant sb3_ppo --scenario S1-hard --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s3 --variant sb3_ppo --scenario S1-hard --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s4 --variant sb3_ppo --scenario S1-hard --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s5 --variant sb3_ppo --scenario S1-hard --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s6 --variant sb3_ppo --scenario S1-hard --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s7 --variant sb3_ppo --scenario S1-hard --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s8 --variant sb3_ppo --scenario S1-hard --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s9 --variant sb3_ppo --scenario S1-hard --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-sb3_ppo-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-sb3_ppo-s10 --variant sb3_ppo --scenario S1-hard --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s1 --variant rllib_sac --scenario S1-hard --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s2 --variant rllib_sac --scenario S1-hard --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s3 --variant rllib_sac --scenario S1-hard --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s4 --variant rllib_sac --scenario S1-hard --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s5 --variant rllib_sac --scenario S1-hard --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s6 --variant rllib_sac --scenario S1-hard --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s7 --variant rllib_sac --scenario S1-hard --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s8 --variant rllib_sac --scenario S1-hard --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s9 --variant rllib_sac --scenario S1-hard --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-rllib_sac-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-rllib_sac-s10 --variant rllib_sac --scenario S1-hard --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s1 --variant method --scenario S1-hard --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s2 --variant method --scenario S1-hard --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s3 --variant method --scenario S1-hard --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s4 --variant method --scenario S1-hard --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s5 --variant method --scenario S1-hard --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s6 --variant method --scenario S1-hard --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s7 --variant method --scenario S1-hard --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s8 --variant method --scenario S1-hard --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s9 --variant method --scenario S1-hard --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S1-hard-method-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S1-hard-method-s10 --variant method --scenario S1-hard --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s1 --variant sb3_ppo --scenario S2-high --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s2 --variant sb3_ppo --scenario S2-high --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s3 --variant sb3_ppo --scenario S2-high --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s4 --variant sb3_ppo --scenario S2-high --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s5 --variant sb3_ppo --scenario S2-high --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s6 --variant sb3_ppo --scenario S2-high --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s7 --variant sb3_ppo --scenario S2-high --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s8 --variant sb3_ppo --scenario S2-high --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s9 --variant sb3_ppo --scenario S2-high --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-sb3_ppo-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-sb3_ppo-s10 --variant sb3_ppo --scenario S2-high --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s1 --variant rllib_sac --scenario S2-high --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s2 --variant rllib_sac --scenario S2-high --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s3 --variant rllib_sac --scenario S2-high --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s4 --variant rllib_sac --scenario S2-high --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s5 --variant rllib_sac --scenario S2-high --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s6 --variant rllib_sac --scenario S2-high --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s7 --variant rllib_sac --scenario S2-high --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s8 --variant rllib_sac --scenario S2-high --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s9 --variant rllib_sac --scenario S2-high --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-rllib_sac-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-rllib_sac-s10 --variant rllib_sac --scenario S2-high --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s1 --variant method --scenario S2-high --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s2 --variant method --scenario S2-high --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s3 --variant method --scenario S2-high --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s4 --variant method --scenario S2-high --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s5 --variant method --scenario S2-high --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s6 --variant method --scenario S2-high --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s7 --variant method --scenario S2-high --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s8 --variant method --scenario S2-high --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s9 --variant method --scenario S2-high --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S2-high-method-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S2-high-method-s10 --variant method --scenario S2-high --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s1 --variant sb3_ppo --scenario S3-severe --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s2 --variant sb3_ppo --scenario S3-severe --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s3 --variant sb3_ppo --scenario S3-severe --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s4 --variant sb3_ppo --scenario S3-severe --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s5 --variant sb3_ppo --scenario S3-severe --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s6 --variant sb3_ppo --scenario S3-severe --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s7 --variant sb3_ppo --scenario S3-severe --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s8 --variant sb3_ppo --scenario S3-severe --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s9 --variant sb3_ppo --scenario S3-severe --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-sb3_ppo-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-sb3_ppo-s10 --variant sb3_ppo --scenario S3-severe --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s1 --variant rllib_sac --scenario S3-severe --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s2 --variant rllib_sac --scenario S3-severe --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s3 --variant rllib_sac --scenario S3-severe --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s4 --variant rllib_sac --scenario S3-severe --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s5 --variant rllib_sac --scenario S3-severe --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s6 --variant rllib_sac --scenario S3-severe --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s7 --variant rllib_sac --scenario S3-severe --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s8 --variant rllib_sac --scenario S3-severe --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s9 --variant rllib_sac --scenario S3-severe --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-rllib_sac-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-rllib_sac-s10 --variant rllib_sac --scenario S3-severe --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s1 --variant method --scenario S3-severe --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s2 --variant method --scenario S3-severe --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s3 --variant method --scenario S3-severe --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s4 --variant method --scenario S3-severe --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s5 --variant method --scenario S3-severe --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s6 --variant method --scenario S3-severe --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s7 --variant method --scenario S3-severe --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s8 --variant method --scenario S3-severe --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s9 --variant method --scenario S3-severe --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-S3-severe-method-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-S3-severe-method-s10 --variant method --scenario S3-severe --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s1 --variant sb3_ppo --scenario SIM-isaac --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s2 --variant sb3_ppo --scenario SIM-isaac --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s3 --variant sb3_ppo --scenario SIM-isaac --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s4 --variant sb3_ppo --scenario SIM-isaac --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s5 --variant sb3_ppo --scenario SIM-isaac --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s6 --variant sb3_ppo --scenario SIM-isaac --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s7 --variant sb3_ppo --scenario SIM-isaac --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s8 --variant sb3_ppo --scenario SIM-isaac --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s9 --variant sb3_ppo --scenario SIM-isaac --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-sb3_ppo-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-sb3_ppo-s10 --variant sb3_ppo --scenario SIM-isaac --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s1 --variant rllib_sac --scenario SIM-isaac --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s2 --variant rllib_sac --scenario SIM-isaac --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s3 --variant rllib_sac --scenario SIM-isaac --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s4 --variant rllib_sac --scenario SIM-isaac --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s5 --variant rllib_sac --scenario SIM-isaac --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s6 --variant rllib_sac --scenario SIM-isaac --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s7 --variant rllib_sac --scenario SIM-isaac --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s8 --variant rllib_sac --scenario SIM-isaac --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s9 --variant rllib_sac --scenario SIM-isaac --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-rllib_sac-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-rllib_sac-s10 --variant rllib_sac --scenario SIM-isaac --seed 10 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s1",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s1 --variant method --scenario SIM-isaac --seed 1 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s2",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s2 --variant method --scenario SIM-isaac --seed 2 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s3",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s3 --variant method --scenario SIM-isaac --seed 3 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s4",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s4 --variant method --scenario SIM-isaac --seed 4 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s5",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s5 --variant method --scenario SIM-isaac --seed 5 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s6",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s6 --variant method --scenario SIM-isaac --seed 6 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s7",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s7 --variant method --scenario SIM-isaac --seed 7 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s8",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s8 --variant method --scenario SIM-isaac --seed 8 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s9",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s9 --variant method --scenario SIM-isaac --seed 9 --backend auto",
+      "expected_status": 0
+    },
+    {
+      "id": "lib-SIM-isaac-method-s10",
+      "command": "python3 scripts/experiments/library_lane_benchmark.py --run-id lib-SIM-isaac-method-s10 --variant method --scenario SIM-isaac --seed 10 --backend auto",
+      "expected_status": 0
+    }
+  ]
+}

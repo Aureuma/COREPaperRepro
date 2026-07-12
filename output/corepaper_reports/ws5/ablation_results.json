@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "group": "method_full",
+      "n": 5,
+      "mean": 0.7510000000000001,
+      "std": 0.003317378483079671,
+      "delta_vs_ref": 0.0
+    },
+    {
+      "group": "no_feedback_gating",
+      "n": 5,
+      "mean": 0.73894,
+      "std": 0.001283744522870466,
+      "delta_vs_ref": -0.01206000000000007
+    },
+    {
+      "group": "no_history",
+      "n": 5,
+      "mean": 0.72036,
+      "std": 0.0014741099009232704,
+      "delta_vs_ref": -0.03064000000000011
+    },
+    {
+      "group": "no_history_no_feedback",
+      "n": 5,
+      "mean": 0.7055,
+      "std": 0.0033837848631377322,
+      "delta_vs_ref": -0.045500000000000096
+    },
+    {
+      "group": "no_robust_reg",
+      "n": 5,
+      "mean": 0.7314,
+      "std": 0.0021540659228537935,
+      "delta_vs_ref": -0.019600000000000062
+    }
+  ],
+  "reference_group": "method_full"
+}

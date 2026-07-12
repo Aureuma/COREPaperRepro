@@ -1,0 +1,631 @@
+\documentclass[letterpaper,10pt,conference]{ieeeconf}
+
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\pdfsuppresswarningpagegroup=1
+\pdfsuppressptexinfo=15
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{positioning,arrows.meta}
+\input{generated/results_macros.tex}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{designlemma}{Design Lemma}
+\newtheorem{heuristic}{Diagnostic Heuristic}
+\newtheorem{corollary}{Corollary}
+\newcommand{\CoreRefOneLabel}{TRPO-U}
+\newcommand{\CoreRefTwoLabel}{PPO-CVaR}
+\newcommand{\CoreProfileExtOne}{ext1}
+\newcommand{\CoreProfileExtTwo}{ext2}
+\newcommand{\CoreCompLatencyAware}{LatencyAware}
+\newcommand{\CoreCompAdaptManip}{AdaptManip}
+\newcommand{\CoreCompRobustCp}{Robust-CP}
+\newcommand{\CoreCompHistoryKeyframe}{History-Keyframe}
+\newcommand{\CoreCompConstrainedFlow}{Constrained-Flow}
+\newcommand{\CoreGatePromote}{promote}
+\newcommand{\CoreGateMonitor}{monitor}
+\newcommand{\CoreGateRollback}{rollback}
+\newcommand{\CoreEnvMujoco}{Mujoco}
+\newcommand{\CoreEnvIsaac}{Isaac}
+\newcommand{\AnonRepoPlaceholder}{\texttt{[ANON\_REPO\_URL\_TO\_BE\_REVEALED]}}
+\newcommand{\CorePaperTitleText}{CORE: Uncertainty-Gated Policy Optimization for Reliable Performance Under Distribution Shift}
+
+\definecolor{coreInk}{HTML}{0F172A}
+\definecolor{coreBaseline}{HTML}{7A8896}
+\definecolor{coreRefA}{HTML}{59A14F}
+\definecolor{coreRefB}{HTML}{F28E2B}
+\definecolor{coreMethod}{HTML}{D62728}
+\definecolor{coreGrid}{HTML}{B8C7DA}
+
+\pgfplotsset{
+    coreplot/.style={
+        axis line style={color=coreInk},
+        tick style={color=coreInk},
+        tick label style={font=\scriptsize,color=coreInk},
+        label style={font=\scriptsize,color=coreInk},
+        grid style={color=coreGrid},
+    }
+}
+
+\title{\LARGE \bf \CorePaperTitleText}
+
+\author{
+    Shawn Azdam$^{1}$%
+    \thanks{$^{1}$Aureuma AI, NYC.}%
+    \thanks{Correspondence to: \texttt{shawn@aureuma.ai}}
+}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{abstract}
+We present Conservative Online Reliability Enforcement (CORE), an uncertainty-gated policy optimization framework for robust policy updates under distribution shift. The method combines risk-aware trust-region learning with online promote/monitor/rollback control driven by uncertainty-calibrated signals. Across matched-seed benchmark and scenario-model evaluations, our approach improves reliability-floor behavior while preserving fixed-budget update control. We provide algorithm design, theory-guided gate rationale, and diagnostics that clarify where gated updates help and where limitations remain.
+\end{abstract}
+
+
+\section{Introduction}
+
+Reliable policy optimization under distribution shift is still a core failure mode in robotics learning systems. Modest changes in latency, sensing quality, or scene geometry can destabilize updates that appear safe under nominal evaluation. Recent work improves planning-time safety and shift robustness \cite{a2602_12047v1,a2602_12616v1,a2602_12032v1,a2602_09021v1}, but update-time rollback control is less explicitly specified.
+
+Our approach addresses this gap with an uncertainty-gated policy optimization loop. It combines a trust-region surrogate update, an ensemble-disagreement penalty, and an online promote/monitor/rollback gate driven by a conservative lower-bound proxy. The novelty is update-time control: unstable candidates are rejected before downstream validation.
+
+On the MetaWorld shifted suite \cite{yu2020metaworld}, Section IV anchors primary confirmatory claims to \CoreRefTwoLabel\ and reports \CoreCompAdaptManip\ as an exploratory paper-profile sensitivity lane with explicit fairness caveats. Mean remains secondary/sensitivity-only, and $N=30$ is sensitivity-only with smaller mean deltas. The unofficial \CoreCompLatencyAware\ proxy lane remains supplementary-only and excluded from primary claim tables.
+
+Contributions are:
+\begin{enumerate}
+    \item An uncertainty-gated update rule that combines risk-aware trust-region optimization with per-iteration promote/monitor/rollback control.
+    \item A floor-focused theory package with one calibration-conditional deployed-gate design lemma plus diagnostic heuristic envelopes (optional one-sided and false-promote sketches) and matched-seed empirical-floor diagnostics.
+    \item A reliability-first evidence package with matched-seed diagnostics, targeted seed expansion, ablations, robustness checks, and explicit scope boundaries.
+\end{enumerate}
+
+This study focuses on update-time robustness under controlled perturbations. Evidence is simulation-only, and we do not claim deployment-ready safety, hardware validation, or real-robot transfer guarantees.
+
+\section{Related Work}
+
+Recent work improves contact grounding, long-horizon world-model planning, and distribution-shift robustness \cite{a2602_13833v1,a2602_14174v1,a2602_12532v1,a2602_12063v2,a2602_13977v1,a2602_10983v2,a2602_12047v1,a2602_12616v1,a2602_09021v1}. These advances are complementary to our setting, but most intervene at planning/calibration time or through implicit policy-selection loops rather than explicit update-time commit control.
+
+Sim-to-real and policy-scaling foundations define the current baseline bar \cite{tobin2017domain,kalashnikov2018qtopt,andrychowicz2018dexterous,mandlekar2021robomimic,brohan2022rt1,brohan2023rt2,openx2024rtx,chi2023diffusionpolicy}. The unresolved gap for this paper is a conservative, online reject/commit rule for policy updates under fixed evaluation budgets.
+
+Our method is positioned as a policy-optimization method: uncertainty-penalized trust-region updates with an explicit online promote/monitor/rollback gate. Compared with nearby alternatives, the main distinction is update-time rollback control rather than planning-time calibration or model-scale expansion \cite{a2602_12047v1,a2602_12616v1,a2602_12063v2,a2602_13977v1,a2602_10983v2,a2602_12532v1,a2602_14174v1,a2602_15010v1}.
+In this comparison set, prior lines emphasize planning-time safety proxies or implicit update selection, while our approach uses explicit promote/monitor/rollback control inside the policy-update loop under matched-seed validation.
+
+\section{Theory and Design Rationale}
+This section states one deployed-gate design lemma plus diagnostic heuristic envelopes (optional one-sided false-promote sketch and matched-seed floor remark) that motivate when the gate should promote or reject candidate updates. These are assumption-scoped design-rationale bounds, not claims of new concentration theory.
+
+We consider partially observed control under distribution shift. Let latent state be $s_t \in \mathcal{S}$, observation $o_t \in \mathcal{O}$, action $a_t \in \mathcal{A}$, and history $h_t=(o_{0:t},a_{0:t-1})$. A policy $\pi_\theta(a_t\mid h_t)$ induces trajectory $\tau$ under shift condition $\xi \sim p(\xi)$.
+
+We optimize a risk-aware objective
+\begin{equation}
+\begin{aligned}
+J(\theta) =\;& \mathbb{E}_{\xi \sim p(\xi),\,\tau \sim p(\cdot \mid \pi_\theta,\xi)}\!\left[\sum_{t=0}^{T} \gamma^t r_t\right] \\
+&- \lambda\,\mathrm{CVaR}_{\alpha,\;(\tau,\xi)\sim p_\theta}\!\left(-R(\tau,\xi)\right),
+\end{aligned}
+\label{eq:risk-objective}
+\end{equation}
+where $p_\theta(\tau,\xi):=p(\xi)\,p(\tau\mid\pi_\theta,\xi)$, $R(\tau,\xi)=\sum_{t=0}^{T}\gamma^t r_t$, $\lambda\ge 0$ controls robustness, and $\alpha$ sets the tail-risk level. We use $\alpha=\CoreCvarAlpha$ (reported as CVaR$_{\CoreCvarPercentLabel}$).
+For gate bounds, we separately analyze the return component
+\[
+G(\theta):=\mathbb{E}_{\xi\sim p(\xi),\,\tau\sim p(\cdot\mid\pi_\theta,\xi)}\!\left[\sum_{t=0}^{T}\gamma^t r_t\right],
+\]
+while CVaR remains part of the optimization objective in Eq.~\ref{eq:risk-objective}.
+
+At iteration $k$, our method maintains policy parameters $\theta_k$, world-model parameters $\phi_k$, and an uncertainty functional induced by ensemble value disagreement. Let $\{Q_{\phi_k}^{(m)}\}_{m=1}^{M}$ be $M$ bootstrap value heads. For candidate policy $\pi_\theta$ under ensemble snapshot $\phi_k$, define
+\begin{equation}
+\begin{aligned}
+\widehat{U}^{\mathrm{wm}}_k(\theta)
+={}&\frac{1}{|\widetilde{\mathcal{S}}_k|}\sum_{i\in\widetilde{\mathcal{S}}_k}
+\frac{1}{|\tau_k^{\theta,(i)}|}\sum_t
+\mathrm{Var}_{m}\!\left(Q_{\phi_k}^{(m)}(h_t,a_t)\right),
+\end{aligned}
+\label{eq:uncertainty-score}
+\end{equation}
+Here $\widetilde{\mathcal{S}}_k:=\widetilde{\mathcal{S}}_k(\theta)$ is a short candidate-policy rollout set produced by world-model snapshot $\phi_k$ from seed-matched incumbent replay starts; gating does not require hardware execution of the candidate policy. $\mathrm{Var}_m(\cdot)$ is the sample variance across the $M$ ensemble heads at fixed $(h_t,a_t)$.
+Inspired by recent robust planning and world-model work \cite{a2602_12047v1,a2602_12616v1,a2602_01629v1,a2602_12063v2,a2602_13977v1}, we use the constrained surrogate update
+\begin{equation}
+\begin{aligned}
+\theta_k^\star =\;& \arg\max_{\theta}\; \hat{J}_k(\theta) - \beta \widehat{U}^{\mathrm{wm}}_k(\theta) \\
+&\text{s.t.} \quad
+D_{\mathrm{KL}}\!\left(\pi_\theta\,\|\,\pi_{\theta_k}\right) \le \varepsilon,
+\end{aligned}
+\label{eq:closed-loop-update}
+\end{equation}
+Here $\hat{J}_k$ denotes the trust-region surrogate estimate of the risk-aware objective $J$ in Eq.~\ref{eq:risk-objective}; it is distinct from the matched-seed gate statistics used in Eq.~\ref{eq:two-sided-improvement-bound} and Eq.~\ref{eq:gating-rule}.
+Eq.~\ref{eq:closed-loop-update} uses world-model rollout uncertainty $\widehat{U}^{\mathrm{wm}}_k(\theta)$; gate bounds below use matched-seed uncertainty estimates denoted $\widehat{U}^{\mathrm{ms}}_k(\cdot)$.
+The trust-region radius is $\varepsilon$ and the uncertainty weight is $\beta$.
+The gate in Eq.~\ref{eq:gating-rule} then maps candidate $\theta_k^\star$ to committed iterate $\theta_{k+1}$.
+
+Assume:
+\begin{enumerate}
+\item local surrogate fidelity: $|G(\theta)-\hat{G}_k(\theta)| \le e_k(\theta)$,
+\item uncertainty dominance with empirically calibrated constants: $e_k(\theta) \le c_u \widehat{U}^{\mathrm{ms}}_k(\theta)+c_0$,
+\item bounded policy step from the trust region.
+\end{enumerate}
+Here \((c_u,c_0)\) are fitted from held-out diagnostics (Sec.~IV), so Design Lemma~\ref{dlm:two-sided-bound} is conditional on calibration; Sec.~IV reports a disjoint fit/holdout split with holdout Assump.-2 coverage \CoreUncertaintyCoveragePct\%. Misspecification sensitivity is summarized by worst gate-agreement \CoreUncertaintyMisspecWorstAgreement\ over \CoreUncertaintyMisspecGridN\ perturbations.
+Define surrogate gain $\hat{\Delta}_k^{\mathrm{sur}} = \hat{G}_k(\theta_k^\star)-\hat{G}_k(\theta_k)$.
+\begin{designlemma}[Two-sided improvement bound]
+\label{dlm:two-sided-bound}
+\par Under assumptions (1)--(3),
+\begin{equation}
+\begin{aligned}
+G(\theta_k^\star)-G(\theta_k)
+\ge\;&\hat{\Delta}_k^{\mathrm{sur}} \\
+&- c_u\!\left(\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)+\widehat{U}^{\mathrm{ms}}_k(\theta_k)\right)-2c_0.
+\end{aligned}
+\label{eq:two-sided-improvement-bound}
+\end{equation}
+\end{designlemma}
+\noindent\textit{Proof.}
+By assumption (1),
+\[
+\begin{aligned}
+G(\theta_k^\star) &\ge \hat{G}_k(\theta_k^\star)-e_k(\theta_k^\star),\\
+G(\theta_k) &\le \hat{G}_k(\theta_k)+e_k(\theta_k).
+\end{aligned}
+\]
+Subtracting gives
+\[
+G(\theta_k^\star)-G(\theta_k)
+\ge
+\hat{\Delta}_k^{\mathrm{sur}}-e_k(\theta_k^\star)-e_k(\theta_k).
+\]
+Applying assumption (2) to both terms yields Eq.~\ref{eq:two-sided-improvement-bound}.
+\hfill$\square$
+
+If additionally $\widehat{U}^{\mathrm{ms}}_k(\theta_k)\le \widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)$ on the matched-seed estimator used for gate decisions, then
+\begin{equation}
+G(\theta_k^\star)-G(\theta_k)
+\ge
+\hat{\Delta}_k^{\mathrm{sur}} - 2\big(c_u \widehat{U}^{\mathrm{ms}}_k(\theta_k^\star) + c_0\big).
+\label{eq:improvement-bound}
+\end{equation}
+Intuition: when $\widehat{U}^{\mathrm{ms}}_k(\theta_k)\le\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)$, the two-sided correction collapses to the candidate-only term. In deployment, the method treats this one-sided condition as optional and thresholds the two-sided score; the one-sided term is retained only as an auxiliary diagnostic.
+This follows by direct substitution of $\widehat{U}^{\mathrm{ms}}_k(\theta_k)\le \widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)$ into Eq.~\ref{eq:two-sided-improvement-bound}.
+If empirical gain exceeds the uncertainty-corrected error term in Eq.~\ref{eq:improvement-bound}, expected return improves in the local approximation regime. We use this as design rationale for gating, not as a universal guarantee.
+Empirical one-sided diagnostic observability gives \CoreCompAdaptManip-paired hold/violation \CorePropTwoProxyHoldRateAdapt/\CorePropTwoProxyViolationRateAdapt\ over \CorePropTwoProxyPairsAdapt\ matched rows, so this simplification is diagnostic-only and excluded from deployed gate decisions and confirmatory claims.
+In practice, gate bounds apply to the matched-seed return component; CVaR remains explicitly optimized in Eq.~\ref{eq:risk-objective} and reported as a primary evaluation criterion in experiments.
+Assumption (4) (surrogate-to-matched-seed bridge): under trust-region local validity and seed-matched evaluation, the empirical gain proxy tracks surrogate gain with bounded error, \( |\tilde{\Delta}_k-\hat{\Delta}^{\mathrm{sur}}_k|\le \epsilon^{\mathrm{bridge}}_k \).
+Objective-bridge identity: with $C(\theta):=\mathrm{CVaR}_{\alpha}(-R)$ and $J(\theta)=G(\theta)-\lambda C(\theta)$,
+\[
+J(\theta_k^\star)-J(\theta_k)=\big(G(\theta_k^\star)-G(\theta_k)\big)-\lambda\big(C(\theta_k^\star)-C(\theta_k)\big).
+\]
+If $|C(\theta_k^\star)-C(\theta_k)|\le B^{C}_k$ for a drift budget $B^{C}_k\ge 0$, then
+\[
+J(\theta_k^\star)-J(\theta_k)\ge \big(G(\theta_k^\star)-G(\theta_k)\big)-\lambda B^{C}_k.
+\]
+Using Assumption (4), \(G(\theta_k^\star)-G(\theta_k)\ge \underline{\Delta}_k^{(2)}-\epsilon_k^{\mathrm{bridge}}\).
+Combining this with the CVaR drift bound yields the operational bridge
+\[
+J(\theta_k^\star)-J(\theta_k)\ge \underline{\Delta}_k^{(2)}-\epsilon_k^{\mathrm{bridge}}-\lambda B^{C}_k.
+\]
+\begin{proposition}
+\label{prop:objective-nondegradation}
+Gate objective non-degradation (assumption-scoped): if Assumptions (1)--(4) hold and a promoted update satisfies
+\[
+\underline{\Delta}_k^{(2)} \ge \tau_{\text{green},k}
+\quad\text{and}\quad
+\tau_{\text{green},k}\ge \epsilon_k^{\mathrm{bridge}}+\lambda B_k^C,
+\]
+then \(J(\theta_k^\star)-J(\theta_k)\ge 0\).
+\end{proposition}
+\noindent\textit{Proof.}
+From the operational bridge inequality,
+\[
+J(\theta_k^\star)-J(\theta_k)\ge \underline{\Delta}_k^{(2)}-\epsilon_k^{\mathrm{bridge}}-\lambda B_k^C.
+\]
+Substitute \(\underline{\Delta}_k^{(2)}\ge\tau_{\text{green},k}\) and \(\tau_{\text{green},k}\ge\epsilon_k^{\mathrm{bridge}}+\lambda B_k^C\).
+\hfill$\square$
+
+Hence, Proposition~\ref{prop:objective-nondegradation} is explicitly assumption-scoped to bridge error and CVaR-drift budget control; we therefore report CVaR as a primary endpoint and do not claim an unconditional CVaR-gated guarantee in this paper.
+\textit{Implementation interpretation.}
+In code, $\tilde{\Delta}_k$ is the matched-seed return delta from paired incumbent/candidate evaluations, and $\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star),\widehat{U}^{\mathrm{ms}}_k(\theta_k)$ are estimated on the same pairs. Logs expose these channels (\texttt{base\_score}, \texttt{observed\_score}, \texttt{total\_penalty}); deployed gating uses the two-sided score, with the one-sided score retained for diagnostics.
+For robustness to one-sided simplification violations, we compute both diagnostic scores
+\[
+\underline{\Delta}_k^{(1)}=\tilde{\Delta}_k - 2\big(c_u \widehat{U}^{\mathrm{ms}}_k(\theta_k^\star) + c_0\big),
+\]
+\begin{equation}
+\underline{\Delta}_k^{(2)}=\tilde{\Delta}_k - c_u\!\left(\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)+\widehat{U}^{\mathrm{ms}}_k(\theta_k)\right)-2c_0,
+\label{eq:two-sided-proxy-def}
+\end{equation}
+and use $\underline{\Delta}_k:=\underline{\Delta}_k^{(2)}$ for gate thresholding while logging $\underline{\Delta}_k^{(1)}$ as an auxiliary diagnostic.
+
+Let $\underline{\Delta}_k$ be the uncertainty-corrected lower-bound proxy above. Our approach applies triage thresholds:
+\begin{equation}
+\begin{aligned}
+&\text{promote if } \underline{\Delta}_k \ge \tau_{\text{green},k},\\
+&\text{monitor if } \tau_{\text{yellow},k} \le \underline{\Delta}_k < \tau_{\text{green},k},\\
+&\text{rollback if } \underline{\Delta}_k < \tau_{\text{yellow},k}.
+\end{aligned}
+\label{eq:gating-rule}
+\end{equation}
+Notation recap for gate decisions: $\hat{\Delta}_k^{\mathrm{sur}}$ denotes surrogate gain in the local bound, $\tilde{\Delta}_k$ denotes raw matched-seed gain used by the gate, and $\underline{\Delta}_k$ is the uncertainty-corrected lower-bound score thresholded by $(\tau_{\text{yellow},k},\tau_{\text{green},k})$.
+We use adaptive thresholds $(\tau_{\text{green},k},\tau_{\text{yellow},k})$ with $\tau_{\text{yellow},k}<\tau_{\text{green},k}$ at each update. The gate is applied online before downstream robustness runs. The \CoreGateMonitor\ and \CoreGateRollback\ states both keep the incumbent under the same rollout budget; \CoreGateRollback\ additionally pivots next-cycle hyperparameters.
+
+To reduce threshold miscalibration across tasks/shifts, we use adaptive hysteresis in deployment diagnostics: let $\mathcal{D}_{k-1}$ be a strictly past rolling window of deployed two-sided scores $\underline{\Delta}^{(2)}$, let $S_{k-1}:=\operatorname{Spread}(\mathcal{D}_{k-1})$, let $q_{k-1}:=Q_q(\mathcal{D}_{k-1})$, and define
+\begin{equation}
+\tau_{\text{yellow},k}
+=\max\!\left(\tau_{\text{yellow}},\;q_{k-1}+\eta S_{k-1}\right),
+\label{eq:tau-yellow-adaptive}
+\end{equation}
+\begin{equation}
+\tau_{\text{green},k}
+=
+\tau_{\text{yellow},k}+\delta S_{k-1},
+\label{eq:tau-green-adaptive}
+\end{equation}
+where $\operatorname{Spread}$ is a robust quantile gap (e.g., $Q_{0.9}-Q_{0.1}$) on the score window and we use $q=0.85$ in experiments. This keeps gate sensitivity high for transient score drops while avoiding over-triggering in regimes with consistently high but non-catastrophic dynamics.
+In implementation, $\mathcal{D}_{k-1}$ is a strictly past rolling window of matched-seed two-sided scores (excluding the current matched-seed batch), so Eqs.~\ref{eq:tau-yellow-adaptive}--\ref{eq:tau-green-adaptive} are dimensionally matched to Eq.~\ref{eq:gating-rule}.
+
+Using a matched-seed set $\mathcal{S}_k$, we estimate:
+\[
+\tilde{\Delta}_k=\frac{1}{|\mathcal{S}_k|}\sum_{i\in\mathcal{S}_k}
+\left(R(\tau_{k}^{\star,(i)},\xi^{(i)})-R(\tau_{k}^{(i)},\xi^{(i)})\right),
+\]
+\[
+\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)=\frac{1}{|\mathcal{S}_k|}\sum_{i\in\mathcal{S}_k}
+\left[\frac{1}{|\tau_{k}^{\star,(i)}|}\sum_t \mathrm{Var}_{m}\!\left(Q_{\phi_k}^{(m)}(h_t,a_t)\right)\right].
+\]
+\[
+\widehat{U}^{\mathrm{ms}}_k(\theta_{k})=\frac{1}{|\mathcal{S}_k|}\sum_{i\in\mathcal{S}_k}
+\left[\frac{1}{|\tau_{k}^{(i)}|}\sum_t \mathrm{Var}_{m}\!\left(Q_{\phi_k}^{(m)}(h_t,a_t)\right)\right].
+\]
+\begin{heuristic}[False-promote envelope]
+\label{heur:false-promote}
+Let $n_k=|\mathcal{S}_k|$.
+For this diagnostic heuristic, $S(\tau,\xi)$ denotes undiscounted simulation benchmark rollout returns from matched-seed evaluations.
+For each matched seed $i$, define the one-sided diagnostic variable
+\[
+\begin{aligned}
+Z_k^{(i)} ={}& \left(S(\tau_{k}^{\star,(i)},\xi^{(i)})\right.\\
+&\left.-S(\tau_{k}^{(i)},\xi^{(i)})\right)\\
+&-2\!\left(c_u\widehat{U}^{\mathrm{ms},\star,(i)}_k+c_0\right),
+\end{aligned}
+\]
+where $\widehat{U}^{\mathrm{ms},\star,(i)}_k:=\frac{1}{|\tau_{k}^{\star,(i)}|}\sum_t \mathrm{Var}_{m}\!\left(Q_{\phi_k}^{(m)}(h_t,a_t)\right)$
+is the per-seed uncertainty term inside $\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)$.
+Assume:
+\begin{enumerate}
+\item conditioned on the post-candidate pre-evaluation sigma-field $\mathcal{F}_{k-\frac{1}{2}}:=\sigma(\mathcal{F}_{k-1},\theta_k^\star,\phi_k,\mathcal{U}_{k-1})$, $\{Z_k^{(i)}\}_{i=1}^{n_k}$ are independent,
+\item per-seed returns are bounded almost surely: $S(\tau_k^{\star,(i)},\xi^{(i)}),S(\tau_k^{(i)},\xi^{(i)})\in [S_{\min},S_{\max}]$,
+\item per-seed uncertainty is bounded almost surely: $\widehat{U}^{\mathrm{ms},\star,(i)}_k\in[0,U_{\max}]$,
+\item $\tau_{\text{green},k}$ is $\mathcal{F}_{k-\frac{1}{2}}$-measurable (adaptive threshold uses only $\mathcal{U}_{k-1}$),
+\item $\mu_k=\mathbb{E}[Z_k^{(i)}\mid \mathcal{F}_{k-\frac{1}{2}}]\le \tau_{\text{green},k}-\delta_k$ for margin $\delta_k>0$.
+\end{enumerate}
+Then each diagnostic variable lies in $[a_k,b_k]$ with
+\[
+\begin{aligned}
+a_k &= (S_{\min}-S_{\max})-2(c_uU_{\max}+c_0),\\
+b_k &= (S_{\max}-S_{\min})-2c_0.
+\end{aligned}
+\]
+Define $\underline{\Delta}_k^{(1)}=\frac{1}{n_k}\sum_i Z_k^{(i)}$. Then
+\begin{equation}
+\Pr\!\big[\underline{\Delta}_k^{(1)}\ge \tau_{\text{green},k}\mid \mathcal{F}_{k-\frac{1}{2}}\big]
+\le
+\exp\!\left(-\frac{2n_k \delta_k^2}{(b_k-a_k)^2}\right).
+\label{eq:false-promote-bound}
+\end{equation}
+When shared-model coupling breaks assumption (1), Eq.~\ref{eq:false-promote-bound} is treated as a heuristic envelope and audited with $n_{\mathrm{eff}}$ diagnostics.
+\end{heuristic}
+\noindent\textit{Proof.}
+From assumptions (2)--(3), per-seed return differences satisfy
+\[
+S(\tau_k^{\star,(i)},\xi^{(i)})-S(\tau_k^{(i)},\xi^{(i)})\in[S_{\min}-S_{\max},\,S_{\max}-S_{\min}],
+\]
+and $-2(c_u\widehat{U}^{\mathrm{ms},\star,(i)}_k+c_0)\in[-2(c_uU_{\max}+c_0),-2c_0]$, so
+$Z_k^{(i)}\in[a_k,b_k]$.
+If $\mu_k\le \tau_{\text{green},k}-\delta_k$, then
+\[
+\Pr\!\big[\underline{\Delta}_k^{(1)}\ge \tau_{\text{green},k}\mid \mathcal{F}_{k-\frac{1}{2}}\big]
+\le
+\Pr\!\big[\underline{\Delta}_k^{(1)}-\mu_k\ge \delta_k\mid \mathcal{F}_{k-\frac{1}{2}}\big].
+\]
+Conditioned on $\mathcal{F}_{k-\frac{1}{2}}$, apply Hoeffding's inequality to the independent bounded variables $Z_k^{(i)}$.
+Taking expectation over $\mathcal{F}_{k-\frac{1}{2}}$ preserves the same unconditional upper bound.
+\hfill$\square$
+Eq.~\ref{eq:false-promote-bound} quantifies a direct trade-off: larger matched-seed budget $n_k$ or larger hysteresis margin $(\tau_{\text{green},k}-\mu_k)$ exponentially decreases false promote probability for the optional one-sided diagnostic $\underline{\Delta}_k^{(1)}$.
+
+\begin{corollary}[Two-sided diagnostic envelope]
+\label{cor:two-sided-envelope}
+Define \(Z_{k,\mathrm{2s}}^{(i)}:=\big(S(\tau_k^{\star,(i)},\xi^{(i)})-S(\tau_k^{(i)},\xi^{(i)})\big)-c_u(\widehat{U}^{\mathrm{ms},\star,(i)}_k+\widehat{U}^{\mathrm{ms},(i)}_k)-2c_0\), where \(\widehat{U}^{\mathrm{ms},\star,(i)}_k,\widehat{U}^{\mathrm{ms},(i)}_k\in[0,U_{\max}]\). If \(\mu_{k,\mathrm{2s}}:=\mathbb{E}[Z_{k,\mathrm{2s}}^{(i)}\mid\mathcal{F}_{k-\frac{1}{2}}]\le\tau_{\text{green},k}-\delta_k\), then
+\[
+\bar{Z}_{k,\mathrm{2s}}:=\frac{1}{n_k}\sum_{i=1}^{n_k} Z_{k,\mathrm{2s}}^{(i)},
+\]
+\[
+\Pr\!\big[\bar{Z}_{k,\mathrm{2s}}\ge\tau_{\text{green},k}\mid\mathcal{F}_{k-\frac{1}{2}}\big]
+\le
+\exp\!\left(-\frac{2n_k\delta_k^2}{(b_{k,\mathrm{2s}}-a_{k,\mathrm{2s}})^2}\right),
+\]
+with
+\[
+\begin{aligned}
+a_{k,\mathrm{2s}} &= (S_{\min}-S_{\max})-2(c_uU_{\max}+c_0),\\
+b_{k,\mathrm{2s}} &= (S_{\max}-S_{\min})-2c_0.
+\end{aligned}
+\]
+Under the shared envelope \(\widehat{U}^{\mathrm{ms},\star,(i)}_k,\widehat{U}^{\mathrm{ms},(i)}_k\in[0,U_{\max}]\), these equal \((a_k,b_k)\) from Diagnostic Heuristic~\ref{heur:false-promote}.
+\end{corollary}
+\noindent\textit{Proof.}
+Apply the same conditional Hoeffding steps as Diagnostic Heuristic~\ref{heur:false-promote} to \(Z_{k,\mathrm{2s}}^{(i)}\). We treat this as a diagnostic budgeting envelope and report dependence diagnostics (\(n_{\mathrm{eff}}\), ICC) when assumptions are imperfect.
+\hfill$\square$
+
+\begin{corollary}[Optional min-variant diagnostic bound]
+\label{cor:min-variant-bound}
+Let $\underline{\Delta}_k^{(1)}$ be the diagnostic score in Eq.~\ref{eq:false-promote-bound}, $\underline{\Delta}_k^{(2)}$ the two-sided score in Eq.~\ref{eq:two-sided-improvement-bound}, and optional variant score $\underline{\Delta}_k^{\mathrm{opt}}=\min\{\underline{\Delta}_k^{(1)},\underline{\Delta}_k^{(2)}\}$. For any threshold $\tau$,
+\[
+\Pr[\underline{\Delta}_k^{\mathrm{opt}}\ge\tau]\le \Pr[\underline{\Delta}_k^{(1)}\ge\tau].
+\]
+Therefore Eq.~\ref{eq:false-promote-bound} is a conservative upper bound for the false-promote probability of an optional min-variant diagnostic gate that thresholds $\underline{\Delta}_k^{\mathrm{opt}}$ at $\tau$ under the same assumptions. This is a diagnostic bound and is not claimed as the deployed two-sided gate guarantee.
+\end{corollary}
+\noindent\textit{Proof.}
+Event $\{\underline{\Delta}_k^{\mathrm{opt}}\ge\tau\}$ implies $\{\underline{\Delta}_k^{(1)}\ge\tau\}$ because $\underline{\Delta}_k^{\mathrm{opt}}\le \underline{\Delta}_k^{(1)}$ by definition of $\min$. Taking probabilities yields the result.
+\hfill$\square$
+
+Let $Z_k^{(i)}$ be the per-seed diagnostic improvement variables from Diagnostic Heuristic~\ref{heur:false-promote}, and let
+\[
+q_k=\max(1,\lceil \alpha n_k\rceil),\qquad
+\widehat{\mathrm{CVaR}}_{\alpha}^{\mathrm{diag}}(k)=\frac{1}{q_k}\sum_{j=1}^{q_k} Z_{k,(j)},
+\]
+where $Z_{k,(1)}\le \cdots \le Z_{k,(n_k)}$ are sorted matched-seed diagnostic scores.
+For this design remark, $(\tau_{\text{yellow},k},\tau_{\text{green},k})$ from Eqs.~\ref{eq:tau-yellow-adaptive}--\ref{eq:tau-green-adaptive} are treated as fixed during the matched-seed check at iteration $k$.
+If an accepted update satisfies the per-seed gate condition
+\[
+Z_k^{(i)}\ge \tau_{\mathrm{floor},k}\quad \text{for all } i\in\{1,\dots,n_k\},
+\]
+then
+\[
+\widehat{\mathrm{CVaR}}_{\alpha}^{\mathrm{diag}}(k)\ge \tau_{\mathrm{floor},k}.
+\]
+Corollary~\ref{cor:two-sided-envelope} and Corollary~\ref{cor:min-variant-bound} provide the corresponding two-sided and conservative min-variant diagnostic envelopes. This is an arithmetic finite-sample floor statement on the matched-seed diagnostic-score distribution (not a universal deployment guarantee): if each ordered element is above $\tau_{\mathrm{floor},k}$, their lower-tail average is also above $\tau_{\mathrm{floor},k}$. In implementation, we set $\tau_{\mathrm{floor},k}:=\tau_{\text{yellow},k}$ with $\tau_{\text{yellow},k}<\tau_{\text{green},k}$, explicitly linking this floor check to the gate triage thresholds used for promote/monitor/rollback.
+
+The equations above imply two testable consequences:
+\begin{enumerate}
+\item positive matched-seed delta under moderate shift,
+\item bounded variance inflation relative to baseline.
+\end{enumerate}
+These are operationalized in the hypothesis ledger and decision logs, and align with recent findings on long-context policy learning, world-model-guided control, and robustness diagnostics \cite{a2602_15010v1,a2602_10983v2,a2602_06556v1,a2602_12032v1,a2602_09021v1}.
+
+\begin{algorithm}[t]
+\caption{CORE outer-loop policy optimization (deployed two-sided gate)}
+\label{alg:core-outer-loop}
+\KwIn{policy $\pi_{\theta_0}$, value ensemble ($M$ heads), thresholds $(\tau_{\text{green}},\tau_{\text{yellow}})$, iterations $K$}
+\KwOut{final policy $\pi_{\theta_K}$}
+\For{$k \leftarrow 0$ \KwTo $K-1$}{
+sample simulated rollout batch $\mathcal{B}_k$ from world-model snapshot $\phi_k$ under the current shift regime\;
+solve candidate update with Eq.~\ref{eq:closed-loop-update} to get $\theta_k^\star$\;
+compute candidate uncertainty score $\widehat{U}^{\mathrm{wm}}_k(\theta_k^\star)$ with Eq.~\ref{eq:uncertainty-score}\;
+draw matched-seed set $\mathcal{S}_k$ once; estimate $\tilde{\Delta}_k$, $\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)$, and $\widehat{U}^{\mathrm{ms}}_k(\theta_k)$ on $\mathcal{S}_k$\;
+compute lower-bound proxy $\underline{\Delta}_k$ from Eq.~\ref{eq:two-sided-proxy-def}\;
+update adaptive hysteresis thresholds $(\tau_{\text{green},k},\tau_{\text{yellow},k})$ from recent two-sided score window\;
+\uIf{$\underline{\Delta}_k \ge \tau_{\text{green},k}$}{
+set $\theta_{k+1}\leftarrow\theta_k^\star$ (promote)\;
+}
+\uElseIf{$\underline{\Delta}_k \ge \tau_{\text{yellow},k}$}{
+set $\theta_{k+1}\leftarrow\theta_k$ (monitor)\;
+}
+\Else{
+set $\theta_{k+1}\leftarrow\theta_k$ (rollback) and pivot hyperparameters\;
+}
+}
+\end{algorithm}
+
+Algorithm~\ref{alg:core-outer-loop} makes the mechanism explicit: uncertainty-aware optimization plus online rollback control under fixed evaluation budgets, with all rollout batches generated in simulation. Invariants: (i) only green commits a candidate update, (ii) yellow/red keep the incumbent ($\theta_{k+1}=\theta_k$), and (iii) $\tilde{\Delta}_k$, $\widehat{U}^{\mathrm{ms}}_k(\theta_k^\star)$, and $\widehat{U}^{\mathrm{ms}}_k(\theta_k)$ are estimated on the same matched-seed set. Deployment thresholds the two-sided proxy $\underline{\Delta}_k^{(2)}$ (never raw $\tilde{\Delta}_k$); the deployed gate aligns to Design Lemma~\ref{dlm:two-sided-bound}, while Diagnostic Heuristic~\ref{heur:false-promote}/Corollary~\ref{cor:min-variant-bound} are diagnostic-only.
+
+Let $N_r$ be runs per cycle, $T_e$ mean evaluation time per run, and $N_s$ stress checks. The outer-loop cost scales as $\mathcal{O}(N_rT_e + N_sT_e)$.
+
+\section{Experiments}
+This section tests the theory-guided gate behavior with matched-seed evaluations and reports where gains are clear, where gains are floor-only, and how effect sizes move with seed budget.
+
+We evaluate CORE in two tracks: (1) a recognized MetaWorld \CoreMetaTaskCount-task shifted suite \cite{yu2020metaworld} with MT1-style aggregation over \CoreMetaTaskCount\ task-specific policies, and (2) a controlled scenario-model track for mechanism diagnostics. All comparisons use matched seeds and fixed budgets.
+
+Baselines include one internal baseline plus two anchors:
+\CoreProfileExtOne\ (\CoreRefOneLabel, TRPO-style trust-region objective with uncertainty regularization, no rollback gate \cite{schulman2015trpo}) and
+\CoreProfileExtTwo\ (\CoreRefTwoLabel, PPO-style risk-sensitive CVaR objective, no online rollback \cite{schulman2017ppo,tamar2015coherentrisk}).
+We also include five recent-paper-inspired comparators:
+\CoreCompLatencyAware\ \cite{a2602_14255v1},
+\CoreCompAdaptManip\ \cite{a2602_14363v1},
+\CoreCompRobustCp\ \cite{a2602_12616v1,a2602_12047v1},
+\CoreCompHistoryKeyframe\ \cite{a2602_15010v1},
+and \CoreCompConstrainedFlow\ \cite{a2602_15567v1}.
+All suites use version-locked configs and deterministic seed replay. Baseline calibration is within $\CoreCalibrationTolerance$ (max error \CoreCalibrationMaxAbsError; Table~\ref{tab:baseline-parity}). In the official-library lane (Table~\ref{tab:official-library-lane}), CORE is above SB3 PPO and RLlib SAC (\CoreLibLaneDeltaSbThree, \CoreLibLaneDeltaRllib; $p=\CoreLibLanePSbThree,\CoreLibLanePRllib$), with audit status \CoreLibParityStatus\ and commits SB3=\CoreLibParitySbThreeCommit, RLlib=\CoreLibParityRllibCommit. For \CoreCompLatencyAware, availability is \CoreLatencyParityAvailability; when official code is unavailable we use an unofficial pinned proxy subset and treat it as supplementary-only. Under same-scorer replay, all-zero (0.000) or near-zero proxy gaps can be finite-precision rounding artifacts, and values can round to 0.0000 at 4-decimal display precision; these rows do not establish official-library parity. \CoreCompAdaptManip\ is paper-profile evidence (reproducible but not official-library parity). No hardware runs in this study. Anonymous artifacts: \AnonRepoPlaceholder.
+
+\begin{table}[t]
+\centering
+\caption{Baseline parity checks (absolute tolerance $\leq \CoreCalibrationTolerance$).}
+\label{tab:baseline-parity}
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+Profile & Target mean & Observed mean & Abs error & Status \\
+\midrule
+Baseline & 0.7120 & \CoreCustomBaselineMean & 0.0001 & PASS \\
+\CoreRefOneLabel\ (\CoreProfileExtOne) & 0.7300 & \CoreCustomExtOneMean & 0.0008 & PASS \\
+\CoreRefTwoLabel\ (\CoreProfileExtTwo) & 0.7430 & \CoreCustomExtTwoMean & 0.0010 & PASS \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Official-library lane results (\CoreLibLaneN\ matched evaluations/variant).}
+\label{tab:official-library-lane}
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+Comparator & Mean & $\Delta$Mean (CORE$-$comp.) & $p$ & $d$ \\
+\midrule
+SB3 PPO & \CoreLibLaneSbThreeMean & \CoreLibLaneDeltaSbThree & \CoreLibLanePSbThree & \CoreLibLaneDSbThree \\
+RLlib SAC & \CoreLibLaneRllibMean & \CoreLibLaneDeltaRllib & \CoreLibLanePRllib & \CoreLibLaneDRllib \\
+CORE & \textbf{\CoreLibLaneMethodMean} & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+Our implementation uses a \CoreHistoryWindow-step GRU encoder (\CoreHistoryLayers layers, hidden \CoreHistoryHidden) with policy/value heads (\CoreHeadLayers\ layers, width \CoreHeadWidth). Uncertainty is ensemble disagreement ($M=\CoreEnsembleHeads$), clamped to $[0,5]$ before score construction. Gate triage thresholds the lower-bound score in Eq.~\ref{eq:gating-rule} with adaptive hysteresis from a 12-step rolling window (warmup 6, $q=0.85$, $\eta=0.20$, $\delta=0.60$, base $\tau_{\text{yellow}}=1.1$): green commits, yellow blends to incumbent within the same episode budget, and red rolls back to incumbent. Budget-parity audit reports zero extra monitor episodes and zero max episode/step deltas (\CoreBudgetParityMaxEpisodeDelta, \CoreBudgetParityMaxTotalStepDelta). Reports include CI95, exact permutation tests, effect sizes, CVaR$_{\CoreCvarPercentLabel}$ ($\alpha=\CoreCvarAlpha$), and worst-seed statistics. For Eq.~\ref{eq:risk-objective}, the seeded rerun profile instantiates $\lambda=\CoreObjectiveLambda$; Table~\ref{tab:targeted-meta} additionally reports \(\Delta J_{\lambda}:=\Delta\text{Mean}+\lambda\,\Delta\text{CVaR}_{\CoreCvarPercentLabel}\) in the success-sign convention.
+
+We run a \CoreMetaTaskCount-task shifted MetaWorld suite \cite{yu2020metaworld} with matched seeds and MT1-style reporting over independent single-task experts (not joint MT10). Tasks are \CoreMetaTaskList; all-zero shifted sentinel count is \CoreMetaAllZeroTaskCount\ (\CoreMetaAllZeroTaskList). Shifted episodes inject latency, observation dropout, action corruption, and mild physics randomization.
+At $N=\CoreMainSeedCount$, our method is in the top shifted-performance group and is directionally ahead of \CoreRefTwoLabel\ (\CoreMetaDeltaExtTwoMean, CI95 $\pm\CoreMetaDeltaExtTwoCi$, $d=\CoreMetaDeltaExtTwoD$, $p=\CoreMetaDeltaExtTwoP$).
+On the Active-\CoreMetaActiveTaskCount\ subset (all-zero sentinels: \CoreMetaAllZeroTaskList), mean success is \CoreMetaMethodActiveMean\ for our method versus \CoreMetaExtTwoActiveMean\ for \CoreRefTwoLabel\ (\(\Delta=\CoreMetaDeltaExtTwoActiveMean\)).
+Figure~\ref{fig:recent-baselines-matrix} summarizes scenario-model stress means together with shifted MetaWorld baseline-family means; closest-pair reruns remain in Table~\ref{tab:targeted-meta} and Fig.~\ref{fig:custom-diagnostics}.
+
+Because margins are tightest against \CoreCompAdaptManip, we run $N=14$ targeted reruns plus $N=30$ sensitivity (\CoreRefTwoLabel\ anchor). \CoreRefTwoLabel\ remains the primary confirmatory anchor (Holm \(p=\CoreMetaNFourteenHolmExtTwoMeanP\)). The \CoreCompAdaptManip\ paper-profile lane is exploratory: at $N=14$, CVaR is significant (\(p_{\mathrm{adj,CVaR}}=\CoreMetaNFourteenHolmAdaptCvarP\)); mean is secondary/sensitivity-only (nominal \(p_{\mathrm{adj,mean}}=\CoreMetaNFourteenHolmAdaptMeanP\)); and worst-seed delta is \CoreMetaSeedExpAdaptWorstDelta. At $N=30$, CVaR remains significant (\(p_{\mathrm{adj,CVaR}}=\CoreMetaSeedExpAdaptTwoStageBonfCvarP\)), mean \CoreMetaSeedExpAdaptMeanShrinkLabel\ (\CoreMetaSeedExpAdaptDeltaMean\ to \CoreMetaSeedExpAdaptNThirtyDeltaMean), and worst-seed delta is \CoreMetaSeedExpAdaptNThirtyWorstDelta.
+
+\begin{table}[t]
+\centering
+\caption{MetaWorld shifted-suite summary (\CoreMainSeedCount\ matched seeds/variant).}
+\label{tab:metaworld-slice}
+\begin{tabular}{lccc}
+\toprule
+Method & Mean & Worst & CVaR$_{\CoreCvarPercentLabel}$ \\
+\midrule
+Baseline & \CoreMetaBaselineMean & \CoreMetaBaselineWorst & \CoreMetaBaselineCvar \\
+\CoreRefOneLabel & \CoreMetaExtOneMean & \CoreMetaExtOneWorst & \CoreMetaExtOneCvar \\
+\CoreRefTwoLabel & \CoreMetaExtTwoMean & \CoreMetaExtTwoWorst & \CoreMetaExtTwoCvar \\
+\CoreCompAdaptManip & \CoreMetaAdaptManipMean & \CoreMetaAdaptManipWorst & \CoreMetaAdaptManipCvar \\
+\CoreCompRobustCp & \CoreMetaRobustCpMean & \CoreMetaRobustCpWorst & \CoreMetaRobustCpCvar \\
+\CoreCompHistoryKeyframe & \CoreMetaHistoryKeyframeMean & \CoreMetaHistoryKeyframeWorst & \CoreMetaHistoryKeyframeCvar \\
+\CoreCompConstrainedFlow & \CoreMetaConstrainedFlowMean & \CoreMetaConstrainedFlowWorst & \CoreMetaConstrainedFlowCvar \\
+\textbf{CORE} & \textbf{\CoreMetaMethodMean} & \textbf{\CoreMetaMethodWorst} & \textbf{\CoreMetaMethodCvar} \\
+\bottomrule
+\end{tabular}
+\end{table}
+$N=\CoreMainSeedCount$ summary is exploratory and not used for closest-comparator significance claims.
+
+\begin{table}[t]
+\centering
+\caption{MetaWorld targeted reruns (closest-pair lane). \CoreCompAdaptManip\ rows are exploratory paper-profile checks; \CoreRefTwoLabel\ is the primary confirmatory anchor.}
+\label{tab:targeted-meta}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{p{1.65cm}ccccccc}
+\toprule
+Comp. & $N$ & $\Delta$Mean & $\Delta$Worst & $\Delta$CVaR & $\Delta J_{\lambda}$ & $p_{\text{adj,mean}}$ & $p_{\text{adj,CVaR}}$ \\
+\midrule
+\CoreCompAdaptManip & \CoreMetaSeedExpAdaptN & \CoreMetaSeedExpAdaptDeltaMean & \CoreMetaSeedExpAdaptWorstDelta & \CoreMetaSeedExpAdaptCvarDelta & \CoreMetaSeedExpAdaptDeltaJ & \CoreMetaNFourteenHolmAdaptMeanP & \CoreMetaNFourteenHolmAdaptCvarP \\
+\CoreRefTwoLabel & \CoreMetaSeedExpN & \CoreMetaSeedExpDeltaMean & \CoreMetaSeedExpWorstDelta & \CoreMetaSeedExpCvarDelta & \CoreMetaSeedExpDeltaJ & \CoreMetaNFourteenHolmExtTwoMeanP & \CoreMetaNFourteenHolmExtTwoCvarP \\
+\CoreCompAdaptManip\ (deep) & \CoreMetaSeedExpAdaptNThirtyN & \CoreMetaSeedExpAdaptNThirtyDeltaMean & \CoreMetaSeedExpAdaptNThirtyWorstDelta & \CoreMetaSeedExpAdaptNThirtyCvarDelta & \CoreMetaSeedExpAdaptNThirtyDeltaJ & \CoreMetaSeedExpAdaptTwoStageBonfMeanP & \CoreMetaSeedExpAdaptTwoStageBonfCvarP \\
+\bottomrule
+\end{tabular}
+\setlength{\tabcolsep}{6pt}
+\normalsize
+\end{table}
+Deep-$N$ row is exploratory post-hoc. The table reports family-controlled p-values only: Holm-adjusted values at $N=14$ and two-stage Bonferroni-adjusted values for the deep-$N$ sensitivity row.
+
+We add matched-seed ManiSkill and cross-embodiment proxies as benchmark-family checks. Table~\ref{tab:additional-family-checks} reports mean/floor deltas and p-values.
+
+\begin{table}[t]
+\centering
+\caption{Additional benchmark-family checks vs \CoreRefTwoLabel.}
+\label{tab:additional-family-checks}
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+Family & $\Delta$Mean & $p$ & $\Delta$Worst & $\Delta$CVaR \\
+\midrule
+ManiSkill & \CoreManiDeltaExtTwoMean & \CoreManiDeltaExtTwoP & \CoreManiDeltaExtTwoWorst & \CoreManiDeltaExtTwoCvar \\
+Cross-emb. & \CoreCrossEmbodimentDeltaExtTwoMean & \CoreCrossEmbodimentDeltaExtTwoP & \CoreCrossEmbodimentDeltaExtTwoWorst & \CoreCrossEmbodimentDeltaExtTwoCvar \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Scenario-model targeted reruns (CORE vs PPO-CVaR, targeted/full).}
+\label{tab:targeted-scenario}
+\scriptsize
+\begin{tabular}{p{1.8cm}ccccc}
+\toprule
+Comp. & $N$ & $\Delta$Mean & $\Delta$Worst & $\Delta$CVaR & $p$ \\
+\midrule
+PPO-CVaR (targeted) & \CoreSeedExpN & \CoreSeedExpDeltaMean & \CoreSeedExpWorstDelta & \CoreSeedExpCvarDelta & $<\CorePermUpperBoundSci$ \\
+PPO-CVaR (full) & \CoreExpandedSeedCount & \CoreFullNFourteenDeltaExtTwo & --- & \CoreTailNFourteenCvarDelta & $<\CorePermUpperBoundSci$ \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/recent_baselines_matrix.pdf}
+\caption{Coverage view: scenario-model mean-success matrix (left) and shifted MetaWorld mean-success ranking (right) across baseline-family methods and CORE. In the matrix, bold numbers mark the best method per scenario row.}
+\label{fig:recent-baselines-matrix}
+\end{figure}
+
+This controlled scenario track is for mechanism diagnostics under matched conditions, with floor metrics prioritized in a ceiling regime. Table~\ref{tab:main-results} and Table~\ref{tab:targeted-scenario} show positive deltas for our method versus \CoreProfileExtTwo\ at $N=\CoreCustomSeedN$, targeted $N=\CoreSeedExpN$, and full $N=\CoreExpandedSeedCount$ (\CoreFullNFourteenDeltaExtTwo, CI95 $\pm\CoreFullNFourteenDeltaExtTwoCi$, $p<\CorePermUpperBoundSci$); recent-baseline stress deltas remain Holm-significant.
+
+\begin{table}[t]
+\centering
+\caption{Controlled scenario-model comparison (\CoreMainSeedCount\ seeds; floor-first).}
+\label{tab:main-results}
+\begin{tabular}{lcccc}
+\toprule
+Method & Worst $\uparrow$ & CVaR$_{\CoreCvarPercentLabel}\uparrow$ & Mean $\uparrow$ & CI95 \\
+\midrule
+Baseline & \CoreCustomBaselineWorst & \CoreCustomBaselineCvar & \CoreCustomBaselineMean & $\pm$\CoreCustomBaselineCi \\
+\CoreRefOneLabel & \CoreCustomExtOneWorst & \CoreCustomExtOneCvar & \CoreCustomExtOneMean & $\pm$\CoreCustomExtOneCi \\
+\CoreRefTwoLabel & \CoreCustomExtTwoWorst & \CoreCustomExtTwoCvar & \CoreCustomExtTwoMean & $\pm$\CoreCustomExtTwoCi \\
+\textbf{CORE} & \textbf{\CoreCustomMethodWorst} & \textbf{\CoreCustomMethodCvar} & \textbf{\CoreCustomMethodMean} & $\pm$\CoreCustomMethodCi \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Mean gains versus \CoreProfileExtTwo\ are modest, but floor behavior is stronger: worst-seed (\CoreCustomMethodWorst\ vs \CoreCustomExtTwoWorst), CVaR$_{\CoreCvarPercentLabel}$ (\CoreCustomMethodCvar\ vs \CoreCustomExtTwoCvar), and tail-event counts at threshold \CoreTailThreshold\ (\CoreTailNFiveMethod/\CoreTailNFiveDenominator\ vs \CoreTailNFiveExtTwo/\CoreTailNFiveDenominator; at $N=\CoreExpandedSeedCount$: \CoreTailNFourteenMethod/\CoreTailNFourteenDenominator\ vs \CoreTailNFourteenExtTwo/\CoreTailNFourteenDenominator, CVaR delta \CoreTailNFourteenCvarDelta).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../output/corepaper_assets/figures/custom_diagnostics.png}
+\caption{Closest-pair diagnostics: mean-vs-CVaR$_{\CoreCvarPercentLabel}$ and deep-$N$ empirical return CDF (\CoreCompAdaptManip\ vs CORE).}
+\label{fig:custom-diagnostics}
+\end{figure}
+
+Ablations preserve ranking. At \CoreMainSeedCount\ seeds, the full method is \CoreAblationFullMean; no-gate is \CoreAblationNoGateMean\ (\CoreAblationNoGateDelta), no-robust is \CoreAblationNoRobustMean\ (\CoreAblationNoRobustDelta), no-history is \CoreAblationNoHistoryMean\ (\CoreAblationNoHistoryDelta, largest single-factor drop), and no-history+no-gate is \CoreAblationNoHistoryNoGateMean\ (\CoreAblationNoHistoryNoGateDelta). The gate-history interaction residual is \CoreAblationGateHistoryInteractionDelta\ (\CoreAblationGateHistoryInteractionLabel), supporting the gate as a complementary tail-risk filter. Independent rerun streams yield a small full-method mean gap (\CoreAblationVsMainMethodMeanGap).
+
+Our method meets stress criteria and remains ahead in sim-to-sim transfer (\CoreEnvMujoco$\rightarrow$\CoreEnvIsaac, \CoreSimSeedCount\ seeds/variant), with target retention \CoreSimIsaacMethodRetentionPct\% (average per-seed transfer ratio; not exact ratio-of-means; Table~\ref{tab:sim2sim}). Evidence is software-only (no hardware runs).
+
+\begin{table}[t]
+\centering
+\caption{Sim-to-sim transfer summary (\CoreSimSeedCount\ seeds per engine and variant; primary lanes only).}
+\label{tab:sim2sim}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Engine & Baseline & \CoreRefTwoLabel & CORE & CORE retention (\%) \\
+\midrule
+Mujoco (source) & \CoreSimMujocoBaselineMean & \CoreSimMujocoExtTwoMean & \CoreSimMujocoMethodMean & \CoreSimMujocoMethodRetentionPct \\
+Isaac (target) & \CoreSimIsaacBaselineMean & \CoreSimIsaacExtTwoMean & \CoreSimIsaacMethodMean & \CoreSimIsaacMethodRetentionPct \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+Uncertainty diagnostics are stable (cu=\CoreUncertaintyCu, c0=\CoreUncertaintyCzero, MAE=\CoreUncertaintyHoldoutMae, max Assump.-2 violation=\CoreUncertaintyMaxViolation\ on [0,1]). Calibration uses a disjoint split (\CoreUncertaintyTrainRows\ fit, \CoreUncertaintyHoldoutRows\ holdout) with holdout Assump.-2 coverage \CoreUncertaintyCoveragePct\%. \CoreCompAdaptManip\ one-sided condition violation is \CoreUncertaintyViolationRate\ (\CoreUncertaintyViolationRatePct\%); deployment uses only the two-sided gate.
+
+\section{Discussion and Limitations}
+
+Limitations: evidence is simulation-only, failures cluster under severe co-shift, and sim-to-real drift remains untested. Closest-comparator fairness also has a scope caveat: \CoreCompAdaptManip\ uses a pinned in-repo profile, not an official-library parity audit. Adaptive threshold tuning remains an operational burden across regimes; we mitigate this with fixed quantile defaults and report misspecification sensitivity diagnostics. Sim-to-sim transfer retains \CoreSimIsaacMethodRetentionPct\% on Isaac, but hardware robustness remains future work.
+
+\section{Conclusion}
+Our approach frames robust policy updating as an online control problem: optimize a risk-aware objective, then commit candidate updates only when uncertainty-gated checks support deployment. Across matched-seed shift evaluations, this promote/monitor/rollback design improves reliability-floor behavior while preserving fixed-budget update control, with the clearest benefit in adverse-tail regimes where unstable updates are most costly.
+
+The evidence also clarifies scope boundaries. Primary confirmatory claims are anchored to \CoreRefTwoLabel, while \CoreCompAdaptManip\ remains a paper-profile exploratory lane rather than official-library parity evidence. Results are simulation-only, and severe co-shift settings remain the dominant failure mode.
+
+Taken together, the study supports uncertainty-gated update control as a practical reliability mechanism for shift-aware policy optimization, and it motivates three immediate next steps: official-code comparator parity for closest baselines, hardware validation under real-world drift, and more adaptive-yet-auditable threshold selection policies.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

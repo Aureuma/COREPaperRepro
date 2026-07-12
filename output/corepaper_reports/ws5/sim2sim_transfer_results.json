@@ -1,0 +1,87 @@
+{
+  "nominal_baseline": 0.71194,
+  "nominal_ext2": null,
+  "nominal_latency_aware": null,
+  "nominal_method": 0.7494,
+  "source_engine": "mujoco",
+  "source_method_mean": 0.7486928571428572,
+  "source_gap_baseline": 0.03651428571428561,
+  "source_gap_ext2": 0.0055357142857141994,
+  "rows": [
+    {
+      "engine": "isaac",
+      "baseline_n": 14,
+      "ext2_n": 14,
+      "latency_aware_n": 14,
+      "method_n": 14,
+      "baseline_mean": 0.6257928571428572,
+      "ext2_mean": 0.6659142857142858,
+      "latency_aware_mean": 0.6666071428571428,
+      "method_mean": 0.6767071428571427,
+      "method_minus_baseline": 0.05091428571428558,
+      "method_minus_ext2": 0.010792857142856938,
+      "method_minus_latency_aware": 0.010099999999999887,
+      "baseline_drop_pct": 12.100337508377512,
+      "ext2_drop_pct": null,
+      "latency_aware_drop_pct": null,
+      "method_drop_pct": 9.70014106523315,
+      "method_beats_baseline": true,
+      "method_beats_ext2": true,
+      "method_beats_latency_aware": true
+    },
+    {
+      "engine": "mujoco",
+      "baseline_n": 14,
+      "ext2_n": 14,
+      "latency_aware_n": 14,
+      "method_n": 14,
+      "baseline_mean": 0.7121785714285715,
+      "ext2_mean": 0.743157142857143,
+      "latency_aware_mean": 0.7416571428571427,
+      "method_mean": 0.7486928571428572,
+      "method_minus_baseline": 0.03651428571428561,
+      "method_minus_ext2": 0.0055357142857141994,
+      "method_minus_latency_aware": 0.007035714285714478,
+      "baseline_drop_pct": -0.033510046994343956,
+      "ext2_drop_pct": null,
+      "latency_aware_drop_pct": null,
+      "method_drop_pct": 0.09436120324830467,
+      "method_beats_baseline": true,
+      "method_beats_ext2": true,
+      "method_beats_latency_aware": true
+    }
+  ],
+  "criteria": [
+    {
+      "engine": "isaac",
+      "checks": {
+        "method_beats_baseline": true,
+        "method_beats_ext2": true,
+        "method_beats_latency_aware": true,
+        "method_drop_within_limit": true,
+        "gap_retention_vs_baseline_ok": true,
+        "gap_retention_vs_ext2_ok": true,
+        "gap_retention_vs_latency_aware_ok": true
+      },
+      "pass": true
+    },
+    {
+      "engine": "mujoco",
+      "checks": {
+        "method_beats_baseline": true,
+        "method_beats_ext2": true,
+        "method_beats_latency_aware": true,
+        "method_drop_within_limit": true,
+        "gap_retention_vs_baseline_ok": true,
+        "gap_retention_vs_ext2_ok": true,
+        "gap_retention_vs_latency_aware_ok": true
+      },
+      "pass": true
+    }
+  ],
+  "all_required_pass": true,
+  "thresholds": {
+    "max_method_drop_pct": 12.0,
+    "min_gap_retention": 0.7
+  }
+}

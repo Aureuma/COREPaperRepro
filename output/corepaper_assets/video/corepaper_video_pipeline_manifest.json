@@ -1,0 +1,103 @@
+{
+  "identity_source": "config/visual_identity.json",
+  "base_manifest": "output/corepaper_assets/video/manifest.json",
+  "video_spec": {
+    "width_px": 1280,
+    "height_px": 720,
+    "fps": 30,
+    "intro_seconds": 2.5,
+    "segment_seconds": 4.0,
+    "outro_seconds": 2.0,
+    "total_seconds": 24.5
+  },
+  "scenarios": [
+    {
+      "scenario": "META-shifted",
+      "available_variants": [
+        "baseline",
+        "ext2",
+        "adaptmanip",
+        "method"
+      ],
+      "baseline_mean": 0.14,
+      "ext2_mean": 0.48,
+      "adaptmanip_mean": 0.62,
+      "method_mean": 0.72,
+      "delta": 0.58,
+      "delta_vs_ext2": 0.24,
+      "source_clip": "output/corepaper_assets/video/comparisons/META-shifted.mp4"
+    },
+    {
+      "scenario": "S1-hard",
+      "available_variants": [
+        "baseline",
+        "method"
+      ],
+      "baseline_mean": 0.5884,
+      "ext2_mean": null,
+      "adaptmanip_mean": null,
+      "method_mean": 0.6436,
+      "delta": 0.0551,
+      "delta_vs_ext2": null,
+      "source_clip": "output/corepaper_assets/video/comparisons/S1-hard.mp4"
+    },
+    {
+      "scenario": "S2-med",
+      "available_variants": [
+        "baseline",
+        "method"
+      ],
+      "baseline_mean": 0.6696,
+      "ext2_mean": null,
+      "adaptmanip_mean": null,
+      "method_mean": 0.7125,
+      "delta": 0.0429,
+      "delta_vs_ext2": null,
+      "source_clip": "output/corepaper_assets/video/comparisons/S2-med.mp4"
+    },
+    {
+      "scenario": "S3-severe",
+      "available_variants": [
+        "baseline",
+        "method"
+      ],
+      "baseline_mean": 0.6444,
+      "ext2_mean": null,
+      "adaptmanip_mean": null,
+      "method_mean": 0.6959,
+      "delta": 0.0516,
+      "delta_vs_ext2": null,
+      "source_clip": "output/corepaper_assets/video/comparisons/S3-severe.mp4"
+    },
+    {
+      "scenario": "SIM-isaac",
+      "available_variants": [
+        "baseline",
+        "ext2",
+        "method"
+      ],
+      "baseline_mean": 0.6258,
+      "ext2_mean": 0.6659,
+      "adaptmanip_mean": null,
+      "method_mean": 0.6767,
+      "delta": 0.0509,
+      "delta_vs_ext2": 0.0108,
+      "source_clip": "output/corepaper_assets/video/comparisons/SIM-isaac.mp4"
+    }
+  ],
+  "segments": [
+    "output/corepaper_assets/video/segments/corepaper_segment_00_intro.mp4",
+    "output/corepaper_assets/video/segments/corepaper_segment_01_META-shifted.mp4",
+    "output/corepaper_assets/video/segments/corepaper_segment_02_S1-hard.mp4",
+    "output/corepaper_assets/video/segments/corepaper_segment_03_S2-med.mp4",
+    "output/corepaper_assets/video/segments/corepaper_segment_04_S3-severe.mp4",
+    "output/corepaper_assets/video/segments/corepaper_segment_05_SIM-isaac.mp4",
+    "output/corepaper_assets/video/segments/corepaper_segment_06_outro.mp4"
+  ],
+  "outputs": {
+    "polished_mp4": "output/corepaper_assets/video/corepaper_video_polished.mp4",
+    "submission_mp4": "output/corepaper_submission/corepaper_video.mp4"
+  },
+  "video_format": "mp4",
+  "legacy_gifs_removed": 0
+}

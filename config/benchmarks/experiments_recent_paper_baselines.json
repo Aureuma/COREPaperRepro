@@ -1,0 +1,3785 @@
+{
+  "suite_name": "ws5-recent-paper-baselines",
+  "runs": [
+    {
+      "id": "recent-nominal-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s1 --variant baseline --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s2 --variant baseline --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s3 --variant baseline --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s4 --variant baseline --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s5 --variant baseline --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s6 --variant baseline --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s7 --variant baseline --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s8 --variant baseline --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s9 --variant baseline --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s10 --variant baseline --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s11 --variant baseline --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s12 --variant baseline --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s13 --variant baseline --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-baseline-s14 --variant baseline --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s1 --variant ext1 --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s2 --variant ext1 --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s3 --variant ext1 --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s4 --variant ext1 --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s5 --variant ext1 --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s6 --variant ext1 --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s7 --variant ext1 --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s8 --variant ext1 --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s9 --variant ext1 --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s10 --variant ext1 --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s11 --variant ext1 --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s12 --variant ext1 --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s13 --variant ext1 --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext1-s14 --variant ext1 --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s1 --variant ext2 --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s2 --variant ext2 --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s3 --variant ext2 --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s4 --variant ext2 --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s5 --variant ext2 --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s6 --variant ext2 --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s7 --variant ext2 --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s8 --variant ext2 --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s9 --variant ext2 --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s10 --variant ext2 --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s11 --variant ext2 --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s12 --variant ext2 --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s13 --variant ext2 --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-ext2-s14 --variant ext2 --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s1 --variant latency_aware --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s2 --variant latency_aware --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s3 --variant latency_aware --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s4 --variant latency_aware --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s5 --variant latency_aware --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s6 --variant latency_aware --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s7 --variant latency_aware --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s8 --variant latency_aware --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s9 --variant latency_aware --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s10 --variant latency_aware --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s11 --variant latency_aware --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s12 --variant latency_aware --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s13 --variant latency_aware --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-latency_aware-s14 --variant latency_aware --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s1 --variant adaptmanip --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s2 --variant adaptmanip --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s3 --variant adaptmanip --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s4 --variant adaptmanip --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s5 --variant adaptmanip --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s6 --variant adaptmanip --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s7 --variant adaptmanip --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s8 --variant adaptmanip --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s9 --variant adaptmanip --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s10 --variant adaptmanip --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s11 --variant adaptmanip --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s12 --variant adaptmanip --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s13 --variant adaptmanip --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-adaptmanip-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-adaptmanip-s14 --variant adaptmanip --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s1 --variant robust_cp --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s2 --variant robust_cp --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s3 --variant robust_cp --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s4 --variant robust_cp --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s5 --variant robust_cp --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s6 --variant robust_cp --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s7 --variant robust_cp --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s8 --variant robust_cp --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s9 --variant robust_cp --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s10 --variant robust_cp --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s11 --variant robust_cp --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s12 --variant robust_cp --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s13 --variant robust_cp --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-robust_cp-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-robust_cp-s14 --variant robust_cp --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s1 --variant history_keyframe --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s2 --variant history_keyframe --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s3 --variant history_keyframe --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s4 --variant history_keyframe --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s5 --variant history_keyframe --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s6 --variant history_keyframe --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s7 --variant history_keyframe --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s8 --variant history_keyframe --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s9 --variant history_keyframe --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s10 --variant history_keyframe --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s11 --variant history_keyframe --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s12 --variant history_keyframe --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s13 --variant history_keyframe --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-history_keyframe-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-history_keyframe-s14 --variant history_keyframe --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s1 --variant constrained_flow --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s2 --variant constrained_flow --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s3 --variant constrained_flow --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s4 --variant constrained_flow --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s5 --variant constrained_flow --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s6 --variant constrained_flow --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s7 --variant constrained_flow --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s8 --variant constrained_flow --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s9 --variant constrained_flow --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s10 --variant constrained_flow --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s11 --variant constrained_flow --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s12 --variant constrained_flow --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s13 --variant constrained_flow --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-constrained_flow-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-constrained_flow-s14 --variant constrained_flow --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s1 --variant method --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s2 --variant method --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s3 --variant method --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s4 --variant method --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s5 --variant method --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s6 --variant method --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s7 --variant method --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s8 --variant method --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s9 --variant method --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s10 --variant method --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s11 --variant method --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s12 --variant method --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s13 --variant method --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-nominal-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-nominal-method-s14 --variant method --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s1 --variant baseline --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s2 --variant baseline --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s3 --variant baseline --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s4 --variant baseline --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s5 --variant baseline --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s6 --variant baseline --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s7 --variant baseline --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s8 --variant baseline --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s9 --variant baseline --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s10 --variant baseline --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s11 --variant baseline --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s12 --variant baseline --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s13 --variant baseline --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-baseline-s14 --variant baseline --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s1 --variant ext1 --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s2 --variant ext1 --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s3 --variant ext1 --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s4 --variant ext1 --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s5 --variant ext1 --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s6 --variant ext1 --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s7 --variant ext1 --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s8 --variant ext1 --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s9 --variant ext1 --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s10 --variant ext1 --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s11 --variant ext1 --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s12 --variant ext1 --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s13 --variant ext1 --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext1-s14 --variant ext1 --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s1 --variant ext2 --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s2 --variant ext2 --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s3 --variant ext2 --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s4 --variant ext2 --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s5 --variant ext2 --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s6 --variant ext2 --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s7 --variant ext2 --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s8 --variant ext2 --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s9 --variant ext2 --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s10 --variant ext2 --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s11 --variant ext2 --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s12 --variant ext2 --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s13 --variant ext2 --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-ext2-s14 --variant ext2 --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s1 --variant latency_aware --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s2 --variant latency_aware --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s3 --variant latency_aware --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s4 --variant latency_aware --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s5 --variant latency_aware --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s6 --variant latency_aware --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s7 --variant latency_aware --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s8 --variant latency_aware --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s9 --variant latency_aware --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s10 --variant latency_aware --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s11 --variant latency_aware --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s12 --variant latency_aware --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s13 --variant latency_aware --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-latency_aware-s14 --variant latency_aware --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s1 --variant adaptmanip --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s2 --variant adaptmanip --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s3 --variant adaptmanip --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s4 --variant adaptmanip --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s5 --variant adaptmanip --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s6 --variant adaptmanip --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s7 --variant adaptmanip --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s8 --variant adaptmanip --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s9 --variant adaptmanip --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s10 --variant adaptmanip --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s11 --variant adaptmanip --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s12 --variant adaptmanip --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s13 --variant adaptmanip --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-adaptmanip-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-adaptmanip-s14 --variant adaptmanip --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s1 --variant robust_cp --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s2 --variant robust_cp --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s3 --variant robust_cp --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s4 --variant robust_cp --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s5 --variant robust_cp --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s6 --variant robust_cp --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s7 --variant robust_cp --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s8 --variant robust_cp --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s9 --variant robust_cp --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s10 --variant robust_cp --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s11 --variant robust_cp --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s12 --variant robust_cp --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s13 --variant robust_cp --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-robust_cp-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-robust_cp-s14 --variant robust_cp --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s1 --variant history_keyframe --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s2 --variant history_keyframe --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s3 --variant history_keyframe --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s4 --variant history_keyframe --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s5 --variant history_keyframe --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s6 --variant history_keyframe --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s7 --variant history_keyframe --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s8 --variant history_keyframe --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s9 --variant history_keyframe --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s10 --variant history_keyframe --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s11 --variant history_keyframe --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s12 --variant history_keyframe --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s13 --variant history_keyframe --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-history_keyframe-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-history_keyframe-s14 --variant history_keyframe --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s1 --variant constrained_flow --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s2 --variant constrained_flow --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s3 --variant constrained_flow --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s4 --variant constrained_flow --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s5 --variant constrained_flow --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s6 --variant constrained_flow --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s7 --variant constrained_flow --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s8 --variant constrained_flow --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s9 --variant constrained_flow --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s10 --variant constrained_flow --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s11 --variant constrained_flow --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s12 --variant constrained_flow --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s13 --variant constrained_flow --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-constrained_flow-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-constrained_flow-s14 --variant constrained_flow --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s1 --variant method --scenario R4-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s2 --variant method --scenario R4-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s3 --variant method --scenario R4-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s4 --variant method --scenario R4-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s5 --variant method --scenario R4-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s6 --variant method --scenario R4-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s7 --variant method --scenario R4-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s8 --variant method --scenario R4-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s9 --variant method --scenario R4-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s10 --variant method --scenario R4-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s11 --variant method --scenario R4-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s12 --variant method --scenario R4-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s13 --variant method --scenario R4-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-R4-hard-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-R4-hard-method-s14 --variant method --scenario R4-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s1 --variant baseline --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s2 --variant baseline --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s3 --variant baseline --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s4 --variant baseline --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s5 --variant baseline --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s6 --variant baseline --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s7 --variant baseline --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s8 --variant baseline --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s9 --variant baseline --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s10 --variant baseline --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s11 --variant baseline --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s12 --variant baseline --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s13 --variant baseline --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-baseline-s14 --variant baseline --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s1 --variant ext1 --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s2 --variant ext1 --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s3 --variant ext1 --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s4 --variant ext1 --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s5 --variant ext1 --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s6 --variant ext1 --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s7 --variant ext1 --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s8 --variant ext1 --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s9 --variant ext1 --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s10 --variant ext1 --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s11 --variant ext1 --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s12 --variant ext1 --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s13 --variant ext1 --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext1-s14 --variant ext1 --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s1 --variant ext2 --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s2 --variant ext2 --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s3 --variant ext2 --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s4 --variant ext2 --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s5 --variant ext2 --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s6 --variant ext2 --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s7 --variant ext2 --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s8 --variant ext2 --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s9 --variant ext2 --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s10 --variant ext2 --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s11 --variant ext2 --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s12 --variant ext2 --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s13 --variant ext2 --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-ext2-s14 --variant ext2 --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s1 --variant latency_aware --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s2 --variant latency_aware --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s3 --variant latency_aware --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s4 --variant latency_aware --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s5 --variant latency_aware --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s6 --variant latency_aware --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s7 --variant latency_aware --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s8 --variant latency_aware --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s9 --variant latency_aware --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s10 --variant latency_aware --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s11 --variant latency_aware --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s12 --variant latency_aware --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s13 --variant latency_aware --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-latency_aware-s14 --variant latency_aware --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s1 --variant adaptmanip --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s2 --variant adaptmanip --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s3 --variant adaptmanip --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s4 --variant adaptmanip --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s5 --variant adaptmanip --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s6 --variant adaptmanip --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s7 --variant adaptmanip --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s8 --variant adaptmanip --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s9 --variant adaptmanip --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s10 --variant adaptmanip --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s11 --variant adaptmanip --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s12 --variant adaptmanip --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s13 --variant adaptmanip --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-adaptmanip-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-adaptmanip-s14 --variant adaptmanip --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s1 --variant robust_cp --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s2 --variant robust_cp --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s3 --variant robust_cp --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s4 --variant robust_cp --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s5 --variant robust_cp --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s6 --variant robust_cp --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s7 --variant robust_cp --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s8 --variant robust_cp --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s9 --variant robust_cp --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s10 --variant robust_cp --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s11 --variant robust_cp --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s12 --variant robust_cp --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s13 --variant robust_cp --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-robust_cp-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-robust_cp-s14 --variant robust_cp --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s1 --variant history_keyframe --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s2 --variant history_keyframe --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s3 --variant history_keyframe --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s4 --variant history_keyframe --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s5 --variant history_keyframe --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s6 --variant history_keyframe --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s7 --variant history_keyframe --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s8 --variant history_keyframe --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s9 --variant history_keyframe --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s10 --variant history_keyframe --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s11 --variant history_keyframe --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s12 --variant history_keyframe --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s13 --variant history_keyframe --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-history_keyframe-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-history_keyframe-s14 --variant history_keyframe --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s1 --variant constrained_flow --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s2 --variant constrained_flow --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s3 --variant constrained_flow --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s4 --variant constrained_flow --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s5 --variant constrained_flow --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s6 --variant constrained_flow --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s7 --variant constrained_flow --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s8 --variant constrained_flow --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s9 --variant constrained_flow --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s10 --variant constrained_flow --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s11 --variant constrained_flow --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s12 --variant constrained_flow --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s13 --variant constrained_flow --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-constrained_flow-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-constrained_flow-s14 --variant constrained_flow --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s1 --variant method --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s2 --variant method --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s3 --variant method --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s4 --variant method --scenario S1-hard --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s5 --variant method --scenario S1-hard --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s6 --variant method --scenario S1-hard --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s7 --variant method --scenario S1-hard --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s8 --variant method --scenario S1-hard --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s9 --variant method --scenario S1-hard --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s10 --variant method --scenario S1-hard --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s11 --variant method --scenario S1-hard --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s12 --variant method --scenario S1-hard --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s13 --variant method --scenario S1-hard --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S1-hard-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S1-hard-method-s14 --variant method --scenario S1-hard --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s1 --variant baseline --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s2 --variant baseline --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s3 --variant baseline --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s4 --variant baseline --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s5 --variant baseline --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s6 --variant baseline --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s7 --variant baseline --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s8 --variant baseline --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s9 --variant baseline --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s10 --variant baseline --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s11 --variant baseline --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s12 --variant baseline --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s13 --variant baseline --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-baseline-s14 --variant baseline --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s1 --variant ext1 --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s2 --variant ext1 --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s3 --variant ext1 --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s4 --variant ext1 --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s5 --variant ext1 --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s6 --variant ext1 --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s7 --variant ext1 --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s8 --variant ext1 --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s9 --variant ext1 --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s10 --variant ext1 --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s11 --variant ext1 --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s12 --variant ext1 --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s13 --variant ext1 --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext1-s14 --variant ext1 --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s1 --variant ext2 --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s2 --variant ext2 --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s3 --variant ext2 --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s4 --variant ext2 --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s5 --variant ext2 --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s6 --variant ext2 --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s7 --variant ext2 --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s8 --variant ext2 --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s9 --variant ext2 --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s10 --variant ext2 --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s11 --variant ext2 --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s12 --variant ext2 --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s13 --variant ext2 --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-ext2-s14 --variant ext2 --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s1 --variant latency_aware --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s2 --variant latency_aware --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s3 --variant latency_aware --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s4 --variant latency_aware --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s5 --variant latency_aware --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s6 --variant latency_aware --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s7 --variant latency_aware --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s8 --variant latency_aware --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s9 --variant latency_aware --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s10 --variant latency_aware --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s11 --variant latency_aware --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s12 --variant latency_aware --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s13 --variant latency_aware --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-latency_aware-s14 --variant latency_aware --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s1 --variant adaptmanip --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s2 --variant adaptmanip --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s3 --variant adaptmanip --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s4 --variant adaptmanip --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s5 --variant adaptmanip --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s6 --variant adaptmanip --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s7 --variant adaptmanip --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s8 --variant adaptmanip --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s9 --variant adaptmanip --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s10 --variant adaptmanip --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s11 --variant adaptmanip --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s12 --variant adaptmanip --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s13 --variant adaptmanip --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-adaptmanip-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-adaptmanip-s14 --variant adaptmanip --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s1 --variant robust_cp --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s2 --variant robust_cp --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s3 --variant robust_cp --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s4 --variant robust_cp --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s5 --variant robust_cp --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s6 --variant robust_cp --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s7 --variant robust_cp --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s8 --variant robust_cp --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s9 --variant robust_cp --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s10 --variant robust_cp --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s11 --variant robust_cp --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s12 --variant robust_cp --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s13 --variant robust_cp --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-robust_cp-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-robust_cp-s14 --variant robust_cp --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s1 --variant history_keyframe --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s2 --variant history_keyframe --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s3 --variant history_keyframe --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s4 --variant history_keyframe --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s5 --variant history_keyframe --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s6 --variant history_keyframe --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s7 --variant history_keyframe --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s8 --variant history_keyframe --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s9 --variant history_keyframe --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s10 --variant history_keyframe --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s11 --variant history_keyframe --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s12 --variant history_keyframe --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s13 --variant history_keyframe --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-history_keyframe-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-history_keyframe-s14 --variant history_keyframe --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s1 --variant constrained_flow --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s2 --variant constrained_flow --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s3 --variant constrained_flow --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s4 --variant constrained_flow --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s5 --variant constrained_flow --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s6 --variant constrained_flow --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s7 --variant constrained_flow --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s8 --variant constrained_flow --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s9 --variant constrained_flow --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s10 --variant constrained_flow --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s11 --variant constrained_flow --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s12 --variant constrained_flow --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s13 --variant constrained_flow --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-constrained_flow-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-constrained_flow-s14 --variant constrained_flow --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s1 --variant method --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s2 --variant method --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s3 --variant method --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s4 --variant method --scenario S2-high --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s5 --variant method --scenario S2-high --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s6 --variant method --scenario S2-high --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s7 --variant method --scenario S2-high --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s8 --variant method --scenario S2-high --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s9 --variant method --scenario S2-high --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s10 --variant method --scenario S2-high --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s11 --variant method --scenario S2-high --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s12 --variant method --scenario S2-high --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s13 --variant method --scenario S2-high --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S2-high-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S2-high-method-s14 --variant method --scenario S2-high --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s1 --variant baseline --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s2 --variant baseline --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s3 --variant baseline --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s4 --variant baseline --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s5 --variant baseline --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s6 --variant baseline --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s7 --variant baseline --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s8 --variant baseline --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s9 --variant baseline --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s10 --variant baseline --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s11 --variant baseline --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s12 --variant baseline --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s13 --variant baseline --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-baseline-s14 --variant baseline --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s1 --variant ext1 --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s2 --variant ext1 --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s3 --variant ext1 --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s4 --variant ext1 --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s5 --variant ext1 --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s6 --variant ext1 --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s7 --variant ext1 --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s8 --variant ext1 --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s9 --variant ext1 --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s10 --variant ext1 --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s11 --variant ext1 --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s12 --variant ext1 --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s13 --variant ext1 --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext1-s14 --variant ext1 --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s1 --variant ext2 --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s2 --variant ext2 --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s3 --variant ext2 --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s4 --variant ext2 --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s5 --variant ext2 --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s6 --variant ext2 --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s7 --variant ext2 --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s8 --variant ext2 --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s9 --variant ext2 --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s10 --variant ext2 --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s11 --variant ext2 --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s12 --variant ext2 --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s13 --variant ext2 --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-ext2-s14 --variant ext2 --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s1 --variant latency_aware --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s2 --variant latency_aware --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s3 --variant latency_aware --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s4 --variant latency_aware --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s5 --variant latency_aware --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s6 --variant latency_aware --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s7 --variant latency_aware --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s8 --variant latency_aware --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s9 --variant latency_aware --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s10 --variant latency_aware --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s11 --variant latency_aware --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s12 --variant latency_aware --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s13 --variant latency_aware --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-latency_aware-s14 --variant latency_aware --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s1 --variant adaptmanip --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s2 --variant adaptmanip --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s3 --variant adaptmanip --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s4 --variant adaptmanip --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s5 --variant adaptmanip --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s6 --variant adaptmanip --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s7 --variant adaptmanip --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s8 --variant adaptmanip --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s9 --variant adaptmanip --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s10 --variant adaptmanip --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s11 --variant adaptmanip --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s12 --variant adaptmanip --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s13 --variant adaptmanip --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-adaptmanip-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-adaptmanip-s14 --variant adaptmanip --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s1 --variant robust_cp --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s2 --variant robust_cp --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s3 --variant robust_cp --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s4 --variant robust_cp --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s5 --variant robust_cp --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s6 --variant robust_cp --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s7 --variant robust_cp --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s8 --variant robust_cp --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s9 --variant robust_cp --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s10 --variant robust_cp --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s11 --variant robust_cp --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s12 --variant robust_cp --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s13 --variant robust_cp --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-robust_cp-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-robust_cp-s14 --variant robust_cp --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s1 --variant history_keyframe --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s2 --variant history_keyframe --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s3 --variant history_keyframe --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s4 --variant history_keyframe --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s5 --variant history_keyframe --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s6 --variant history_keyframe --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s7 --variant history_keyframe --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s8 --variant history_keyframe --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s9 --variant history_keyframe --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s10 --variant history_keyframe --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s11 --variant history_keyframe --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s12 --variant history_keyframe --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s13 --variant history_keyframe --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-history_keyframe-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-history_keyframe-s14 --variant history_keyframe --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s1 --variant constrained_flow --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s2 --variant constrained_flow --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s3 --variant constrained_flow --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s4 --variant constrained_flow --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s5 --variant constrained_flow --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s6 --variant constrained_flow --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s7 --variant constrained_flow --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s8 --variant constrained_flow --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s9 --variant constrained_flow --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s10 --variant constrained_flow --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s11 --variant constrained_flow --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s12 --variant constrained_flow --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s13 --variant constrained_flow --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-constrained_flow-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-constrained_flow-s14 --variant constrained_flow --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s1 --variant method --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s2 --variant method --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s3 --variant method --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s4 --variant method --scenario S3-severe --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s5 --variant method --scenario S3-severe --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s6 --variant method --scenario S3-severe --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s7 --variant method --scenario S3-severe --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s8 --variant method --scenario S3-severe --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s9 --variant method --scenario S3-severe --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s10 --variant method --scenario S3-severe --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s11 --variant method --scenario S3-severe --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s12 --variant method --scenario S3-severe --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s13 --variant method --scenario S3-severe --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-S3-severe-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-S3-severe-method-s14 --variant method --scenario S3-severe --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s1 --variant baseline --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s2 --variant baseline --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s3 --variant baseline --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s4 --variant baseline --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s5 --variant baseline --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s6 --variant baseline --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s7 --variant baseline --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s8 --variant baseline --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s9 --variant baseline --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s10 --variant baseline --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s11 --variant baseline --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s12 --variant baseline --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s13 --variant baseline --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-baseline-s14 --variant baseline --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s1 --variant ext1 --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s2 --variant ext1 --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s3 --variant ext1 --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s4 --variant ext1 --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s5 --variant ext1 --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s6 --variant ext1 --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s7 --variant ext1 --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s8 --variant ext1 --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s9 --variant ext1 --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s10 --variant ext1 --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s11 --variant ext1 --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s12 --variant ext1 --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s13 --variant ext1 --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext1-s14 --variant ext1 --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s1 --variant ext2 --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s2 --variant ext2 --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s3 --variant ext2 --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s4 --variant ext2 --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s5 --variant ext2 --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s6 --variant ext2 --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s7 --variant ext2 --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s8 --variant ext2 --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s9 --variant ext2 --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s10 --variant ext2 --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s11 --variant ext2 --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s12 --variant ext2 --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s13 --variant ext2 --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-ext2-s14 --variant ext2 --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s1 --variant latency_aware --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s2 --variant latency_aware --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s3 --variant latency_aware --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s4 --variant latency_aware --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s5 --variant latency_aware --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s6 --variant latency_aware --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s7 --variant latency_aware --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s8 --variant latency_aware --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s9 --variant latency_aware --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s10 --variant latency_aware --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s11 --variant latency_aware --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s12 --variant latency_aware --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s13 --variant latency_aware --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-latency_aware-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-latency_aware-s14 --variant latency_aware --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s1 --variant adaptmanip --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s2 --variant adaptmanip --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s3 --variant adaptmanip --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s4 --variant adaptmanip --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s5 --variant adaptmanip --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s6 --variant adaptmanip --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s7 --variant adaptmanip --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s8 --variant adaptmanip --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s9 --variant adaptmanip --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s10 --variant adaptmanip --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s11 --variant adaptmanip --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s12 --variant adaptmanip --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s13 --variant adaptmanip --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-adaptmanip-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-adaptmanip-s14 --variant adaptmanip --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s1 --variant robust_cp --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s2 --variant robust_cp --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s3 --variant robust_cp --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s4 --variant robust_cp --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s5 --variant robust_cp --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s6 --variant robust_cp --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s7 --variant robust_cp --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s8 --variant robust_cp --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s9 --variant robust_cp --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s10 --variant robust_cp --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s11 --variant robust_cp --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s12 --variant robust_cp --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s13 --variant robust_cp --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-robust_cp-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-robust_cp-s14 --variant robust_cp --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s1 --variant history_keyframe --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s2 --variant history_keyframe --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s3 --variant history_keyframe --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s4 --variant history_keyframe --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s5 --variant history_keyframe --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s6 --variant history_keyframe --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s7 --variant history_keyframe --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s8 --variant history_keyframe --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s9 --variant history_keyframe --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s10 --variant history_keyframe --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s11 --variant history_keyframe --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s12 --variant history_keyframe --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s13 --variant history_keyframe --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-history_keyframe-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-history_keyframe-s14 --variant history_keyframe --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s1 --variant constrained_flow --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s2 --variant constrained_flow --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s3 --variant constrained_flow --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s4 --variant constrained_flow --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s5 --variant constrained_flow --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s6 --variant constrained_flow --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s7 --variant constrained_flow --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s8 --variant constrained_flow --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s9 --variant constrained_flow --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s10 --variant constrained_flow --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s11 --variant constrained_flow --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s12 --variant constrained_flow --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s13 --variant constrained_flow --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-constrained_flow-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-constrained_flow-s14 --variant constrained_flow --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s1 --variant method --scenario SIM-isaac --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s2 --variant method --scenario SIM-isaac --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s3 --variant method --scenario SIM-isaac --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s4 --variant method --scenario SIM-isaac --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s5 --variant method --scenario SIM-isaac --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s6 --variant method --scenario SIM-isaac --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s7 --variant method --scenario SIM-isaac --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s8 --variant method --scenario SIM-isaac --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s9 --variant method --scenario SIM-isaac --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s10 --variant method --scenario SIM-isaac --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s11 --variant method --scenario SIM-isaac --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s12 --variant method --scenario SIM-isaac --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s13 --variant method --scenario SIM-isaac --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "recent-SIM-isaac-method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id recent-SIM-isaac-method-s14 --variant method --scenario SIM-isaac --seed 14",
+      "expected_status": 0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "n_rows": 84,
+  "scenario_rows": [
+    {
+      "scenario": "R4-hard",
+      "n": 14,
+      "mean_score": 0.6303857142857144,
+      "mean_risk_lambda": 1.0399999999999996,
+      "mean_severity_norm": 0.8,
+      "conformal_violation_rate": 0.0,
+      "mean_penalty_raw": 0.11375200000000003,
+      "mean_penalty_effective": 0.11830199999999998
+    },
+    {
+      "scenario": "S1-hard",
+      "n": 14,
+      "mean_score": 0.6430285714285714,
+      "mean_risk_lambda": 1.0344,
+      "mean_severity_norm": 0.7439999999999999,
+      "conformal_violation_rate": 0.0,
+      "mean_penalty_raw": 0.10332499999999999,
+      "mean_penalty_effective": 0.10687899999999996
+    },
+    {
+      "scenario": "S2-high",
+      "n": 14,
+      "mean_score": 0.6808357142857144,
+      "mean_risk_lambda": 1.016,
+      "mean_severity_norm": 0.5600000000000003,
+      "conformal_violation_rate": 0.0,
+      "mean_penalty_raw": 0.06720000000000001,
+      "mean_penalty_effective": 0.06827499999999999
+    },
+    {
+      "scenario": "S3-severe",
+      "n": 14,
+      "mean_score": 0.6956428571428572,
+      "mean_risk_lambda": 1.0079999999999996,
+      "mean_severity_norm": 0.48000000000000015,
+      "conformal_violation_rate": 0.0,
+      "mean_penalty_raw": 0.05279999999999999,
+      "mean_penalty_effective": 0.053222
+    },
+    {
+      "scenario": "SIM-isaac",
+      "n": 14,
+      "mean_score": 0.6760857142857143,
+      "mean_risk_lambda": 1.026,
+      "mean_severity_norm": 0.66,
+      "conformal_violation_rate": 0.0,
+      "mean_penalty_raw": 0.07059000000000001,
+      "mean_penalty_effective": 0.07242499999999999
+    },
+    {
+      "scenario": "nominal",
+      "n": 14,
+      "mean_score": 0.7493857142857144,
+      "mean_risk_lambda": 0.9600000000000003,
+      "mean_severity_norm": 0.0,
+      "conformal_violation_rate": 0.0,
+      "mean_penalty_raw": 0.0,
+      "mean_penalty_effective": 0.0
+    }
+  ],
+  "global": {
+    "mean_risk_lambda": 1.0140666666666658,
+    "mean_conformal_violation_rate": 0.0,
+    "mean_penalty_raw": 0.0679445000000001,
+    "mean_penalty_effective": 0.06985049999999997
+  }
+}

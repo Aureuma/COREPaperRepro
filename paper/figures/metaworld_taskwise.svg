@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="580" viewBox="0 0 1040 580">
+<rect x="0" y="0" width="1040" height="580" fill="#F4F7FB"/>
+<text x="520.0" y="34" fill="#0F172A" font-size="22" text-anchor="middle" font-family="DejaVu Sans">MetaWorld Shifted Task-wise Success</text>
+<line x1="82" y1="468" x2="1004" y2="468" stroke="#0F172A" stroke-width="2"/>
+<line x1="82" y1="60" x2="82" y2="468" stroke="#0F172A" stroke-width="2"/>
+<text x="24" y="264.0" fill="#0F172A" font-size="12" text-anchor="middle" transform="rotate(-90 24 264.0)" font-family="DejaVu Sans">Success</text>
+<line x1="82" y1="468.00" x2="1004" y2="468.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="472.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.00</text>
+<line x1="82" y1="386.40" x2="1004" y2="386.40" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="390.40" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.20</text>
+<line x1="82" y1="304.80" x2="1004" y2="304.80" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="308.80" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.40</text>
+<line x1="82" y1="223.20" x2="1004" y2="223.20" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="227.20" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.60</text>
+<line x1="82" y1="141.60" x2="1004" y2="141.60" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="145.60" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.80</text>
+<line x1="82" y1="60.00" x2="1004" y2="60.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="64.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">1.00</text>
+<rect x="96.49" y="386.40" width="25.68" height="81.60" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="109.33" y1="226.46" x2="109.33" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="103.68" y1="226.46" x2="114.98" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="103.68" y1="468.00" x2="114.98" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="122.17" y="386.40" width="25.68" height="81.60" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="135.01" y1="226.46" x2="135.01" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="129.36" y1="226.46" x2="140.67" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="129.36" y1="468.00" x2="140.67" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="147.86" y="223.20" width="25.68" height="244.80" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="160.70" y1="60.00" x2="160.70" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="155.05" y1="60.00" x2="166.35" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="155.05" y1="419.08" x2="166.35" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="173.54" y="60.00" width="25.68" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="186.38" y1="60.00" x2="186.38" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="180.73" y1="60.00" x2="192.03" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="180.73" y1="60.00" x2="192.03" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<text x="147.86" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 147.86 492.00)" font-family="DejaVu Sans">push</text>
+<rect x="228.20" y="468.00" width="25.68" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="241.04" y1="468.00" x2="241.04" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="235.39" y1="468.00" x2="246.70" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="235.39" y1="468.00" x2="246.70" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="253.89" y="223.20" width="25.68" height="244.80" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="266.73" y1="60.00" x2="266.73" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="261.08" y1="60.00" x2="272.38" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="261.08" y1="419.08" x2="272.38" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="279.57" y="60.00" width="25.68" height="408.00" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="292.41" y1="60.00" x2="292.41" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="286.76" y1="60.00" x2="298.06" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="286.76" y1="60.00" x2="298.06" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="305.26" y="60.00" width="25.68" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="318.10" y1="60.00" x2="318.10" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="312.45" y1="60.00" x2="323.75" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="312.45" y1="60.00" x2="323.75" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<text x="279.57" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 279.57 492.00)" font-family="DejaVu Sans">btn-press</text>
+<rect x="359.92" y="386.40" width="25.68" height="81.60" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="372.76" y1="226.46" x2="372.76" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="367.11" y1="226.46" x2="378.41" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="367.11" y1="468.00" x2="378.41" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="385.60" y="141.60" width="25.68" height="326.40" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="398.44" y1="60.00" x2="398.44" y2="301.54" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="392.79" y1="60.00" x2="404.09" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="392.79" y1="301.54" x2="404.09" y2="301.54" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="411.29" y="386.40" width="25.68" height="81.60" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="424.13" y1="226.46" x2="424.13" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="418.48" y1="226.46" x2="429.78" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="418.48" y1="468.00" x2="429.78" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="436.97" y="141.60" width="25.68" height="326.40" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="449.81" y1="60.00" x2="449.81" y2="301.54" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="444.16" y1="60.00" x2="455.46" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="444.16" y1="301.54" x2="455.46" y2="301.54" stroke="#0F172A" stroke-width="1.2"/>
+<text x="411.29" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 411.29 492.00)" font-family="DejaVu Sans">btn-press-top</text>
+<rect x="491.63" y="468.00" width="25.68" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="504.47" y1="468.00" x2="504.47" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="498.82" y1="468.00" x2="510.12" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="498.82" y1="468.00" x2="510.12" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="517.32" y="223.20" width="25.68" height="244.80" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="530.16" y1="60.00" x2="530.16" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="524.51" y1="60.00" x2="535.81" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="524.51" y1="419.08" x2="535.81" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="543.00" y="60.00" width="25.68" height="408.00" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="555.84" y1="60.00" x2="555.84" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="550.19" y1="60.00" x2="561.49" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="550.19" y1="60.00" x2="561.49" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="568.68" y="60.00" width="25.68" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="581.53" y1="60.00" x2="581.53" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="575.88" y1="60.00" x2="587.18" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="575.88" y1="60.00" x2="587.18" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<text x="543.00" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 543.00 492.00)" font-family="DejaVu Sans">faucet-open</text>
+<rect x="623.35" y="468.00" width="25.68" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="636.19" y1="468.00" x2="636.19" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="630.54" y1="468.00" x2="641.84" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="630.54" y1="468.00" x2="641.84" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="649.03" y="223.20" width="25.68" height="244.80" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="661.87" y1="60.00" x2="661.87" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="656.22" y1="60.00" x2="667.52" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="656.22" y1="419.08" x2="667.52" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="674.71" y="60.00" width="25.68" height="408.00" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="687.56" y1="60.00" x2="687.56" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="681.91" y1="60.00" x2="693.21" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="681.91" y1="60.00" x2="693.21" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="700.40" y="141.60" width="25.68" height="326.40" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="713.24" y1="60.00" x2="713.24" y2="301.54" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="707.59" y1="60.00" x2="718.89" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="707.59" y1="301.54" x2="718.89" y2="301.54" stroke="#0F172A" stroke-width="1.2"/>
+<text x="674.71" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 674.71 492.00)" font-family="DejaVu Sans">hammer</text>
+<rect x="755.06" y="468.00" width="25.68" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="767.90" y1="468.00" x2="767.90" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="762.25" y1="468.00" x2="773.55" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="762.25" y1="468.00" x2="773.55" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="780.74" y="386.40" width="25.68" height="81.60" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="793.59" y1="226.46" x2="793.59" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="787.94" y1="226.46" x2="799.24" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="787.94" y1="468.00" x2="799.24" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="806.43" y="386.40" width="25.68" height="81.60" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="819.27" y1="226.46" x2="819.27" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="813.62" y1="226.46" x2="824.92" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="813.62" y1="468.00" x2="824.92" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="832.11" y="223.20" width="25.68" height="244.80" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="844.96" y1="60.00" x2="844.96" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="839.30" y1="60.00" x2="850.61" y2="60.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="839.30" y1="419.08" x2="850.61" y2="419.08" stroke="#0F172A" stroke-width="1.2"/>
+<text x="806.43" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 806.43 492.00)" font-family="DejaVu Sans">soccer</text>
+<rect x="886.77" y="468.00" width="25.68" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="899.62" y1="468.00" x2="899.62" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="893.97" y1="468.00" x2="905.27" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="893.97" y1="468.00" x2="905.27" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="912.46" y="468.00" width="25.68" height="0.00" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="925.30" y1="468.00" x2="925.30" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="919.65" y1="468.00" x2="930.95" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="919.65" y1="468.00" x2="930.95" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="938.14" y="386.40" width="25.68" height="81.60" fill="#2CA58D" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="950.99" y1="226.46" x2="950.99" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="945.33" y1="226.46" x2="956.64" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="945.33" y1="468.00" x2="956.64" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<rect x="963.83" y="386.40" width="25.68" height="81.60" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<line x1="976.67" y1="226.46" x2="976.67" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="971.02" y1="226.46" x2="982.32" y2="226.46" stroke="#0F172A" stroke-width="1.2"/>
+<line x1="971.02" y1="468.00" x2="982.32" y2="468.00" stroke="#0F172A" stroke-width="1.2"/>
+<text x="938.14" y="492.00" fill="#334155" font-size="11" text-anchor="end" transform="rotate(-26.0 938.14 492.00)" font-family="DejaVu Sans">push-wall</text>
+<rect x="86" y="44" width="14" height="14" fill="#7A8896" rx="2"/>
+<text x="106" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">Baseline</text>
+<rect x="276" y="44" width="14" height="14" fill="#F28E2B" rx="2"/>
+<text x="296" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">PPO-CVaR</text>
+<rect x="466" y="44" width="14" height="14" fill="#2CA58D" rx="2"/>
+<text x="486" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">adaptmanip</text>
+<rect x="656" y="44" width="14" height="14" fill="#D62728" rx="2"/>
+<text x="676" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">CORE</text>
+</svg>

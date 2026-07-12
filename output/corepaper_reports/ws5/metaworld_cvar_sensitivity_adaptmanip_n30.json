@@ -1,0 +1,50 @@
+{
+  "input_json": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_n30_results.json",
+  "scenario": "shifted",
+  "reference_group": "method",
+  "comparator_group": "adaptmanip",
+  "n_reference": 30,
+  "n_comparator": 30,
+  "rows": [
+    {
+      "alpha": 0.1,
+      "k_reference": 3,
+      "k_comparator": 3,
+      "reference_cvar": 0.5666666666666668,
+      "comparator_cvar": 0.3666666666666667,
+      "delta_cvar": 0.20000000000000007
+    },
+    {
+      "alpha": 0.2,
+      "k_reference": 6,
+      "k_comparator": 6,
+      "reference_cvar": 0.5833333333333334,
+      "comparator_cvar": 0.3833333333333333,
+      "delta_cvar": 0.20000000000000007
+    },
+    {
+      "alpha": 0.3,
+      "k_reference": 9,
+      "k_comparator": 9,
+      "reference_cvar": 0.6111111111111112,
+      "comparator_cvar": 0.4222222222222222,
+      "delta_cvar": 0.18888888888888894
+    },
+    {
+      "alpha": 0.4,
+      "k_reference": 12,
+      "k_comparator": 12,
+      "reference_cvar": 0.6333333333333334,
+      "comparator_cvar": 0.44166666666666665,
+      "delta_cvar": 0.19166666666666676
+    },
+    {
+      "alpha": 0.5,
+      "k_reference": 15,
+      "k_comparator": 15,
+      "reference_cvar": 0.6466666666666666,
+      "comparator_cvar": 0.4733333333333333,
+      "delta_cvar": 0.17333333333333334
+    }
+  ]
+}

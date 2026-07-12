@@ -1,0 +1,63 @@
+{
+  "failure_threshold": 0.742,
+  "reference": {
+    "name": "method",
+    "values": [
+      0.7474,
+      0.7479,
+      0.7496,
+      0.7507,
+      0.7514
+    ],
+    "mean": 0.7494,
+    "worst": 0.7474,
+    "cvar40": 0.7476,
+    "failure_tail_count": 0,
+    "failure_tail_rate": 0.0,
+    "hist_counts": [
+      0,
+      0,
+      2,
+      3
+    ]
+  },
+  "comparator": {
+    "name": "ext2",
+    "values": [
+      0.7404,
+      0.7433,
+      0.7435,
+      0.7459,
+      0.7469
+    ],
+    "mean": 0.744,
+    "worst": 0.7404,
+    "cvar40": 0.7418,
+    "failure_tail_count": 1,
+    "failure_tail_rate": 0.2,
+    "hist_counts": [
+      1,
+      2,
+      2,
+      0
+    ]
+  },
+  "bins": [
+    {
+      "low": 0.7403,
+      "high": 0.7431
+    },
+    {
+      "low": 0.7431,
+      "high": 0.7459
+    },
+    {
+      "low": 0.7459,
+      "high": 0.7487
+    },
+    {
+      "low": 0.7487,
+      "high": 0.7515
+    }
+  ]
+}

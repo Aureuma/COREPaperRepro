@@ -1,0 +1,77 @@
+{
+  "nominal_baseline": 0.71194,
+  "nominal_method": 0.7494,
+  "rows": [
+    {
+      "test": "S1",
+      "severity": "hard",
+      "baseline_mean": 0.5884333333333334,
+      "method_mean": 0.6435666666666666,
+      "baseline_drop_pct": 17.347903849575335,
+      "method_drop_pct": 14.122409038341784,
+      "criterion": "method > baseline under hard long-horizon shift",
+      "status": "PASS"
+    },
+    {
+      "test": "S1",
+      "severity": "mild",
+      "baseline_mean": 0.6683333333333333,
+      "method_mean": 0.7148666666666667,
+      "baseline_drop_pct": 6.125047990935568,
+      "method_drop_pct": 4.608130949203804,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "S2",
+      "severity": "high",
+      "baseline_mean": 0.6259333333333333,
+      "method_mean": 0.6828,
+      "baseline_drop_pct": 12.080606043580453,
+      "method_drop_pct": 8.8871096877502,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "S2",
+      "severity": "low",
+      "baseline_mean": 0.6938,
+      "method_mean": 0.7348666666666667,
+      "baseline_drop_pct": 2.5479675253532665,
+      "method_drop_pct": 1.9393292411707084,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "S2",
+      "severity": "med",
+      "baseline_mean": 0.6695666666666668,
+      "method_mean": 0.7124666666666667,
+      "baseline_drop_pct": 5.951812418649502,
+      "method_drop_pct": 4.92838715416777,
+      "criterion": "method drop <= 12% at med temporal jitter",
+      "status": "PASS"
+    },
+    {
+      "test": "S3",
+      "severity": "mild",
+      "baseline_mean": 0.6852,
+      "method_mean": 0.7291333333333334,
+      "baseline_drop_pct": 3.7559344888614192,
+      "method_drop_pct": 2.7043857308068517,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "S3",
+      "severity": "severe",
+      "baseline_mean": 0.6443666666666666,
+      "method_mean": 0.6959333333333334,
+      "baseline_drop_pct": 9.49143654427808,
+      "method_drop_pct": 7.134596566141788,
+      "criterion": "method > baseline and drop <= 18% under severe observation dropout",
+      "status": "PASS"
+    }
+  ],
+  "all_required_pass": true
+}

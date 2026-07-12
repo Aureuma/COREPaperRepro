@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="580" viewBox="0 0 1040 580">
+<rect x="0" y="0" width="1040" height="580" fill="#F4F7FB"/>
+<text x="520.0" y="34" fill="#0F172A" font-size="22" text-anchor="middle" font-family="DejaVu Sans">F7: MT1 Shifted Task-wise Success</text>
+<line x1="82" y1="468" x2="1004" y2="468" stroke="#0F172A" stroke-width="2"/>
+<line x1="82" y1="60" x2="82" y2="468" stroke="#0F172A" stroke-width="2"/>
+<text x="24" y="264.0" fill="#0F172A" font-size="12" text-anchor="middle" transform="rotate(-90 24 264.0)" font-family="DejaVu Sans">Success</text>
+<line x1="82" y1="468.00" x2="1004" y2="468.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="472.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.00</text>
+<line x1="82" y1="386.40" x2="1004" y2="386.40" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="390.40" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.20</text>
+<line x1="82" y1="304.80" x2="1004" y2="304.80" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="308.80" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.40</text>
+<line x1="82" y1="223.20" x2="1004" y2="223.20" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="227.20" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.60</text>
+<line x1="82" y1="141.60" x2="1004" y2="141.60" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="145.60" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.80</text>
+<line x1="82" y1="60.00" x2="1004" y2="60.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="64.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">1.00</text>
+<rect x="92.14" y="304.80" width="23.97" height="163.20" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="104.13" y="300.80" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.400</text>
+<rect x="116.11" y="141.60" width="23.97" height="326.40" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="128.10" y="137.60" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.800</text>
+<rect x="140.09" y="141.60" width="23.97" height="326.40" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="152.07" y="137.60" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.800</text>
+<text x="128.10" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">reach</text>
+<rect x="184.34" y="223.20" width="23.97" height="244.80" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="196.33" y="219.20" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.600</text>
+<rect x="208.31" y="141.60" width="23.97" height="326.40" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="220.30" y="137.60" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.800</text>
+<rect x="232.29" y="60.00" width="23.97" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="244.27" y="56.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">1.000</text>
+<text x="220.30" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">push</text>
+<rect x="276.54" y="468.00" width="23.97" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="288.53" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="300.51" y="304.80" width="23.97" height="163.20" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="312.50" y="300.80" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.400</text>
+<rect x="324.49" y="60.00" width="23.97" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="336.47" y="56.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">1.000</text>
+<text x="312.50" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">btn-press</text>
+<rect x="368.74" y="386.40" width="23.97" height="81.60" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="380.73" y="382.40" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.200</text>
+<rect x="392.71" y="223.20" width="23.97" height="244.80" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="404.70" y="219.20" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.600</text>
+<rect x="416.69" y="60.00" width="23.97" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="428.67" y="56.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">1.000</text>
+<text x="404.70" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">btn-press-top</text>
+<rect x="460.94" y="468.00" width="23.97" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="472.93" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="484.91" y="223.20" width="23.97" height="244.80" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="496.90" y="219.20" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.600</text>
+<rect x="508.89" y="60.00" width="23.97" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="520.87" y="56.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">1.000</text>
+<text x="496.90" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">faucet-open</text>
+<rect x="553.14" y="468.00" width="23.97" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="565.13" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="577.11" y="223.20" width="23.97" height="244.80" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="589.10" y="219.20" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.600</text>
+<rect x="601.09" y="223.20" width="23.97" height="244.80" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="613.07" y="219.20" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.600</text>
+<text x="589.10" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">hammer</text>
+<rect x="645.34" y="386.40" width="23.97" height="81.60" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="657.33" y="382.40" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.200</text>
+<rect x="669.31" y="141.60" width="23.97" height="326.40" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="681.30" y="137.60" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.800</text>
+<rect x="693.29" y="60.00" width="23.97" height="408.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="705.27" y="56.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">1.000</text>
+<text x="681.30" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">pick-place</text>
+<rect x="737.54" y="468.00" width="23.97" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="749.53" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="761.51" y="386.40" width="23.97" height="81.60" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="773.50" y="382.40" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.200</text>
+<rect x="785.49" y="223.20" width="23.97" height="244.80" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="797.47" y="219.20" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.600</text>
+<text x="773.50" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">soccer</text>
+<rect x="829.74" y="468.00" width="23.97" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="841.73" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="853.71" y="468.00" width="23.97" height="0.00" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="865.70" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="877.69" y="468.00" width="23.97" height="0.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="889.67" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<text x="865.70" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">peg-ins-side</text>
+<rect x="921.94" y="468.00" width="23.97" height="0.00" fill="#7A8896" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="933.93" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="945.91" y="468.00" width="23.97" height="0.00" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="957.90" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<rect x="969.89" y="468.00" width="23.97" height="0.00" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="981.87" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<text x="957.90" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">push-wall</text>
+<rect x="86" y="44" width="14" height="14" fill="#7A8896" rx="2"/>
+<text x="106" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">baseline</text>
+<rect x="276" y="44" width="14" height="14" fill="#F28E2B" rx="2"/>
+<text x="296" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">PPO-CVaR</text>
+<rect x="466" y="44" width="14" height="14" fill="#D62728" rx="2"/>
+<text x="486" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">CORE</text>
+</svg>

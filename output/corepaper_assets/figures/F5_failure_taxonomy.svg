@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="580" viewBox="0 0 1040 580">
+<rect x="0" y="0" width="1040" height="580" fill="#F4F7FB"/>
+<text x="520.0" y="34" fill="#0F172A" font-size="22" text-anchor="middle" font-family="DejaVu Sans">F5: Failure Taxonomy Counts</text>
+<line x1="82" y1="468" x2="1004" y2="468" stroke="#0F172A" stroke-width="2"/>
+<line x1="82" y1="60" x2="82" y2="468" stroke="#0F172A" stroke-width="2"/>
+<text x="24" y="264.0" fill="#0F172A" font-size="12" text-anchor="middle" transform="rotate(-90 24 264.0)" font-family="DejaVu Sans">Count</text>
+<line x1="82" y1="468.00" x2="1004" y2="468.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="472.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.00</text>
+<line x1="82" y1="386.40" x2="1004" y2="386.40" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="390.40" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.20</text>
+<line x1="82" y1="304.80" x2="1004" y2="304.80" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="308.80" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.40</text>
+<line x1="82" y1="223.20" x2="1004" y2="223.20" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="227.20" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.60</text>
+<line x1="82" y1="141.60" x2="1004" y2="141.60" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="145.60" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.80</text>
+<line x1="82" y1="60.00" x2="1004" y2="60.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="64.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">1.00</text>
+<rect x="115.81" y="466.60" width="239.72" height="1.40" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="235.67" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<text x="235.67" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">floor</text>
+<rect x="423.14" y="466.60" width="239.72" height="1.40" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="543.00" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<text x="543.00" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">stability</text>
+<rect x="730.47" y="466.60" width="239.72" height="1.40" fill="#D62728" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="850.33" y="464.00" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.000</text>
+<text x="850.33" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">recovery</text>
+<rect x="86" y="44" width="14" height="14" fill="#D62728" rx="2"/>
+<text x="106" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">count</text>
+<text x="520" y="565" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">No verification-threshold failures observed in this cycle.</text>
+</svg>

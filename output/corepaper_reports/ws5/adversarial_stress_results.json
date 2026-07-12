@@ -1,0 +1,8488 @@
+{
+  "config_json": "config/benchmarks/experiments_adversarial_stress_generated.json",
+  "stress_aggregate": {
+    "adaptmanip": {
+      "n": 96,
+      "mean": 0.5170369111522665,
+      "std": 0.01600069326228654,
+      "worst": 0.47513439252449,
+      "cvar40": 0.500784324153361
+    },
+    "baseline": {
+      "n": 96,
+      "mean": 0.4546733354984242,
+      "std": 0.018038883427890794,
+      "worst": 0.4093626052890962,
+      "cvar40": 0.4365286115068759
+    },
+    "ext2": {
+      "n": 96,
+      "mean": 0.5122157393670331,
+      "std": 0.01578774186346491,
+      "worst": 0.4744106356377263,
+      "cvar40": 0.4960516533166709
+    },
+    "latency_aware": {
+      "n": 96,
+      "mean": 0.5152050439823325,
+      "std": 0.017058935787675183,
+      "worst": 0.4729556191062687,
+      "cvar40": 0.4975685115142263
+    },
+    "method": {
+      "n": 96,
+      "mean": 0.5477952369774657,
+      "std": 0.01481057341715288,
+      "worst": 0.5085471538599451,
+      "cvar40": 0.5325910189331481
+    },
+    "robust_cp": {
+      "n": 96,
+      "mean": 0.5221790714042567,
+      "std": 0.014823217100229269,
+      "worst": 0.48525768153106996,
+      "cvar40": 0.5068796771676675
+    }
+  },
+  "comparisons": [
+    {
+      "reference_group": "method",
+      "comparator_group": "baseline",
+      "n_reference": 96,
+      "n_comparator": 96,
+      "reference_mean": 0.5477952369774657,
+      "comparator_mean": 0.4546733354984242,
+      "delta_mean": 0.09312190147904148,
+      "reference_worst": 0.5085471538599451,
+      "comparator_worst": 0.4093626052890962,
+      "delta_worst": 0.09918454857084891,
+      "reference_cvar40": 0.5325910189331481,
+      "comparator_cvar40": 0.4365286115068759,
+      "delta_cvar40": 0.0960624074262722,
+      "delta_ci95_halfwidth": 0.004668967257413661,
+      "cohen_d": 5.642433635081156,
+      "p_two_sided": 0.0
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "ext2",
+      "n_reference": 96,
+      "n_comparator": 96,
+      "reference_mean": 0.5477952369774657,
+      "comparator_mean": 0.5122157393670331,
+      "delta_mean": 0.03557949761043255,
+      "reference_worst": 0.5085471538599451,
+      "comparator_worst": 0.4744106356377263,
+      "delta_worst": 0.034136518222218803,
+      "reference_cvar40": 0.5325910189331481,
+      "comparator_cvar40": 0.4960516533166709,
+      "delta_cvar40": 0.03653936561647719,
+      "delta_ci95_halfwidth": 0.004330363174337613,
+      "cohen_d": 2.324400409630064,
+      "p_two_sided": 2.3944835241012686e-58
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "latency_aware",
+      "n_reference": 96,
+      "n_comparator": 96,
+      "reference_mean": 0.5477952369774657,
+      "comparator_mean": 0.5152050439823325,
+      "delta_mean": 0.032590192995133216,
+      "reference_worst": 0.5085471538599451,
+      "comparator_worst": 0.4729556191062687,
+      "delta_worst": 0.03559153475367638,
+      "reference_cvar40": 0.5325910189331481,
+      "comparator_cvar40": 0.4975685115142263,
+      "delta_cvar40": 0.03502250741892177,
+      "delta_ci95_halfwidth": 0.004519172602630771,
+      "cohen_d": 2.040156372205612,
+      "p_two_sided": 2.323917025082937e-45
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "adaptmanip",
+      "n_reference": 96,
+      "n_comparator": 96,
+      "reference_mean": 0.5477952369774657,
+      "comparator_mean": 0.5170369111522665,
+      "delta_mean": 0.030758325825199218,
+      "reference_worst": 0.5085471538599451,
+      "comparator_worst": 0.47513439252449,
+      "delta_worst": 0.033412761335455066,
+      "reference_cvar40": 0.5325910189331481,
+      "comparator_cvar40": 0.500784324153361,
+      "delta_cvar40": 0.03180669477978704,
+      "delta_ci95_halfwidth": 0.0043615288275913,
+      "cohen_d": 1.9950757898248312,
+      "p_two_sided": 1.870227419065672e-43
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "robust_cp",
+      "n_reference": 96,
+      "n_comparator": 96,
+      "reference_mean": 0.5477952369774657,
+      "comparator_mean": 0.5221790714042567,
+      "delta_mean": 0.025616165573209004,
+      "reference_worst": 0.5085471538599451,
+      "comparator_worst": 0.48525768153106996,
+      "delta_worst": 0.023289472328875127,
+      "reference_cvar40": 0.5325910189331481,
+      "comparator_cvar40": 0.5068796771676675,
+      "delta_cvar40": 0.025711341765480622,
+      "delta_ci95_halfwidth": 0.004191724229954218,
+      "cohen_d": 1.7288482367160132,
+      "p_two_sided": 4.6441977774488845e-33
+    }
+  ],
+  "scenario_summary": [
+    {
+      "scenario_id": "ADV-01",
+      "baseline_mean": 0.41424626452560176,
+      "ext2_mean": 0.4775717574499173,
+      "latency_aware_mean": 0.48001632104457675,
+      "adaptmanip_mean": 0.4818365846810761,
+      "robust_cp_mean": 0.4908693815168989,
+      "method_mean": 0.5156885303621946
+    },
+    {
+      "scenario_id": "ADV-02",
+      "baseline_mean": 0.44098587984600274,
+      "ext2_mean": 0.5024336058489443,
+      "latency_aware_mean": 0.5015357933208753,
+      "adaptmanip_mean": 0.505788694758093,
+      "robust_cp_mean": 0.5096462849023533,
+      "method_mean": 0.5374056290981201
+    },
+    {
+      "scenario_id": "ADV-03",
+      "baseline_mean": 0.4420239643225815,
+      "ext2_mean": 0.5009346541363762,
+      "latency_aware_mean": 0.5054226409876101,
+      "adaptmanip_mean": 0.5069904981759936,
+      "robust_cp_mean": 0.5118675162465058,
+      "method_mean": 0.5379055704909181
+    },
+    {
+      "scenario_id": "ADV-04",
+      "baseline_mean": 0.44524405761196434,
+      "ext2_mean": 0.5028383184591252,
+      "latency_aware_mean": 0.5071164054904529,
+      "adaptmanip_mean": 0.5079735670102936,
+      "robust_cp_mean": 0.5139778201903304,
+      "method_mean": 0.5417476952087349
+    },
+    {
+      "scenario_id": "ADV-05",
+      "baseline_mean": 0.44487234430558714,
+      "ext2_mean": 0.5021030200936443,
+      "latency_aware_mean": 0.5044628903009353,
+      "adaptmanip_mean": 0.5080547738376371,
+      "robust_cp_mean": 0.5159911481881981,
+      "method_mean": 0.539042210524681
+    },
+    {
+      "scenario_id": "ADV-06",
+      "baseline_mean": 0.44618887266939616,
+      "ext2_mean": 0.5046808605764146,
+      "latency_aware_mean": 0.5015398001443101,
+      "adaptmanip_mean": 0.5074785708861413,
+      "robust_cp_mean": 0.5127593583121928,
+      "method_mean": 0.5383704111656293
+    },
+    {
+      "scenario_id": "ADV-07",
+      "baseline_mean": 0.46906341780527344,
+      "ext2_mean": 0.5252740665800669,
+      "latency_aware_mean": 0.528020623917097,
+      "adaptmanip_mean": 0.5302618113199606,
+      "robust_cp_mean": 0.5328656780896844,
+      "method_mean": 0.5594654018154777
+    },
+    {
+      "scenario_id": "ADV-08",
+      "baseline_mean": 0.4682819087072863,
+      "ext2_mean": 0.5230806266001111,
+      "latency_aware_mean": 0.5282005593455071,
+      "adaptmanip_mean": 0.5284677360193704,
+      "robust_cp_mean": 0.5327840518313924,
+      "method_mean": 0.5598624429301731
+    },
+    {
+      "scenario_id": "ADV-09",
+      "baseline_mean": 0.47207105427449453,
+      "ext2_mean": 0.5264150461135468,
+      "latency_aware_mean": 0.5315872101702193,
+      "adaptmanip_mean": 0.5309806976691427,
+      "robust_cp_mean": 0.5340075466685424,
+      "method_mean": 0.5598878284463672
+    },
+    {
+      "scenario_id": "ADV-10",
+      "baseline_mean": 0.46932677891848984,
+      "ext2_mean": 0.528013530548359,
+      "latency_aware_mean": 0.5301098764856763,
+      "adaptmanip_mean": 0.5306521330479966,
+      "robust_cp_mean": 0.5366205852414739,
+      "method_mean": 0.5582821681363718
+    },
+    {
+      "scenario_id": "ADV-11",
+      "baseline_mean": 0.4720274795358488,
+      "ext2_mean": 0.5258064958649749,
+      "latency_aware_mean": 0.5299408041796247,
+      "adaptmanip_mean": 0.5333792614037458,
+      "robust_cp_mean": 0.5377241466061711,
+      "method_mean": 0.561881537420259
+    },
+    {
+      "scenario_id": "ADV-12",
+      "baseline_mean": 0.47174800345856216,
+      "ext2_mean": 0.5274368901329143,
+      "latency_aware_mean": 0.5345076024011044,
+      "adaptmanip_mean": 0.5325786050177478,
+      "robust_cp_mean": 0.5370353390573398,
+      "method_mean": 0.564003418130661
+    }
+  ],
+  "coverage_matrix": {
+    "latency": {
+      "zero": 0,
+      "mid": 1,
+      "high": 11
+    },
+    "dropout": {
+      "zero": 0,
+      "mid": 2,
+      "high": 10
+    },
+    "physics": {
+      "zero": 1,
+      "mid": 3,
+      "high": 8
+    },
+    "sensor": {
+      "zero": 1,
+      "mid": 4,
+      "high": 7
+    },
+    "contact": {
+      "zero": 0,
+      "mid": 3,
+      "high": 9
+    }
+  },
+  "scenario_components": [
+    {
+      "scenario_id": "ADV-01",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      },
+      "adversarial_score": 4.91,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-02",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      },
+      "adversarial_score": 4.42,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-03",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      },
+      "adversarial_score": 4.4,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-04",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      },
+      "adversarial_score": 4.39,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-05",
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      },
+      "adversarial_score": 4.38,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-06",
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      },
+      "adversarial_score": 4.295,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-07",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      },
+      "adversarial_score": 3.945,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-08",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      },
+      "adversarial_score": 3.93,
+      "active_components": 4
+    },
+    {
+      "scenario_id": "ADV-09",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      },
+      "adversarial_score": 3.9,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-10",
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      },
+      "adversarial_score": 3.89,
+      "active_components": 5
+    },
+    {
+      "scenario_id": "ADV-11",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      },
+      "adversarial_score": 3.89,
+      "active_components": 4
+    },
+    {
+      "scenario_id": "ADV-12",
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      },
+      "adversarial_score": 3.88,
+      "active_components": 5
+    }
+  ],
+  "rows": [
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.41245998407056056,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.41581672186667146,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.41614923257370884,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4131337032069499,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.4185672386746232,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4170545882155461,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.4114260423076578,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.4093626052890962,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.4762001774227552,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.4777394410246035,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.4744106356377263,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.4783137286835933,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.47770705604731745,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.4803238067317685,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.47736563230304885,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.47851358174852554,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.4760418837773853,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.47846757941574813,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.4729556191062687,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.47984593044959445,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.48873618992414797,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.48197680532616605,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.47664388699184757,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.48546267336545573,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.4869958615903278,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.47513439252449,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.4818780299965581,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.4777384573521194,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.4822563313542218,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.48621478078313846,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.4798628780672981,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.4846119457804548,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.48525768153106996,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.4969074450429071,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.48811972944508225,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.48833213973813044,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.49739817743798903,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.48789643939730354,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.49099433847861884,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.4920491010640898,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5085471538599451,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5238446803994069,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5176156446734504,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5113151766402996,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5193789996195093,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.518799102181615,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5120741539620414,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-01",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5139333315612902,
+      "adversarial_score": 4.91,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.44000043780896136,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.43680770892997245,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.44290925166973993,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4475918066519928,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.44247945970313485,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4380482396064313,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.43799929646705726,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.442050837930732,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5021937976948342,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.4993868051696846,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5085106610933047,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.4999060886115227,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5037481625253675,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.504857144045727,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5029837906321276,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.4978823970189854,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.4996245295405249,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5094155101776787,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5019653564473716,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.49642872590980897,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.4984610376444358,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.49930278879581536,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5007215562137898,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5063668418375775,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5101731971923152,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5048077447684043,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5094320324282063,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5056244792761003,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5019164142876151,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5041386905042688,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5002128687318518,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5100041308759815,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5018198839762862,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.517291111661942,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5111336122721356,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.510613442871492,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5098161470270415,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.50888570530711,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5098387911094516,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5077715849933675,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5342509938686999,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5340711100597195,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.537025133969807,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5361669977436059,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5426801934198452,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5328424555336556,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5400343236164797,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-02",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5421738245731474,
+      "adversarial_score": 4.42,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.4456594655705314,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.4414872309154441,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.44493599329352296,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4417094365265869,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.43496879900849894,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.44392044086808996,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.441951996451474,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.44155835194650384,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.49877916684390394,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.49830301518542536,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.49483909526762543,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5080697799047774,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5017048465944811,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5054439995458415,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.498550198327974,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5017871314209806,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5045316955033262,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5037950512984103,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.503719711930495,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5057478240391758,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5043062656108402,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5002757144939328,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5114959138514945,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5095089511732063,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5099920814809843,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5097563699022848,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5023130682524152,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5114507202660693,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5065157953099348,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5047992864383115,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5072809126399584,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5038157511179904,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5141768566341125,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5169030796172172,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5087016934163332,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5091438050776925,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5092504653058555,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5074338055972287,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5152741394346283,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5140562848889789,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.540358002594333,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5359847431446615,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5406514302775999,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.533495385324133,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5369747685745537,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5371792949433293,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5396937972857094,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-03",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5389071417830255,
+      "adversarial_score": 4.4,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.4458427812962136,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.44422198850328987,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.44272094197457224,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.44626027749291214,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.44737989722354915,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.44738352935761316,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.44754652885014073,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.44059651619742407,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5017475452676714,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5022767669101805,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.49973743390092396,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5054820707238491,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5061866459359375,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5056602403758207,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5019816751097641,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.4996341694488547,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.4973424116436969,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5050724798338404,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5109384851526961,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5063211419606254,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5116956438234297,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5069625758814453,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5082605236805802,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5103379819473092,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5045278940529794,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.513217096296789,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.507047567618271,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5063620801457077,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.511776499117612,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5098258179805158,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5093380155473659,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5016935653231077,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5133806984802766,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5162281009061359,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5113931278600267,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5115576748274254,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5119965674590363,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5153916885773747,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5146754104947626,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5171992929176049,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.542859184334136,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.540039976934452,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5408863365139233,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5478315213225556,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5380749107032576,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5452483048529552,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5404983163874449,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-04",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5385430106211541,
+      "adversarial_score": 4.39,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.4520413686848795,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.43889825103390623,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.4428252989499006,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4486646608620196,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.44071172684039567,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.44557277479782553,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.44502851254484976,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.44523616073092004,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.49689420111439253,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5066233198870542,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.49875396957877277,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5069440577052996,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5066880715437583,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.49368406370951956,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5060483293490824,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5011881478612751,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5037266169577919,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.4999627366671223,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.501881249641578,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5041739612149497,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5073230900645843,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.507208697017059,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5060080486430968,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5054187222013001,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.506101143159553,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.51232216441084,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5112378798569004,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5084397950790547,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.50548311905716,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5037880051533558,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5105868594863631,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.50647922449787,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.518385757907225,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5176659959739043,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5123033785052649,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5177661498584605,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5150573384432751,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.507917350233064,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5189476579002383,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5198855566841534,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5428803524166195,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5466550315867716,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5374274581993169,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5363870252662905,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5456753595242496,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.53615848449592,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5346999306189487,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-05",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5324540420893312,
+      "adversarial_score": 4.38,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.44510778476134516,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.4431578325500144,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.4459837892258965,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.44630274591881186,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.44966205131275244,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4469620441217616,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.4468691960042659,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.4454655374603215,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5074013034553798,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5073363972932372,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5090849613558899,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5049726544408216,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5046856189200749,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.492353775641458,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5076897083072447,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5039224651972096,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5027694534231725,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5006215403949824,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5029844352840999,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5031790859043687,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.4963415328376312,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5045818001053199,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5026369018719686,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.4992036513329383,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.511516160552331,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5072911829254945,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5053343379731696,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5127062999145255,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5101903198724091,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5043320833261385,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5074241971634795,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5010339853615828,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5082646114551496,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5129739298745527,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5071849579718131,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5145166300692262,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.514100396468674,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5191916390535918,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5108469768673116,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.514995724737224,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5305501496888575,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5406791077279973,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5369095543191836,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5374375389054808,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5381694546851699,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5384480876180653,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5388378495818911,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-06",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5459315467983894,
+      "adversarial_score": 4.295,
+      "components": {
+        "latency": 0.5,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.46883316575177403,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.46564361823355055,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.4739228410891268,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.47320705736827773,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.46748249704261274,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.46625721519677304,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.470319408785092,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.46684153897498076,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5269659388149576,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5225235535453331,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5233077910520001,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5289397959285389,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5247465149152414,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5221212468083803,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5267551098682415,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5268325817078422,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5318963626910742,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5314322775567925,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5294523034069775,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5310025482403248,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5188550015208252,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5268844391513621,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.52561737306612,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5290246857033014,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5350291487675763,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.530586968364085,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5330619617161446,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5278107255565367,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5331306767001678,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.521937352047548,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5267817001302564,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5337559572773709,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5338869640666284,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5314303030771579,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5378522535748883,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.534273707498524,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.527656691364061,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5373425794103807,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5278926631500457,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5325902625757893,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5583116660329315,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5618174383737597,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5612714692465859,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5623127677463173,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5569148393189255,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5585663740419803,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5561102926660584,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-07",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5604183670972629,
+      "adversarial_score": 3.945,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.46740520161630067,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.46840822273106025,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.464247428271902,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4663324884165564,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.47119788391802847,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4727239613724885,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.46709430146989284,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.4688457818620609,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5197777519655431,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.527918752169061,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5260194733416104,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5193796566924861,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5232499571792132,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5223662882408516,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5238751076049183,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5220580256072056,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5298293178781449,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5277501521326082,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.537173144368598,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5200459942415948,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.526105619214651,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5306061772257842,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5264782031986649,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.527615866504011,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.531110965942204,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5313830599822751,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5270425037395551,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5272177971338003,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5244890200180347,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5253205317587851,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5300251212695014,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5311528883108074,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.530910270193026,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5306503590033118,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5315669454200137,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5293514165767088,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5324620641648856,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5375308048598209,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5319927161126834,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5378078383206888,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5624744391809372,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.556259386661465,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5589611656716943,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.565143769859166,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5584421568120664,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5564811292243314,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5603822469671618,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-08",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5607552490645622,
+      "adversarial_score": 3.93,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.4727192027068831,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.4680977805643208,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.466633349531063,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.47295447549970066,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.47687216272766225,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4736097742460151,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.47490723269626417,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.4707744562240475,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5280549531205322,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5262697702691237,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5248959175991416,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5237968061901349,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5267230851252249,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5286098167046386,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5274124800427034,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5255575398568753,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5321561767344702,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5276302305156667,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5373834266894575,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5275005206530246,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5311386875090213,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5360320712750934,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5315313272758488,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5293252407091714,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5283525749460698,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5305882405313828,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.533494863758089,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.525547464865549,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5345552304102436,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5283546402804945,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5333291701659428,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5336233963953698,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5362304937607264,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.534289909054331,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.530933901547563,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5354721287628442,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5360848570594365,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5355410775684045,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5304562574180841,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5330517481769497,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5576501326058811,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5513297769742613,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5599368010190504,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5623915290652289,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5619779977014034,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5634556829802496,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5631834752885723,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-09",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5591772319362904,
+      "adversarial_score": 3.9,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.4732458067282717,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.4669202958446444,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.47413527697962177,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.46734279990035965,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.47124556487602287,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4740049814682122,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.4643541705807617,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.463365334970024,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5322616689629874,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5317615975619923,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.522850408957073,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5263225446973,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5335765129667414,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5251223866919676,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5240220916542416,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5281910328945679,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5227470966811798,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.528753977000041,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5308454536178364,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5311120351156409,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5304676864310304,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5285854669786688,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.533390297346236,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5349769987147773,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5331461375039229,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5283119392150736,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5256320424095864,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5265201503166517,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5346306309888709,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5329075407636288,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5306395349585955,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.533429088227643,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5359061429631594,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5312375222869251,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5370205350534302,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5411680647324519,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5360509001607174,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5371147547297686,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5418306235622565,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5326361384430821,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5533923660624417,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5586607443788718,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5520910277103688,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5629450508971239,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5620112605909512,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5565428063691876,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.564084826058731,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-10",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.556529263023298,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 0.5,
+        "physics": 1.0,
+        "sensor": 0.5,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.47044552015793517,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.4689472207260002,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.4762627802992761,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4704330201425345,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.4648579427538381,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.4739920406862766,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.4791043627288804,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.47217694879204947,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5290781753497533,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5252335098652525,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5265970350029828,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5241862180747586,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5278725780224552,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5254924517221132,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5225139217226832,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5254780771598001,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5305438796225254,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5321792611562548,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.530492595387876,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.530596390344677,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.526595452048142,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5321872260798163,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.528736138239441,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5281954905582653,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.5351251038594124,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5314961671475974,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5361548984262838,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5312538620373486,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5315654552498069,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.5336683031541397,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5354891245868724,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5322811767685056,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5356095594797119,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5348506835153037,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5366257441431588,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5338566386574288,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5405084708551807,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5397690072411676,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5428169205436735,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5377561484137433,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.558044808128547,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.5669003253653978,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5649441329429267,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5600413453367156,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.555714950813053,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5637349753797561,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5614197348801725,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-11",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5642520265155037,
+      "adversarial_score": 3.89,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.0,
+        "sensor": 1.0,
+        "contact": 1.0
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 1,
+      "score": 0.4681270039006373,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 2,
+      "score": 0.475866580006333,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 3,
+      "score": 0.47193764247468534,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 4,
+      "score": 0.4736581784057958,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 5,
+      "score": 0.4744507239588262,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 6,
+      "score": 0.47120617819264293,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 7,
+      "score": 0.47352532222358845,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "baseline",
+      "seed": 8,
+      "score": 0.46521239850598817,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 1,
+      "score": 0.5310039422821846,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 2,
+      "score": 0.5324611341801648,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 3,
+      "score": 0.5340763112322593,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 4,
+      "score": 0.5242379804032273,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 5,
+      "score": 0.5259690179989422,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 6,
+      "score": 0.5234194717776427,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 7,
+      "score": 0.5260006318817368,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "ext2",
+      "seed": 8,
+      "score": 0.5223266313071568,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 1,
+      "score": 0.5345732957429495,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 2,
+      "score": 0.5392412268037724,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 3,
+      "score": 0.5341915537159733,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 4,
+      "score": 0.5325754001873773,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 5,
+      "score": 0.5377887997477141,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 6,
+      "score": 0.5367014870883362,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 7,
+      "score": 0.5299455454688133,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "latency_aware",
+      "seed": 8,
+      "score": 0.5310435104538991,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 1,
+      "score": 0.533478260592401,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 2,
+      "score": 0.5358003203434356,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 3,
+      "score": 0.5319975189570958,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 4,
+      "score": 0.5285542288926501,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 5,
+      "score": 0.5367023293591693,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 6,
+      "score": 0.528959448489196,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 7,
+      "score": 0.5329376038271622,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "adaptmanip",
+      "seed": 8,
+      "score": 0.5321991296808727,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 1,
+      "score": 0.5338518297643182,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 2,
+      "score": 0.5370299897514017,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 3,
+      "score": 0.5325832405439592,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 4,
+      "score": 0.5437629476124942,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 5,
+      "score": 0.5406378267478832,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 6,
+      "score": 0.5356565779383763,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 7,
+      "score": 0.5356597932181898,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "robust_cp",
+      "seed": 8,
+      "score": 0.5371005068820961,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 1,
+      "score": 0.5713256226045262,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 2,
+      "score": 0.562026048306875,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 3,
+      "score": 0.5704230795220139,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 4,
+      "score": 0.5591164347464554,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 5,
+      "score": 0.5632853582315813,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 6,
+      "score": 0.5605206620552786,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 7,
+      "score": 0.5658066953776518,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    },
+    {
+      "scenario_id": "ADV-12",
+      "variant": "method",
+      "seed": 8,
+      "score": 0.5595234442009058,
+      "adversarial_score": 3.88,
+      "components": {
+        "latency": 1.0,
+        "dropout": 1.0,
+        "physics": 0.5,
+        "sensor": 1.0,
+        "contact": 0.5
+      }
+    }
+  ]
+}

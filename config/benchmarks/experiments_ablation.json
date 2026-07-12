@@ -1,0 +1,130 @@
+{
+  "suite_name": "ws5-ablation",
+  "runs": [
+    {
+      "id": "method_full-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method_full-s1 --variant method_full --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "method_full-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method_full-s2 --variant method_full --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "method_full-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method_full-s3 --variant method_full --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "method_full-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method_full-s4 --variant method_full --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "method_full-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method_full-s5 --variant method_full --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history-s1 --variant no_history --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history-s2 --variant no_history --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history-s3 --variant no_history --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history-s4 --variant no_history --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history-s5 --variant no_history --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history_no_feedback-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history_no_feedback-s1 --variant no_history_no_feedback --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history_no_feedback-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history_no_feedback-s2 --variant no_history_no_feedback --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history_no_feedback-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history_no_feedback-s3 --variant no_history_no_feedback --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history_no_feedback-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history_no_feedback-s4 --variant no_history_no_feedback --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "no_history_no_feedback-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_history_no_feedback-s5 --variant no_history_no_feedback --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "no_robust_reg-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_robust_reg-s1 --variant no_robust_reg --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "no_robust_reg-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_robust_reg-s2 --variant no_robust_reg --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "no_robust_reg-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_robust_reg-s3 --variant no_robust_reg --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "no_robust_reg-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_robust_reg-s4 --variant no_robust_reg --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "no_robust_reg-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_robust_reg-s5 --variant no_robust_reg --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "no_feedback_gating-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_feedback_gating-s1 --variant no_feedback_gating --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "no_feedback_gating-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_feedback_gating-s2 --variant no_feedback_gating --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "no_feedback_gating-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_feedback_gating-s3 --variant no_feedback_gating --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "no_feedback_gating-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_feedback_gating-s4 --variant no_feedback_gating --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "no_feedback_gating-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id no_feedback_gating-s5 --variant no_feedback_gating --scenario nominal --seed 5",
+      "expected_status": 0
+    }
+  ]
+}

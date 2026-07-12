@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "family_name": "adversarial-composed-shifts",
+    "alpha": 0.05,
+    "input_json": "output/corepaper_reports/ws5/adversarial_stress_results.json",
+    "num_tests": 5,
+    "holm_significant_count": 5,
+    "bh_significant_count": 5
+  },
+  "rows": [
+    {
+      "comparison": "method vs baseline",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.09312190147904148,
+      "delta_ci95_halfwidth": 0.004668967257413661,
+      "delta_ci95_lower": 0.08845293422162782,
+      "delta_ci95_upper": 0.09779086873645514,
+      "ci95_excludes_zero": true,
+      "cohen_d": 5.642433635081156
+    },
+    {
+      "comparison": "method vs ext2",
+      "p_raw": 2.3944835241012686e-58,
+      "p_bonferroni": 1.1972417620506343e-57,
+      "p_holm": 9.577934096405074e-58,
+      "q_bh": 5.986208810253171e-58,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.03557949761043255,
+      "delta_ci95_halfwidth": 0.004330363174337613,
+      "delta_ci95_lower": 0.03124913443609494,
+      "delta_ci95_upper": 0.039909860784770164,
+      "ci95_excludes_zero": true,
+      "cohen_d": 2.324400409630064
+    },
+    {
+      "comparison": "method vs latency_aware",
+      "p_raw": 2.323917025082937e-45,
+      "p_bonferroni": 1.1619585125414685e-44,
+      "p_holm": 6.97175107524881e-45,
+      "q_bh": 3.873195041804895e-45,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.032590192995133216,
+      "delta_ci95_halfwidth": 0.004519172602630771,
+      "delta_ci95_lower": 0.028071020392502446,
+      "delta_ci95_upper": 0.03710936559776399,
+      "ci95_excludes_zero": true,
+      "cohen_d": 2.040156372205612
+    },
+    {
+      "comparison": "method vs adaptmanip",
+      "p_raw": 1.870227419065672e-43,
+      "p_bonferroni": 9.35113709532836e-43,
+      "p_holm": 3.740454838131344e-43,
+      "q_bh": 2.33778427383209e-43,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.030758325825199218,
+      "delta_ci95_halfwidth": 0.0043615288275913,
+      "delta_ci95_lower": 0.026396796997607917,
+      "delta_ci95_upper": 0.035119854652790515,
+      "ci95_excludes_zero": true,
+      "cohen_d": 1.9950757898248312
+    },
+    {
+      "comparison": "method vs robust_cp",
+      "p_raw": 4.6441977774488845e-33,
+      "p_bonferroni": 2.3220988887244422e-32,
+      "p_holm": 4.6441977774488845e-33,
+      "q_bh": 4.6441977774488845e-33,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.025616165573209004,
+      "delta_ci95_halfwidth": 0.004191724229954218,
+      "delta_ci95_lower": 0.021424441343254788,
+      "delta_ci95_upper": 0.02980788980316322,
+      "ci95_excludes_zero": true,
+      "cohen_d": 1.7288482367160132
+    }
+  ]
+}

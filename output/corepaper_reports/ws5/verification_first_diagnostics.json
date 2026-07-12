@@ -1,0 +1,418 @@
+{
+  "recent_json": "output/corepaper_reports/ws5/o2o_proxy_recent.json",
+  "o2o_failure_json": "output/corepaper_reports/ws5/o2o_failure_accounting.json",
+  "verification_thresholds": [
+    {
+      "check": "floor_cvar_check",
+      "metric": "cvar40",
+      "threshold": 0.44,
+      "direction": "min"
+    },
+    {
+      "check": "worst_seed_floor_check",
+      "metric": "worst",
+      "threshold": 0.36,
+      "direction": "min"
+    },
+    {
+      "check": "mean_stability_check",
+      "metric": "std",
+      "threshold": 0.085,
+      "direction": "max"
+    },
+    {
+      "check": "o2o_gain_check",
+      "metric": "mean_gain",
+      "threshold": 0.02,
+      "direction": "min"
+    },
+    {
+      "check": "intervention_burden_check",
+      "metric": "mean_interventions",
+      "threshold": 5.8,
+      "direction": "max"
+    },
+    {
+      "check": "catastrophic_event_check",
+      "metric": "mean_catastrophic_events",
+      "threshold": 0.8,
+      "direction": "max"
+    }
+  ],
+  "rows": [
+    {
+      "variant": "baseline",
+      "pass_count": 6,
+      "fail_count": 0,
+      "pass_ratio": 1.0,
+      "grade": "A",
+      "checks": [
+        {
+          "check": "floor_cvar_check",
+          "metric": "cvar40",
+          "direction": "min",
+          "threshold": 0.44,
+          "observed": 0.59737,
+          "pass": true
+        },
+        {
+          "check": "worst_seed_floor_check",
+          "metric": "worst",
+          "direction": "min",
+          "threshold": 0.36,
+          "observed": 0.584,
+          "pass": true
+        },
+        {
+          "check": "mean_stability_check",
+          "metric": "std",
+          "direction": "max",
+          "threshold": 0.085,
+          "observed": 0.021882186959315767,
+          "pass": true
+        },
+        {
+          "check": "o2o_gain_check",
+          "metric": "mean_gain",
+          "direction": "min",
+          "threshold": 0.02,
+          "observed": 0.024636383333333334,
+          "pass": true
+        },
+        {
+          "check": "intervention_burden_check",
+          "metric": "mean_interventions",
+          "direction": "max",
+          "threshold": 5.8,
+          "observed": 2.9,
+          "pass": true
+        },
+        {
+          "check": "catastrophic_event_check",
+          "metric": "mean_catastrophic_events",
+          "direction": "max",
+          "threshold": 0.8,
+          "observed": 0.26666666666666666,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "variant": "ext2",
+      "pass_count": 6,
+      "fail_count": 0,
+      "pass_ratio": 1.0,
+      "grade": "A",
+      "checks": [
+        {
+          "check": "floor_cvar_check",
+          "metric": "cvar40",
+          "direction": "min",
+          "threshold": 0.44,
+          "observed": 0.6398550000000001,
+          "pass": true
+        },
+        {
+          "check": "worst_seed_floor_check",
+          "metric": "worst",
+          "direction": "min",
+          "threshold": 0.36,
+          "observed": 0.6246,
+          "pass": true
+        },
+        {
+          "check": "mean_stability_check",
+          "metric": "std",
+          "direction": "max",
+          "threshold": 0.085,
+          "observed": 0.01906580826762818,
+          "pass": true
+        },
+        {
+          "check": "o2o_gain_check",
+          "metric": "mean_gain",
+          "direction": "min",
+          "threshold": 0.02,
+          "observed": 0.027267733333333325,
+          "pass": true
+        },
+        {
+          "check": "intervention_burden_check",
+          "metric": "mean_interventions",
+          "direction": "max",
+          "threshold": 5.8,
+          "observed": 3.0833333333333335,
+          "pass": true
+        },
+        {
+          "check": "catastrophic_event_check",
+          "metric": "mean_catastrophic_events",
+          "direction": "max",
+          "threshold": 0.8,
+          "observed": 0.36666666666666664,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "variant": "latency_aware",
+      "pass_count": 6,
+      "fail_count": 0,
+      "pass_ratio": 1.0,
+      "grade": "A",
+      "checks": [
+        {
+          "check": "floor_cvar_check",
+          "metric": "cvar40",
+          "direction": "min",
+          "threshold": 0.44,
+          "observed": 0.637195,
+          "pass": true
+        },
+        {
+          "check": "worst_seed_floor_check",
+          "metric": "worst",
+          "direction": "min",
+          "threshold": 0.36,
+          "observed": 0.6249,
+          "pass": true
+        },
+        {
+          "check": "mean_stability_check",
+          "metric": "std",
+          "direction": "max",
+          "threshold": 0.085,
+          "observed": 0.01961253077155791,
+          "pass": true
+        },
+        {
+          "check": "o2o_gain_check",
+          "metric": "mean_gain",
+          "direction": "min",
+          "threshold": 0.02,
+          "observed": 0.026066216666666676,
+          "pass": true
+        },
+        {
+          "check": "intervention_burden_check",
+          "metric": "mean_interventions",
+          "direction": "max",
+          "threshold": 5.8,
+          "observed": 3.1666666666666665,
+          "pass": true
+        },
+        {
+          "check": "catastrophic_event_check",
+          "metric": "mean_catastrophic_events",
+          "direction": "max",
+          "threshold": 0.8,
+          "observed": 0.3333333333333333,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "variant": "adaptmanip",
+      "pass_count": 6,
+      "fail_count": 0,
+      "pass_ratio": 1.0,
+      "grade": "A",
+      "checks": [
+        {
+          "check": "floor_cvar_check",
+          "metric": "cvar40",
+          "direction": "min",
+          "threshold": 0.44,
+          "observed": 0.6466949999999999,
+          "pass": true
+        },
+        {
+          "check": "worst_seed_floor_check",
+          "metric": "worst",
+          "direction": "min",
+          "threshold": 0.36,
+          "observed": 0.6303,
+          "pass": true
+        },
+        {
+          "check": "mean_stability_check",
+          "metric": "std",
+          "direction": "max",
+          "threshold": 0.085,
+          "observed": 0.02056274707686059,
+          "pass": true
+        },
+        {
+          "check": "o2o_gain_check",
+          "metric": "mean_gain",
+          "direction": "min",
+          "threshold": 0.02,
+          "observed": 0.03169173333333334,
+          "pass": true
+        },
+        {
+          "check": "intervention_burden_check",
+          "metric": "mean_interventions",
+          "direction": "max",
+          "threshold": 5.8,
+          "observed": 3.1,
+          "pass": true
+        },
+        {
+          "check": "catastrophic_event_check",
+          "metric": "mean_catastrophic_events",
+          "direction": "max",
+          "threshold": 0.8,
+          "observed": 0.36666666666666664,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "variant": "robust_cp",
+      "pass_count": 6,
+      "fail_count": 0,
+      "pass_ratio": 1.0,
+      "grade": "A",
+      "checks": [
+        {
+          "check": "floor_cvar_check",
+          "metric": "cvar40",
+          "direction": "min",
+          "threshold": 0.44,
+          "observed": 0.6473350000000001,
+          "pass": true
+        },
+        {
+          "check": "worst_seed_floor_check",
+          "metric": "worst",
+          "direction": "min",
+          "threshold": 0.36,
+          "observed": 0.6247,
+          "pass": true
+        },
+        {
+          "check": "mean_stability_check",
+          "metric": "std",
+          "direction": "max",
+          "threshold": 0.085,
+          "observed": 0.018373185985704983,
+          "pass": true
+        },
+        {
+          "check": "o2o_gain_check",
+          "metric": "mean_gain",
+          "direction": "min",
+          "threshold": 0.02,
+          "observed": 0.029797433333333345,
+          "pass": true
+        },
+        {
+          "check": "intervention_burden_check",
+          "metric": "mean_interventions",
+          "direction": "max",
+          "threshold": 5.8,
+          "observed": 3.2,
+          "pass": true
+        },
+        {
+          "check": "catastrophic_event_check",
+          "metric": "mean_catastrophic_events",
+          "direction": "max",
+          "threshold": 0.8,
+          "observed": 0.43333333333333335,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "variant": "method",
+      "pass_count": 6,
+      "fail_count": 0,
+      "pass_ratio": 1.0,
+      "grade": "A",
+      "checks": [
+        {
+          "check": "floor_cvar_check",
+          "metric": "cvar40",
+          "direction": "min",
+          "threshold": 0.44,
+          "observed": 0.6709699999999998,
+          "pass": true
+        },
+        {
+          "check": "worst_seed_floor_check",
+          "metric": "worst",
+          "direction": "min",
+          "threshold": 0.36,
+          "observed": 0.6562,
+          "pass": true
+        },
+        {
+          "check": "mean_stability_check",
+          "metric": "std",
+          "direction": "max",
+          "threshold": 0.085,
+          "observed": 0.01692647919560307,
+          "pass": true
+        },
+        {
+          "check": "o2o_gain_check",
+          "metric": "mean_gain",
+          "direction": "min",
+          "threshold": 0.02,
+          "observed": 0.03799303333333333,
+          "pass": true
+        },
+        {
+          "check": "intervention_burden_check",
+          "metric": "mean_interventions",
+          "direction": "max",
+          "threshold": 5.8,
+          "observed": 3.566666666666667,
+          "pass": true
+        },
+        {
+          "check": "catastrophic_event_check",
+          "metric": "mean_catastrophic_events",
+          "direction": "max",
+          "threshold": 0.8,
+          "observed": 0.26666666666666666,
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "failure_taxonomy": {
+    "performance_floor": 0,
+    "stability": 0,
+    "recovery": 0
+  },
+  "summary": {
+    "num_variants": 6,
+    "num_checks_per_variant": 6,
+    "total_checks": 36,
+    "total_fails": 0,
+    "overall_pass_ratio": 1.0
+  },
+  "verification_scaling": [
+    {
+      "verification_scale": 1.0,
+      "method_pass_ratio": 1.0,
+      "ext2_pass_ratio": 1.0,
+      "delta_method_minus_ext2": 0.0
+    },
+    {
+      "verification_scale": 2.0,
+      "method_pass_ratio": 1.0,
+      "ext2_pass_ratio": 1.0,
+      "delta_method_minus_ext2": 0.0
+    },
+    {
+      "verification_scale": 4.0,
+      "method_pass_ratio": 1.0,
+      "ext2_pass_ratio": 1.0,
+      "delta_method_minus_ext2": 0.0
+    }
+  ]
+}

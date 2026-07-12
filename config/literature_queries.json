@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-02-17",
+  "notes": "Tune these queries to the exact CORE Paper topic as soon as scope is finalized.",
+  "queries": [
+    {
+      "name": "robotics-general",
+      "arxiv_query": "cat:cs.RO"
+    },
+    {
+      "name": "robot-learning-control",
+      "arxiv_query": "cat:cs.RO AND (all:\"robot learning\" OR all:\"model predictive control\" OR all:\"adaptive control\")"
+    },
+    {
+      "name": "sim2real-and-robustness",
+      "arxiv_query": "cat:cs.RO AND (all:sim2real OR all:domain shift OR all:robustness)"
+    },
+    {
+      "name": "manipulation-and-planning",
+      "arxiv_query": "cat:cs.RO AND (all:manipulation OR all:planning OR all:grasp)"
+    }
+  ]
+}

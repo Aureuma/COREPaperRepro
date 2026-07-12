@@ -1,0 +1,26 @@
+{
+  "inputs": {
+    "recent_json": "output/corepaper_reports/ws5/recent_paper_baselines.json",
+    "metaworld_json": "output/corepaper_reports/ws3/metaworld_recent_baselines_stats.json"
+  },
+  "summary": {
+    "stress_top_variant": "method",
+    "stress_top_margin": 0.0070828571428575016,
+    "metaworld_top_variant": "method",
+    "metaworld_top_margin": 0.020000000000000018,
+    "method_minus_ext2_metaworld": 0.24
+  },
+  "quality_flags": {
+    "stress_top_is_method": true,
+    "metaworld_top_is_method": true,
+    "stress_margin_reasonable": true,
+    "metaworld_margin_reasonable": false,
+    "metaworld_delta_vs_ext2_reasonable": true
+  },
+  "quality_score": 4,
+  "quality_score_max": 5,
+  "recommendations": [
+    "Expand recognized benchmark coverage (more tasks/seeds) to stabilize practical significance.",
+    "Current direction is viable: lead with recognized benchmark, use scenario-model as mechanism evidence."
+  ]
+}

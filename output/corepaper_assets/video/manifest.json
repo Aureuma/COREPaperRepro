@@ -1,0 +1,169 @@
+{
+  "rollouts": [
+    {
+      "variant": "baseline",
+      "label": "Baseline",
+      "rank": "best",
+      "run_id": "baseline-s3",
+      "score": 0.7148,
+      "clip": "output/corepaper_assets/video/rollouts/baseline_best.mp4"
+    },
+    {
+      "variant": "baseline",
+      "label": "Baseline",
+      "rank": "median",
+      "run_id": "baseline-s1",
+      "score": 0.7126,
+      "clip": "output/corepaper_assets/video/rollouts/baseline_median.mp4"
+    },
+    {
+      "variant": "baseline",
+      "label": "Baseline",
+      "rank": "worst",
+      "run_id": "baseline-s5",
+      "score": 0.7074,
+      "clip": "output/corepaper_assets/video/rollouts/baseline_worst.mp4"
+    },
+    {
+      "variant": "ext2",
+      "label": "PPO-CVaR",
+      "rank": "best",
+      "run_id": "ext2-s1",
+      "score": 0.7469,
+      "clip": "output/corepaper_assets/video/rollouts/ext2_best.mp4"
+    },
+    {
+      "variant": "ext2",
+      "label": "PPO-CVaR",
+      "rank": "median",
+      "run_id": "ext2-s3",
+      "score": 0.7435,
+      "clip": "output/corepaper_assets/video/rollouts/ext2_median.mp4"
+    },
+    {
+      "variant": "ext2",
+      "label": "PPO-CVaR",
+      "rank": "worst",
+      "run_id": "ext2-s2",
+      "score": 0.7404,
+      "clip": "output/corepaper_assets/video/rollouts/ext2_worst.mp4"
+    },
+    {
+      "variant": "method",
+      "label": "CORE",
+      "rank": "best",
+      "run_id": "method-s3",
+      "score": 0.7514,
+      "clip": "output/corepaper_assets/video/rollouts/method_best.mp4"
+    },
+    {
+      "variant": "method",
+      "label": "CORE",
+      "rank": "median",
+      "run_id": "method-s4",
+      "score": 0.7496,
+      "clip": "output/corepaper_assets/video/rollouts/method_median.mp4"
+    },
+    {
+      "variant": "method",
+      "label": "CORE",
+      "rank": "worst",
+      "run_id": "method-s5",
+      "score": 0.7474,
+      "clip": "output/corepaper_assets/video/rollouts/method_worst.mp4"
+    }
+  ],
+  "comparisons": [
+    {
+      "scenario": "META-shifted",
+      "available_variants": [
+        "baseline",
+        "ext2",
+        "adaptmanip",
+        "method"
+      ],
+      "baseline_mean": 0.14,
+      "ext2_mean": 0.48,
+      "adaptmanip_mean": 0.62,
+      "method_mean": 0.72,
+      "delta": 0.58,
+      "delta_vs_ext2": 0.24,
+      "clip": "output/corepaper_assets/video/comparisons/META-shifted.mp4"
+    },
+    {
+      "scenario": "S1-hard",
+      "available_variants": [
+        "baseline",
+        "method"
+      ],
+      "baseline_mean": 0.5884,
+      "ext2_mean": null,
+      "adaptmanip_mean": null,
+      "method_mean": 0.6436,
+      "delta": 0.0551,
+      "delta_vs_ext2": null,
+      "clip": "output/corepaper_assets/video/comparisons/S1-hard.mp4"
+    },
+    {
+      "scenario": "S2-med",
+      "available_variants": [
+        "baseline",
+        "method"
+      ],
+      "baseline_mean": 0.6696,
+      "ext2_mean": null,
+      "adaptmanip_mean": null,
+      "method_mean": 0.7125,
+      "delta": 0.0429,
+      "delta_vs_ext2": null,
+      "clip": "output/corepaper_assets/video/comparisons/S2-med.mp4"
+    },
+    {
+      "scenario": "S3-severe",
+      "available_variants": [
+        "baseline",
+        "method"
+      ],
+      "baseline_mean": 0.6444,
+      "ext2_mean": null,
+      "adaptmanip_mean": null,
+      "method_mean": 0.6959,
+      "delta": 0.0516,
+      "delta_vs_ext2": null,
+      "clip": "output/corepaper_assets/video/comparisons/S3-severe.mp4"
+    },
+    {
+      "scenario": "SIM-isaac",
+      "available_variants": [
+        "baseline",
+        "ext2",
+        "method"
+      ],
+      "baseline_mean": 0.6258,
+      "ext2_mean": 0.6659,
+      "adaptmanip_mean": null,
+      "method_mean": 0.6767,
+      "delta": 0.0509,
+      "delta_vs_ext2": 0.0108,
+      "clip": "output/corepaper_assets/video/comparisons/SIM-isaac.mp4"
+    },
+    {
+      "scenario": "SIM-mujoco",
+      "available_variants": [
+        "baseline",
+        "ext2",
+        "method"
+      ],
+      "baseline_mean": 0.7122,
+      "ext2_mean": 0.7432,
+      "adaptmanip_mean": null,
+      "method_mean": 0.7487,
+      "delta": 0.0365,
+      "delta_vs_ext2": 0.0055,
+      "clip": "output/corepaper_assets/video/comparisons/SIM-mujoco.mp4"
+    }
+  ],
+  "rough_cut_mp4": "output/corepaper_submission/corepaper_video_rough_cut.mp4",
+  "clips_generated": 15,
+  "video_format": "mp4"
+}

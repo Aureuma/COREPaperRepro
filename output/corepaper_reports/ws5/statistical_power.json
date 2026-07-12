@@ -1,0 +1,44 @@
+{
+  "target_power": 0.8,
+  "alpha": 0.05,
+  "sigma_floor": 0.005,
+  "method": "normal_approximation_from_observed_effects",
+  "rows": [
+    {
+      "comparison": "method vs baseline",
+      "delta_mean": 0.03745999999999994,
+      "cohen_d": 16.0586286858401,
+      "pooled_sigma_est": 0.0023327022956219647,
+      "n_current": 5,
+      "power_est_current": 1.0,
+      "n_recommended_for_target_power": 2,
+      "sigma_for_conservative_planning": 0.005,
+      "power_est_current_conservative": 1.0,
+      "n_recommended_for_target_power_conservative": 2
+    },
+    {
+      "comparison": "method vs ext1",
+      "delta_mean": 0.01861999999999997,
+      "cohen_d": 13.081572610148578,
+      "pooled_sigma_est": 0.001423376267892648,
+      "n_current": 5,
+      "power_est_current": 1.0,
+      "n_recommended_for_target_power": 2,
+      "sigma_for_conservative_planning": 0.005,
+      "power_est_current_conservative": 0.9999572010496296,
+      "n_recommended_for_target_power_conservative": 2
+    },
+    {
+      "comparison": "method vs ext2",
+      "delta_mean": 0.00539999999999996,
+      "cohen_d": 2.4875285744063085,
+      "pooled_sigma_est": 0.002170829334609257,
+      "n_current": 5,
+      "power_est_current": 0.9757595125714207,
+      "n_recommended_for_target_power": 3,
+      "sigma_for_conservative_planning": 0.005,
+      "power_est_current_conservative": 0.4004999232021979,
+      "n_recommended_for_target_power_conservative": 14
+    }
+  ]
+}

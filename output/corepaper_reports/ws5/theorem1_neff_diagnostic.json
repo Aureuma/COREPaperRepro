@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-03-02T08:20:14Z",
+  "reference_variant": "method",
+  "scenario": "shifted",
+  "rows": [
+    {
+      "suite_name": "ws3-metaworld-seedexp-latency_aware-method",
+      "comparator": "latency_aware",
+      "reference_variant": "method",
+      "scenario": "shifted",
+      "paired_rows": 300,
+      "n_seeds": 30,
+      "mean_tasks_per_seed": 10.0,
+      "icc_seed_cluster": 0.0,
+      "design_effect": 1.0,
+      "n_eff_estimate": 300.0,
+      "result_json": "output/corepaper_reports/ws3/metaworld_seedexp_latency_method_n30_results.json"
+    },
+    {
+      "suite_name": "ws3-metaworld-seedexp-adaptmanip-method",
+      "comparator": "adaptmanip",
+      "reference_variant": "method",
+      "scenario": "shifted",
+      "paired_rows": 300,
+      "n_seeds": 30,
+      "mean_tasks_per_seed": 10.0,
+      "icc_seed_cluster": 0.0,
+      "design_effect": 1.0,
+      "n_eff_estimate": 300.0,
+      "result_json": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_n30_results.json"
+    }
+  ],
+  "summary": {
+    "n_rows": 2,
+    "min_n_eff_estimate": 300.0,
+    "min_n_eff_estimate_floor": 300,
+    "min_n_eff_ratio": 1.0,
+    "max_icc_seed_cluster": 0.0
+  },
+  "methodology": "Per matched (task, seed) pair, compute delta := success_final(reference)-success_final(comparator). Estimate one-way seed-cluster ICC and design effect; report n_eff := n / design_effect as a conservative dependence diagnostic for Theorem-1 interpretation."
+}

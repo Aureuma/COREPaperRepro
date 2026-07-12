@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "family_name": "training-backed-stress",
+    "alpha": 0.05,
+    "input_json": "output/corepaper_reports/ws5/training_backed_recent.json",
+    "num_tests": 5,
+    "holm_significant_count": 5,
+    "bh_significant_count": 5
+  },
+  "rows": [
+    {
+      "comparison": "method vs baseline",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": -0.2226474999999999,
+      "delta_ci95_halfwidth": 0.029871050570637613,
+      "delta_ci95_lower": -0.2525185505706375,
+      "delta_ci95_upper": -0.19277644942936228,
+      "ci95_excludes_zero": true,
+      "cohen_d": -3.2666935832485655
+    },
+    {
+      "comparison": "method vs ext2",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": -0.21080750000000004,
+      "delta_ci95_halfwidth": 0.030176468053558485,
+      "delta_ci95_lower": -0.2409839680535585,
+      "delta_ci95_upper": -0.18063103194644156,
+      "ci95_excludes_zero": true,
+      "cohen_d": -3.0616724352469515
+    },
+    {
+      "comparison": "method vs latency_aware",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": -0.20562499999999972,
+      "delta_ci95_halfwidth": 0.030895337001004552,
+      "delta_ci95_lower": -0.23652033700100428,
+      "delta_ci95_upper": -0.17472966299899517,
+      "ci95_excludes_zero": true,
+      "cohen_d": -2.916916868725366
+    },
+    {
+      "comparison": "method vs adaptmanip",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": -0.2183149999999997,
+      "delta_ci95_halfwidth": 0.029940041733103846,
+      "delta_ci95_lower": -0.24825504173310356,
+      "delta_ci95_upper": -0.18837495826689585,
+      "ci95_excludes_zero": true,
+      "cohen_d": -3.195745958956037
+    },
+    {
+      "comparison": "method vs robust_cp",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": -0.20087500000000014,
+      "delta_ci95_halfwidth": 0.031073884083691026,
+      "delta_ci95_lower": -0.23194888408369116,
+      "delta_ci95_upper": -0.16980111591630911,
+      "ci95_excludes_zero": true,
+      "cohen_d": -2.833162090037498
+    }
+  ]
+}

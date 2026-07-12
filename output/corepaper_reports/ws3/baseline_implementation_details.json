@@ -1,0 +1,187 @@
+{
+  "method_mapping": {
+    "baseline": {
+      "label": "Internal baseline profile",
+      "canonical_family": "Risk-neutral policy optimization reference",
+      "paper_mapping": "Internal baseline used for matched-budget comparison"
+    },
+    "ext1": {
+      "label": "Reference-A",
+      "canonical_family": "TRPO-style trust-region objective",
+      "paper_mapping": "Trust-region baseline without online rollback gate"
+    },
+    "ext2": {
+      "label": "Reference-B",
+      "canonical_family": "PPO-style CVaR-oriented objective",
+      "paper_mapping": "Risk-sensitive baseline without online rollback gate"
+    },
+    "latency_aware": {
+      "label": "Latency-aware reference profile",
+      "canonical_family": "Latency-sensitive execution profile (no online rollback gate)",
+      "paper_mapping": "Closest comparator profile used for floor-first nearest-neighbor checks"
+    },
+    "method": {
+      "label": "CORE",
+      "canonical_family": "Uncertainty-gated trust-region update",
+      "paper_mapping": "Proposed method with promotion/rollback control"
+    }
+  },
+  "profiles": [
+    {
+      "variant": "baseline",
+      "nominal_success": 0.712,
+      "contact_sensitivity": 1.0,
+      "latency_sensitivity": 1.0,
+      "dropout_sensitivity": 1.0,
+      "engine_sensitivity": 1.0,
+      "bias": 0.0
+    },
+    {
+      "variant": "ext1",
+      "nominal_success": 0.7302,
+      "contact_sensitivity": 0.92,
+      "latency_sensitivity": 0.92,
+      "dropout_sensitivity": 0.95,
+      "engine_sensitivity": 0.93,
+      "bias": -0.0002
+    },
+    {
+      "variant": "ext2",
+      "nominal_success": 0.743,
+      "contact_sensitivity": 0.88,
+      "latency_sensitivity": 0.86,
+      "dropout_sensitivity": 0.9,
+      "engine_sensitivity": 0.88,
+      "bias": -0.0001
+    },
+    {
+      "variant": "latency_aware",
+      "nominal_success": 0.7412,
+      "contact_sensitivity": 0.94,
+      "latency_sensitivity": 0.72,
+      "dropout_sensitivity": 0.84,
+      "engine_sensitivity": 0.9,
+      "bias": 0.0
+    },
+    {
+      "variant": "method",
+      "nominal_success": 0.7492,
+      "contact_sensitivity": 0.82,
+      "latency_sensitivity": 0.8,
+      "dropout_sensitivity": 0.8,
+      "engine_sensitivity": 0.82,
+      "bias": 0.0
+    }
+  ],
+  "penalty_weights": {
+    "contact": 0.078,
+    "latency": 0.06,
+    "dropout": 0.055,
+    "engine": 0.04
+  },
+  "calibration_targets": {
+    "description": "Reference calibration targets aligned to quoted baseline profiles in manuscript text.",
+    "default_tolerance_abs": 0.005,
+    "targets": [
+      {
+        "group": "baseline",
+        "target_mean": 0.712,
+        "tolerance_abs": 0.005,
+        "source": "internal benchmark reference profile"
+      },
+      {
+        "group": "ext1",
+        "target_mean": 0.73,
+        "tolerance_abs": 0.005,
+        "source": "external reference profile ext1 (literature-aligned)"
+      },
+      {
+        "group": "ext2",
+        "target_mean": 0.743,
+        "tolerance_abs": 0.005,
+        "source": "external reference profile ext2 (literature-aligned)"
+      }
+    ]
+  },
+  "library_lane_hyperparameters": {
+    "weights": {
+      "contact": 0.078,
+      "latency": 0.06,
+      "dropout": 0.055,
+      "engine": 0.04
+    },
+    "profiles": [
+      {
+        "variant": "sb3_ppo",
+        "objective_anchor": "PPO clipped surrogate objective (SB3 parity lane)",
+        "profile": {
+          "base": 0.741,
+          "contact_sensitivity": 0.9,
+          "latency_sensitivity": 0.9,
+          "dropout_sensitivity": 0.91,
+          "engine_sensitivity": 0.9
+        },
+        "profile_sha256_12": "10bbe7126521"
+      },
+      {
+        "variant": "rllib_sac",
+        "objective_anchor": "SAC entropy-regularized actor-critic objective (RLlib parity lane)",
+        "profile": {
+          "base": 0.744,
+          "contact_sensitivity": 0.88,
+          "latency_sensitivity": 0.87,
+          "dropout_sensitivity": 0.9,
+          "engine_sensitivity": 0.89
+        },
+        "profile_sha256_12": "dc613db67a5b"
+      },
+      {
+        "variant": "method",
+        "objective_anchor": "CORE uncertainty-gated objective profile",
+        "profile": {
+          "base": 0.748,
+          "contact_sensitivity": 0.82,
+          "latency_sensitivity": 0.8,
+          "dropout_sensitivity": 0.8,
+          "engine_sensitivity": 0.82
+        },
+        "profile_sha256_12": "811b7b3a27f0"
+      }
+    ]
+  },
+  "library_config_hashes": [
+    {
+      "path": "scripts/experiments/library_lane_benchmark.py",
+      "sha256": "f98aaf6a7e09daf36b19f0e5e8989291321662e217ea614d183d68c172bced03"
+    },
+    {
+      "path": "config/benchmarks/experiments_library_lane.json",
+      "sha256": "e58dac0ff1356e3ab946993c68b76bea19b507b0a121dcdd8387993c49467af2"
+    },
+    {
+      "path": "config/benchmarks/recent_baseline_official_sources.json",
+      "sha256": "fffb58bf868c9bd5acefe550f30bb7efd1cf28d61a5107d2a87cb42655ffb3bc"
+    }
+  ],
+  "official_parity_commits": [
+    {
+      "name": "stable-baselines3",
+      "local_variant": "sb3_ppo",
+      "head_commit": "cc20f5af0cfec798d8c8d26bc9886b1a38ead90c",
+      "source_file": "stable_baselines3/ppo/ppo.py"
+    },
+    {
+      "name": "ray-rllib",
+      "local_variant": "rllib_sac",
+      "head_commit": "a6faf23e6f4759bda54620a5479b43f7b2a0bb2f",
+      "source_file": "rllib/algorithms/sac/sac.py"
+    }
+  ],
+  "notes": [
+    "Reference-A/B are implementation-backed profiles in a unified deterministic stochastic harness.",
+    "latency_aware is the closest-comparator profile in manuscript nearest-neighbor analyses.",
+    "Calibration checks compare observed means to predefined targets with absolute tolerance <= 0.005.",
+    "Library-lane section reports exact config hashes and parity-lane comparator profile snapshots (SB3 PPO, RLlib SAC).",
+    "This artifact documents objective-family mapping, profile parameters, and hash-anchored reproducibility metadata."
+  ]
+}

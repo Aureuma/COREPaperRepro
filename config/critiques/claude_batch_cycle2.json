@@ -1,0 +1,19 @@
+{
+  "jobs": [
+    {
+      "paper_pdf": "paper/build/manuscript.pdf",
+      "paper_tex": "paper/manuscript.tex",
+      "plan_md": "docs/plan.md",
+      "output_dir": "output/corepaper_reports/review_readiness",
+      "model": "us.anthropic.claude-opus-4-6-v1",
+      "region": "us-east-1",
+      "backend": "boto3",
+      "max_output_tokens": 4096,
+      "max_tex_chars": 120000,
+      "max_plan_chars": 120000,
+      "max_pdf_chars": 80000,
+      "schema_mode": "compact",
+      "tag": "cycle2-v027"
+    }
+  ]
+}

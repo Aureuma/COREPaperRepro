@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-03-02T08:20:14Z",
+  "source_logs_dir": "output/corepaper_logs/experiments/recent_baselines_latest",
+  "reference_variant": "method",
+  "comparators": [
+    "adaptmanip",
+    "latency_aware"
+  ],
+  "rows": [
+    {
+      "comparator": "adaptmanip",
+      "paired_rows": 84,
+      "condition_holds_count": 14,
+      "condition_holds_rate": 0.16666666666666666,
+      "violation_count": 70,
+      "violation_rate": 0.8333333333333334,
+      "equal_count": 14,
+      "mean_u_inc_minus_u_cand": 0.00402666666666666,
+      "max_abs_u_inc_minus_u_cand": 0.006861000000000006
+    },
+    {
+      "comparator": "latency_aware",
+      "paired_rows": 84,
+      "condition_holds_count": 28,
+      "condition_holds_rate": 0.3333333333333333,
+      "violation_count": 56,
+      "violation_rate": 0.6666666666666666,
+      "equal_count": 14,
+      "mean_u_inc_minus_u_cand": 0.0021691666666666665,
+      "max_abs_u_inc_minus_u_cand": 0.00984199999999999
+    }
+  ],
+  "overall": {
+    "paired_rows": 168,
+    "condition_holds_count": 42,
+    "condition_holds_rate": 0.25,
+    "violation_count": 126,
+    "violation_rate": 0.75
+  },
+  "proxy_definition": "Prop-2 ordering proxy checks U_incumbent <= U_candidate on matched scenario+seed rows using per-run uncertainty proxy U := |total_penalty|."
+}

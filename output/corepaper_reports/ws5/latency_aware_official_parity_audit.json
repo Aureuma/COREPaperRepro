@@ -1,0 +1,51 @@
+{
+  "generated_at_utc": "2026-03-02T08:20:23Z",
+  "variant": "latency_aware",
+  "official_source": {
+    "arxiv_id": "2602.14255v1",
+    "paper_title": "A Latency-Aware Framework for Visuomotor Policy Learning on Industrial Robots",
+    "official_repo_url": null,
+    "availability_status": "not_found_public_release",
+    "notes": "No official repository URL was found in the curated metadata/source snapshot at this checkpoint; rerun this audit each cycle and update when a public release appears."
+  },
+  "detected_code_links": {
+    "metadata": [],
+    "paper_html": [
+      "https://github.com/ValveSoftware/openvr"
+    ]
+  },
+  "subset_metrics": {
+    "task_count": 3,
+    "task_names": [
+      "button-press-v3",
+      "push-v3",
+      "reach-v3"
+    ],
+    "scenario": "shifted",
+    "reference_variant": "method",
+    "comparator_variant": "latency_aware",
+    "n_rows_reference": 15,
+    "n_rows_comparator": 15,
+    "n_seed_reference": 5,
+    "n_seed_comparator": 5,
+    "reference_mean": 0.9333333333333333,
+    "comparator_mean": 1.0,
+    "delta_mean": -0.06666666666666665,
+    "delta_mean_ci95_halfwidth": 0.13066666666666668,
+    "reference_worst_seed_mean": 0.6666666666666666,
+    "comparator_worst_seed_mean": 1.0,
+    "delta_worst_seed_mean": -0.33333333333333337,
+    "reference_cvar40_seed": 0.8333333333333333,
+    "comparator_cvar40_seed": 1.0,
+    "delta_cvar40_seed": -0.16666666666666674
+  },
+  "parity_assessment": {
+    "status": "no_public_repo_subset_verified",
+    "reasoning": "No public official repository is currently tracked for latency_aware; software-feasible subset parity check is provided as the reproducible fallback.",
+    "subset_floor_positive": false,
+    "residual_risks": [
+      "Official-code parity cannot be fully closed until an upstream public repository/checkpoint is available.",
+      "Subset floor deltas are not uniformly positive; monitor next-cycle reruns."
+    ]
+  }
+}

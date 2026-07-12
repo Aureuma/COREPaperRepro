@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="580" viewBox="0 0 1040 580">
+<rect x="0" y="0" width="1040" height="580" fill="#F4F7FB"/>
+<text x="520.0" y="34" fill="#0F172A" font-size="22" text-anchor="middle" font-family="DejaVu Sans">F6: Baseline Calibration (Target vs Observed)</text>
+<line x1="82" y1="468" x2="1004" y2="468" stroke="#0F172A" stroke-width="2"/>
+<line x1="82" y1="60" x2="82" y2="468" stroke="#0F172A" stroke-width="2"/>
+<text x="24" y="264.0" fill="#0F172A" font-size="12" text-anchor="middle" transform="rotate(-90 24 264.0)" font-family="DejaVu Sans">Mean success</text>
+<line x1="82" y1="468.00" x2="1004" y2="468.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="472.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.00</text>
+<line x1="82" y1="386.40" x2="1004" y2="386.40" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="390.40" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.16</text>
+<line x1="82" y1="304.80" x2="1004" y2="304.80" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="308.80" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.33</text>
+<line x1="82" y1="223.20" x2="1004" y2="223.20" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="227.20" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.49</text>
+<line x1="82" y1="141.60" x2="1004" y2="141.60" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="145.60" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.66</text>
+<line x1="82" y1="60.00" x2="1004" y2="60.00" stroke="#B8C7DA" stroke-width="1"/>
+<text x="74" y="64.00" fill="#334155" font-size="11" text-anchor="end" font-family="DejaVu Sans">0.82</text>
+<rect x="115.81" y="113.74" width="119.86" height="354.26" fill="#59A14F" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="175.74" y="109.74" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.712</text>
+<rect x="235.67" y="113.77" width="119.86" height="354.23" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="295.60" y="109.77" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.712</text>
+<text x="235.67" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">baseline</text>
+<rect x="423.14" y="104.78" width="119.86" height="363.22" fill="#59A14F" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="483.07" y="100.78" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.730</text>
+<rect x="543.00" y="104.39" width="119.86" height="363.61" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="602.93" y="100.39" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.731</text>
+<text x="543.00" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">ext1</text>
+<rect x="730.47" y="98.31" width="119.86" height="369.69" fill="#59A14F" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="790.40" y="94.31" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.743</text>
+<rect x="850.33" y="97.81" width="119.86" height="370.19" fill="#F28E2B" rx="2" stroke="#0F172A" stroke-width="0.6"/>
+<text x="910.26" y="93.81" fill="#0F172A" font-size="9.5" text-anchor="middle" font-family="DejaVu Sans">0.744</text>
+<text x="850.33" y="492.00" fill="#334155" font-size="11" text-anchor="middle" font-family="DejaVu Sans">ext2</text>
+<rect x="86" y="44" width="14" height="14" fill="#59A14F" rx="2"/>
+<text x="106" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">Target</text>
+<rect x="276" y="44" width="14" height="14" fill="#F28E2B" rx="2"/>
+<text x="296" y="56" fill="#0F172A" font-size="12" text-anchor="start" font-family="DejaVu Sans">Observed</text>
+</svg>

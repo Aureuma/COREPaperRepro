@@ -1,0 +1,121 @@
+{
+  "generated_at_utc": "2026-03-02T07:31:31Z",
+  "policy": "temporary_clone_compare_cleanup",
+  "repos": [
+    {
+      "name": "stable-baselines3",
+      "url": "https://github.com/DLR-RM/stable-baselines3.git",
+      "head_commit": "cc20f5af0cfec798d8c8d26bc9886b1a38ead90c",
+      "source_file": "stable_baselines3/ppo/ppo.py",
+      "objective_family": "PPO clipped surrogate objective",
+      "local_variant": "sb3_ppo",
+      "required_symbols": [
+        "class PPO",
+        "clip_range",
+        "target_kl"
+      ],
+      "symbol_hits": [
+        {
+          "symbol": "class PPO",
+          "line": 18,
+          "excerpt": "class PPO(OnPolicyAlgorithm):",
+          "found": true
+        },
+        {
+          "symbol": "clip_range",
+          "line": 41,
+          "excerpt": ":param clip_range: Clipping parameter, it can be a function of the current progress",
+          "found": true
+        },
+        {
+          "symbol": "target_kl",
+          "line": 58,
+          "excerpt": ":param target_kl: Limit the KL divergence between updates,",
+          "found": true
+        }
+      ],
+      "status": "pass",
+      "missing_symbols": []
+    },
+    {
+      "name": "ray-rllib",
+      "url": "https://github.com/ray-project/ray.git",
+      "head_commit": "a6faf23e6f4759bda54620a5479b43f7b2a0bb2f",
+      "source_file": "rllib/algorithms/sac/sac.py",
+      "objective_family": "SAC entropy-regularized actor-critic objective",
+      "local_variant": "rllib_sac",
+      "required_symbols": [
+        "class SACConfig",
+        "actor_lr",
+        "critic_lr",
+        "alpha_lr"
+      ],
+      "symbol_hits": [
+        {
+          "symbol": "class SACConfig",
+          "line": 31,
+          "excerpt": "class SACConfig(AlgorithmConfig):",
+          "found": true
+        },
+        {
+          "symbol": "actor_lr",
+          "line": 42,
+          "excerpt": "actor_lr=0.001,",
+          "found": true
+        },
+        {
+          "symbol": "critic_lr",
+          "line": 43,
+          "excerpt": "critic_lr=0.002,",
+          "found": true
+        },
+        {
+          "symbol": "alpha_lr",
+          "line": 112,
+          "excerpt": "self.alpha_lr = 3e-4",
+          "found": true
+        }
+      ],
+      "status": "pass",
+      "missing_symbols": []
+    }
+  ],
+  "local_mapping": {
+    "source_path": "scripts/experiments/library_lane_benchmark.py",
+    "declared_variants": [
+      {
+        "variant": "method",
+        "present": true
+      },
+      {
+        "variant": "sb3_ppo",
+        "present": true
+      },
+      {
+        "variant": "rllib_sac",
+        "present": true
+      }
+    ]
+  },
+  "runtime_probe": {
+    "sb3": {
+      "requested": "sb3",
+      "available": "no",
+      "mode": "fallback"
+    },
+    "rllib": {
+      "requested": "rllib",
+      "available": "no",
+      "mode": "fallback"
+    }
+  },
+  "parity_summary": {
+    "overall_status": "pass",
+    "checked_variants": [
+      "sb3_ppo",
+      "rllib_sac"
+    ],
+    "missing_or_mismatch": [],
+    "temporary_clone_cleanup": "done"
+  }
+}

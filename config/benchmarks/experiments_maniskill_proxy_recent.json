@@ -1,0 +1,37 @@
+{
+  "suite_name": "ws3-maniskill-proxy-recent-baselines",
+  "tasks": [
+    "pick_cube",
+    "stack_cube",
+    "peg_insert",
+    "drawer_open",
+    "button_press",
+    "door_unlock",
+    "cable_route",
+    "bimanual_handover"
+  ],
+  "variants": [
+    "baseline",
+    "ext1",
+    "ext2",
+    "latency_aware",
+    "adaptmanip",
+    "robust_cp",
+    "method"
+  ],
+  "scenarios": [
+    "nominal",
+    "shifted"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "max_steps": 90
+}

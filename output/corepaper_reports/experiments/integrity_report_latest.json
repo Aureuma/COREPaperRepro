@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "config/experiments_smoke.json",
+      "sha256": "5223c978c5d3013a9d5c3cb7f583c980d972d1a2dcec03030125d534da4b20f5",
+      "size_bytes": 2068
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/baseline-s1.json",
+      "sha256": "8ff2fa55f9b234b22aac474bbef0f710f0d48963d7eae4715430936df403c2e7",
+      "size_bytes": 1703
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/baseline-s2.json",
+      "sha256": "2c73e41729a29195bcac20d0998f7533b77b609e7026262126fce2b862e883c3",
+      "size_bytes": 1703
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/baseline-s3.json",
+      "sha256": "750632ca2c031e55d2401e04d6a9a3a4ced7fb85ef35a80af1d723690b2a6e0c",
+      "size_bytes": 1703
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/baseline-s4.json",
+      "sha256": "a2b6c01eb736d66f5b1c032b407e524d03cd4375bc69f1fd974b1afbf6fd73f8",
+      "size_bytes": 1705
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/baseline-s5.json",
+      "sha256": "16a2b773963a0931f292fb8b2c8ffe7981ecab1581b39d7f10a7f1607ae1f0d7",
+      "size_bytes": 1705
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/method-s1.json",
+      "sha256": "79b313eeb410ea9215733894e226347fbcbcd8387a4d9927dc93db69431d8451",
+      "size_bytes": 1691
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/method-s2.json",
+      "sha256": "f646253afae7020e7f9901276cf31bf32a0b2d80eb9e213bef3d78a870aae4df",
+      "size_bytes": 1689
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/method-s3.json",
+      "sha256": "e8ee837d374f8de93010ee8e42139ecb44548a9763d34ea98c042e3e8f738f74",
+      "size_bytes": 1689
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/method-s4.json",
+      "sha256": "22abb7b3129019ecdb761dc143945d6a473f428fe2f1f8a81950873e19d36fcd",
+      "size_bytes": 1689
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/method-s5.json",
+      "sha256": "141c952f85fce6911c2972e89ed715197c59d2e23f2b7d3ecdef66c0cd29773b",
+      "size_bytes": 1691
+    },
+    {
+      "path": "output/corepaper_logs/experiments/latest/suite_summary.json",
+      "sha256": "da3a83c80d1120d9762445047b755ea62ddf6ecff6313d54b49403b6ecfbd754",
+      "size_bytes": 413
+    }
+  ]
+}

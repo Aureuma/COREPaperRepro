@@ -1,0 +1,50 @@
+{
+  "input_json": "output/corepaper_reports/ws3/metaworld_seedexp_latency_method_n30_results.json",
+  "scenario": "shifted",
+  "reference_group": "method",
+  "comparator_group": "latency_aware",
+  "n_reference": 30,
+  "n_comparator": 30,
+  "rows": [
+    {
+      "alpha": 0.1,
+      "k_reference": 3,
+      "k_comparator": 3,
+      "reference_cvar": 0.5333333333333333,
+      "comparator_cvar": 0.5,
+      "delta_cvar": 0.033333333333333326
+    },
+    {
+      "alpha": 0.2,
+      "k_reference": 6,
+      "k_comparator": 6,
+      "reference_cvar": 0.5666666666666668,
+      "comparator_cvar": 0.5166666666666667,
+      "delta_cvar": 0.050000000000000044
+    },
+    {
+      "alpha": 0.3,
+      "k_reference": 9,
+      "k_comparator": 9,
+      "reference_cvar": 0.5888888888888889,
+      "comparator_cvar": 0.5444444444444444,
+      "delta_cvar": 0.04444444444444451
+    },
+    {
+      "alpha": 0.4,
+      "k_reference": 12,
+      "k_comparator": 12,
+      "reference_cvar": 0.6166666666666667,
+      "comparator_cvar": 0.5666666666666665,
+      "delta_cvar": 0.050000000000000155
+    },
+    {
+      "alpha": 0.5,
+      "k_reference": 15,
+      "k_comparator": 15,
+      "reference_cvar": 0.6333333333333332,
+      "comparator_cvar": 0.5933333333333333,
+      "delta_cvar": 0.039999999999999925
+    }
+  ]
+}

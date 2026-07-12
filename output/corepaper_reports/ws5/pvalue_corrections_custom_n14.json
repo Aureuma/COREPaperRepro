@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "family_name": "custom-scenario-n14",
+    "alpha": 0.05,
+    "input_json": "output/corepaper_reports/ws5/corepaper_external_n14_statistical_effects.json",
+    "num_tests": 3,
+    "holm_significant_count": 3,
+    "bh_significant_count": 3
+  },
+  "rows": [
+    {
+      "comparison": "method vs baseline",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.03644999999999987,
+      "delta_ci95_halfwidth": 0.0015383004607983117,
+      "delta_ci95_lower": 0.03491169953920156,
+      "delta_ci95_upper": 0.03798830046079818,
+      "ci95_excludes_zero": true,
+      "cohen_d": 17.55348748105553
+    },
+    {
+      "comparison": "method vs ext1",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.01911428571428575,
+      "delta_ci95_halfwidth": 0.0013021215824125705,
+      "delta_ci95_lower": 0.01781216413187318,
+      "delta_ci95_upper": 0.02041640729669832,
+      "ci95_excludes_zero": true,
+      "cohen_d": 10.874607416138483
+    },
+    {
+      "comparison": "method vs ext2",
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "p_holm": 0.0,
+      "q_bh": 0.0,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.005328571428571571,
+      "delta_ci95_halfwidth": 0.0012690970745437087,
+      "delta_ci95_lower": 0.004059474354027863,
+      "delta_ci95_upper": 0.00659766850311528,
+      "ci95_excludes_zero": true,
+      "cohen_d": 3.1104483930259987
+    }
+  ]
+}

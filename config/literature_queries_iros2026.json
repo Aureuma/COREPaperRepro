@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-02-17",
+  "notes": "Targeted collection for robust contact-rich manipulation and related theory/control for IROS 2026 submission.",
+  "queries": [
+    {
+      "name": "contact_rich_manipulation",
+      "arxiv_query": "cat:cs.RO AND (all:\"contact-rich manipulation\" OR all:\"contact rich manipulation\" OR all:\"robot manipulation\")"
+    },
+    {
+      "name": "robust_safe_planning_control",
+      "arxiv_query": "cat:cs.RO AND (all:\"robust mpc\" OR all:\"safe planning\" OR all:\"conformal prediction\" OR all:\"distribution shift\")"
+    },
+    {
+      "name": "imitation_policy_history",
+      "arxiv_query": "cat:cs.RO AND (all:\"imitation learning\" OR all:\"policy learning\" OR all:\"history conditioning\" OR all:\"long horizon\")"
+    },
+    {
+      "name": "sim2real_generalization",
+      "arxiv_query": "cat:cs.RO AND (all:sim2real OR all:\"domain shift\" OR all:generalization OR all:robustness)"
+    },
+    {
+      "name": "embodied_vla_transfer",
+      "arxiv_query": "cat:cs.RO AND (all:\"vision-language-action\" OR all:\"cross-embodiment\" OR all:\"few-shot transfer\")"
+    }
+  ]
+}
+

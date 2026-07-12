@@ -1,0 +1,57 @@
+{
+  "context": {
+    "paper_id": "CORE Paper",
+    "venue": "IEEE/RSJ IROS 2026",
+    "format_family": "IEEE conference"
+  },
+  "palette": {
+    "ink_primary": "#0F172A",
+    "ink_secondary": "#334155",
+    "bg_canvas": "#F4F7FB",
+    "bg_panel": "#E6EDF7",
+    "grid": "#B8C7DA",
+    "baseline": "#7A8896",
+    "reference_a": "#59A14F",
+    "reference_b": "#F28E2B",
+    "reference_c": "#1B6CA8",
+    "reference_d": "#2CA58D",
+    "reference_e": "#B07AA1",
+    "reference_f": "#6C63C6",
+    "reference_g": "#C2557D",
+    "method": "#D62728",
+    "success": "#2E9E62",
+    "warning": "#D97706"
+  },
+  "typography": {
+    "latex_primary": "Times (IEEE template default)",
+    "figure_sans": "DejaVu Sans",
+    "mono": "DejaVu Sans Mono",
+    "video": {
+      "font_regular": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+      "font_bold": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+      "title_px": 46,
+      "subtitle_px": 28,
+      "body_px": 24,
+      "caption_px": 20
+    }
+  },
+  "figure_defaults": {
+    "width_px": 960,
+    "height_px": 540,
+    "axis_line_px": 2,
+    "bar_round_px": 4,
+    "title_px": 22,
+    "label_px": 12,
+    "value_px": 13
+  },
+  "video_defaults": {
+    "width_px": 1280,
+    "height_px": 720,
+    "fps": 30,
+    "intro_seconds": 2.5,
+    "segment_seconds": 4.0,
+    "outro_seconds": 2.0,
+    "preferred_codec": "H.264",
+    "supplement_target_mb": 10
+  }
+}

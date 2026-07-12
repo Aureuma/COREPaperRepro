@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    {
+      "paper_pdf": "paper/build/manuscript.pdf",
+      "paper_tex": "paper/manuscript.tex",
+      "plan_md": "docs/plan.md",
+      "output_dir": "output/corepaper_reports/review_readiness",
+      "model": "gemini-3.1-pro-preview",
+      "max_output_tokens": 8192,
+      "tag": "rerun-2026-02-22-post-pipeline"
+    }
+  ]
+}

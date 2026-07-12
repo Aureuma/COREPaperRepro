@@ -1,0 +1,215 @@
+{
+  "suite_name": "ws5-software-transfer",
+  "runs": [
+    {
+      "id": "S1-mild-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-mild-baseline-s1 --variant baseline --scenario S1-mild --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-mild-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-mild-baseline-s2 --variant baseline --scenario S1-mild --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-mild-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-mild-baseline-s3 --variant baseline --scenario S1-mild --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-mild-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-mild-method-s1 --variant method --scenario S1-mild --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-mild-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-mild-method-s2 --variant method --scenario S1-mild --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-mild-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-mild-method-s3 --variant method --scenario S1-mild --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-hard-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-hard-baseline-s1 --variant baseline --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-hard-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-hard-baseline-s2 --variant baseline --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-hard-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-hard-baseline-s3 --variant baseline --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-hard-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-hard-method-s1 --variant method --scenario S1-hard --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-hard-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-hard-method-s2 --variant method --scenario S1-hard --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S1-hard-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S1-hard-method-s3 --variant method --scenario S1-hard --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-low-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-low-baseline-s1 --variant baseline --scenario S2-low --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-low-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-low-baseline-s2 --variant baseline --scenario S2-low --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-low-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-low-baseline-s3 --variant baseline --scenario S2-low --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-low-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-low-method-s1 --variant method --scenario S2-low --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-low-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-low-method-s2 --variant method --scenario S2-low --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-low-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-low-method-s3 --variant method --scenario S2-low --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-med-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-med-baseline-s1 --variant baseline --scenario S2-med --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-med-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-med-baseline-s2 --variant baseline --scenario S2-med --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-med-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-med-baseline-s3 --variant baseline --scenario S2-med --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-med-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-med-method-s1 --variant method --scenario S2-med --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-med-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-med-method-s2 --variant method --scenario S2-med --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-med-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-med-method-s3 --variant method --scenario S2-med --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-high-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-high-baseline-s1 --variant baseline --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-high-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-high-baseline-s2 --variant baseline --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-high-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-high-baseline-s3 --variant baseline --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-high-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-high-method-s1 --variant method --scenario S2-high --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-high-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-high-method-s2 --variant method --scenario S2-high --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S2-high-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S2-high-method-s3 --variant method --scenario S2-high --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-mild-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-mild-baseline-s1 --variant baseline --scenario S3-mild --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-mild-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-mild-baseline-s2 --variant baseline --scenario S3-mild --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-mild-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-mild-baseline-s3 --variant baseline --scenario S3-mild --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-mild-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-mild-method-s1 --variant method --scenario S3-mild --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-mild-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-mild-method-s2 --variant method --scenario S3-mild --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-mild-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-mild-method-s3 --variant method --scenario S3-mild --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-severe-baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-severe-baseline-s1 --variant baseline --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-severe-baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-severe-baseline-s2 --variant baseline --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-severe-baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-severe-baseline-s3 --variant baseline --scenario S3-severe --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-severe-method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-severe-method-s1 --variant method --scenario S3-severe --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-severe-method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-severe-method-s2 --variant method --scenario S3-severe --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "S3-severe-method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id S3-severe-method-s3 --variant method --scenario S3-severe --seed 3",
+      "expected_status": 0
+    }
+  ]
+}

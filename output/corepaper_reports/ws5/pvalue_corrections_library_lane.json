@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "family_name": "library-lane-stress",
+    "alpha": 0.05,
+    "input_json": "output/corepaper_reports/ws5/library_lane.json",
+    "num_tests": 2,
+    "holm_significant_count": 2,
+    "bh_significant_count": 2
+  },
+  "rows": [
+    {
+      "comparison": "method vs sb3_ppo",
+      "p_raw": 2.5e-05,
+      "p_bonferroni": 5e-05,
+      "p_holm": 5e-05,
+      "q_bh": 5e-05,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.021990000000000176,
+      "delta_ci95_halfwidth": 0.009555615672472392,
+      "delta_ci95_lower": 0.012434384327527784,
+      "delta_ci95_upper": 0.03154561567247257,
+      "ci95_excludes_zero": true,
+      "cohen_d": 0.9020957199893049
+    },
+    {
+      "comparison": "method vs rllib_sac",
+      "p_raw": 0.00099,
+      "p_bonferroni": 0.00198,
+      "p_holm": 0.00099,
+      "q_bh": 0.00099,
+      "significant_raw_alpha": true,
+      "significant_holm_alpha": true,
+      "significant_bh_alpha": true,
+      "delta_mean": 0.016013999999999973,
+      "delta_ci95_halfwidth": 0.009268170553113492,
+      "delta_ci95_lower": 0.006745829446886481,
+      "delta_ci95_upper": 0.025282170553113464,
+      "ci95_excludes_zero": true,
+      "cohen_d": 0.677316840904613
+    }
+  ]
+}

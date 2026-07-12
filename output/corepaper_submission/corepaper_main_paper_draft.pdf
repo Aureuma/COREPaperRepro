@@ -1,0 +1,70 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 1740 >>
+stream
+BT /F1 10 Tf 12 TL 50 770 Td
+(# CORE: Uncertainty-Gated Policy Optimization for Robust Contact-Rich Manipulation) Tj T*
+() Tj T*
+(## Abstract) Tj T*
+(We present CORE, an uncertainty-gated policy optimization method for contact-rich) Tj T*
+(manipulation under distribution shift.) Tj T*
+(In the current multiseed benchmark slice, our method reaches 0.7494 success versus baseline) Tj T*
+(0.7119 \(+0.0375\).) Tj T*
+(Results are currently benchmark-scoped and include explicit failure and limitation tracking.) Tj T*
+() Tj T*
+(## 1. Introduction) Tj T*
+(Robust contact-rich manipulation under distribution shift remains difficult to evaluate and) Tj T*
+(iterate safely.) Tj T*
+() Tj T*
+(## 2. Related Work) Tj T*
+(Recent robust planning/manipulation work is tracked in weekly literature briefs and mapped) Tj T*
+(to novelty comparisons.) Tj T*
+() Tj T*
+(## 3. Method) Tj T*
+(CORE combines uncertainty-penalized trust-region updates with an online promote/rollback) Tj T*
+(gate to reject unstable policy steps.) Tj T*
+() Tj T*
+(## 4. Experimental Setup) Tj T*
+(We use fixed-seed suites and consistent run budgets across baseline and method variants.) Tj T*
+() Tj T*
+(## 5. Results) Tj T*
+(Main benchmark: baseline=0.7119, method=0.7494, delta=+0.0375.) Tj T*
+(Ablation and robustness results are reported in WS5 artifacts.) Tj T*
+() Tj T*
+(## 6. Discussion and Limitations) Tj T*
+(Current evidence is strong for the benchmark stack with software-transfer stress validation,) Tj T*
+(while exact upstream baseline parity remains future work.) Tj T*
+() Tj T*
+(## 7. Conclusion) Tj T*
+(Uncertainty-gated updates improve robustness in benchmark-scoped software validation and) Tj T*
+(support conservative, evidence-backed claims.) Tj T*
+() Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000001983 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2109
+%%EOF

@@ -1,0 +1,115 @@
+{
+  "project": "corepaper",
+  "version": "0.2.73",
+  "generated_at_utc": "2026-03-02T08:21:47Z",
+  "git": {
+    "head": "2a5da64477ede1d76c1202f1d5bbb184abebc9c4",
+    "short_head": "2a5da6447",
+    "dirty": true,
+    "dirty_file_count": 1994
+  },
+  "artifacts": [
+    {
+      "path": "paper/build/main.pdf",
+      "exists": true,
+      "size_bytes": 394155,
+      "sha256": "ec6e6c3355c5bcb65de4f21101d6bf713f37338ef99d19e49785b96d614b6960"
+    },
+    {
+      "path": "paper/generated/results_macros.tex",
+      "exists": true,
+      "size_bytes": 27109,
+      "sha256": "4c1e267a9be0258c4f8b9f1c278365fcb9858b9aed6de0ba9695d756dab42661"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_slice_stats.json",
+      "exists": true,
+      "size_bytes": 5760,
+      "sha256": "5edb24287ce8e5614c3d98c11a60dd1c8791f91feae42f8470df5ae86f765fb3"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_recent_baselines_stats.json",
+      "exists": true,
+      "size_bytes": 14187,
+      "sha256": "11263159ff636c83e94c6d3fd4f219f517fd17cc4d9950ef13d4874b791da770"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_seedexp_ext2_method_stats.json",
+      "exists": true,
+      "size_bytes": 2852,
+      "sha256": "31d19b45a98d11aeece7bb9875a02ee2146cf692804eb6a1af153145fefb1d92"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_seedexp_latency_method_stats.json",
+      "exists": true,
+      "size_bytes": 2839,
+      "sha256": "85ca05ea7fc8772f8fe9cd2333daaf0059f8c039cfc886fcce9002860f915b6e"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_stats.json",
+      "exists": true,
+      "size_bytes": 2818,
+      "sha256": "3ade3d11f201782fd32c7a2e2137588aa769ef5911e542e4e3f2f3de4606f930"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_seedexp_latency_method_n30_stats.json",
+      "exists": true,
+      "size_bytes": 3466,
+      "sha256": "2bd2ff8f44a66e0b096a094f623ed27e80066d8ae753d364c1490e4370d4ac60"
+    },
+    {
+      "path": "output/corepaper_reports/ws3/metaworld_seedexp_adaptmanip_method_n30_stats.json",
+      "exists": true,
+      "size_bytes": 3466,
+      "sha256": "cf7c435f1e9601bf2ef61136486c8abd7c072d3b6896acaacf1c07e6b3d8d008"
+    },
+    {
+      "path": "output/corepaper_reports/ws5/statistical_effects.json",
+      "exists": true,
+      "size_bytes": 2294,
+      "sha256": "035d633430ba353d75c313d18995e67e3849df5348ebb2bea12d586449de926e"
+    },
+    {
+      "path": "output/corepaper_reports/ws5/reliability_floor.json",
+      "exists": true,
+      "size_bytes": 907,
+      "sha256": "52e999e07cfa881659c37d735a2e4a76552a433860deff12d19e8779f9aea39e"
+    },
+    {
+      "path": "output/corepaper_reports/ws5/metaworld_cvar_sensitivity_latency_n30.json",
+      "exists": true,
+      "size_bytes": 1303,
+      "sha256": "4c114e26c3053991e65a614e101659d3e319348c0df833780f678c6742eabb33"
+    },
+    {
+      "path": "output/corepaper_reports/ws5/metaworld_cvar_sensitivity_adaptmanip_n30.json",
+      "exists": true,
+      "size_bytes": 1315,
+      "sha256": "6e7d3ae86ad17ffa5705e0e14b24dc204183f8e00212a42e86e03440a6a68e70"
+    },
+    {
+      "path": "output/corepaper_reports/ws5/metaworld_adapt_equivalence_n14.json",
+      "exists": true,
+      "size_bytes": 1571,
+      "sha256": "f585b84e986e67684dcb024f2856fc2d369b9882600306831a4ebea6d905c3b9"
+    },
+    {
+      "path": "output/corepaper_reports/review_readiness/corepaper_gemini_critique_2026-03-01_finalclose-verify3_r01_gemini_raw_retry2.json",
+      "exists": true,
+      "size_bytes": 31118,
+      "sha256": "6b8fbc40945002fdfb510e7d5488e3aa44d239e65f082162f7e50d5103ffc7c5"
+    },
+    {
+      "path": "output/corepaper_reports/review_readiness/corepaper_bedrock_claude_critique_2026-03-01_finalclose-verify2-20260301T0445Z_r01_claude_request.json",
+      "exists": true,
+      "size_bytes": 249626,
+      "sha256": "b06812ed72c1783345f13aad93acf6b470a9fd743bed76e3fb9b69c2364117cf"
+    },
+    {
+      "path": "output/corepaper_reports/review_readiness/corepaper_llm_counsel_critique_2026-03-02_counsel-20260302T082023Z_fallback.json",
+      "exists": true,
+      "size_bytes": 3579,
+      "sha256": "61d754c4f733eb700d18af76efae6caa824729cb80b4fd16b9d4fc87a4a022a0"
+    }
+  ]
+}

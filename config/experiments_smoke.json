@@ -1,0 +1,55 @@
+{
+  "suite_name": "ws3-smoke",
+  "runs": [
+    {
+      "id": "baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s1 --variant baseline --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s2 --variant baseline --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s3 --variant baseline --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s4 --variant baseline --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s5 --variant baseline --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s1 --variant method --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s2 --variant method --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s3 --variant method --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s4 --variant method --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s5 --variant method --scenario nominal --seed 5",
+      "expected_status": 0
+    }
+  ]
+}

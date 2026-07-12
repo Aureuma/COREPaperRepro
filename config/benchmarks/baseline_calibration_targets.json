@@ -1,0 +1,24 @@
+{
+  "description": "Reference calibration targets aligned to quoted baseline profiles in manuscript text.",
+  "default_tolerance_abs": 0.005,
+  "targets": [
+    {
+      "group": "baseline",
+      "target_mean": 0.7120,
+      "tolerance_abs": 0.005,
+      "source": "internal benchmark reference profile"
+    },
+    {
+      "group": "ext1",
+      "target_mean": 0.7300,
+      "tolerance_abs": 0.005,
+      "source": "external reference profile ext1 (literature-aligned)"
+    },
+    {
+      "group": "ext2",
+      "target_mean": 0.7430,
+      "tolerance_abs": 0.005,
+      "source": "external reference profile ext2 (literature-aligned)"
+    }
+  ]
+}

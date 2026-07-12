@@ -1,0 +1,97 @@
+{
+  "nominal_baseline": 0.71194,
+  "nominal_method": 0.7494,
+  "rows": [
+    {
+      "test": "R1",
+      "severity": "high",
+      "baseline_mean": 0.6187333333333332,
+      "method_mean": 0.6762333333333334,
+      "baseline_drop_pct": 13.091927222331485,
+      "method_drop_pct": 9.76336624855439,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "R1",
+      "severity": "low",
+      "baseline_mean": 0.6927,
+      "method_mean": 0.7340333333333334,
+      "baseline_drop_pct": 2.7024749276624482,
+      "method_drop_pct": 2.0505293123387416,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "R1",
+      "severity": "med",
+      "baseline_mean": 0.6683,
+      "method_mean": 0.7151333333333333,
+      "baseline_drop_pct": 6.1297300334297855,
+      "method_drop_pct": 4.572546926430034,
+      "criterion": "method drop <= 10% at med",
+      "status": "PASS"
+    },
+    {
+      "test": "R2",
+      "severity": "high",
+      "baseline_mean": 0.6310666666666668,
+      "method_mean": 0.6870666666666666,
+      "baseline_drop_pct": 11.359571499470917,
+      "method_drop_pct": 8.317765323369809,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "R2",
+      "severity": "low",
+      "baseline_mean": 0.6915333333333334,
+      "method_mean": 0.7341000000000001,
+      "baseline_drop_pct": 2.8663464149600486,
+      "method_drop_pct": 2.041633306645299,
+      "criterion": "informational",
+      "status": "N/A"
+    },
+    {
+      "test": "R2",
+      "severity": "med",
+      "baseline_mean": 0.6689000000000002,
+      "method_mean": 0.7138333333333334,
+      "baseline_drop_pct": 6.045453268533845,
+      "method_drop_pct": 4.7460190374521645,
+      "criterion": "method drop <= 12% at med",
+      "status": "PASS"
+    },
+    {
+      "test": "R3",
+      "severity": "mild",
+      "baseline_mean": 0.6885333333333333,
+      "method_mean": 0.7277,
+      "baseline_drop_pct": 3.287730239439656,
+      "method_drop_pct": 2.8956498532158985,
+      "criterion": "method > baseline",
+      "status": "PASS"
+    },
+    {
+      "test": "R3",
+      "severity": "severe",
+      "baseline_mean": 0.6452666666666667,
+      "method_mean": 0.6950333333333334,
+      "baseline_drop_pct": 9.365021396934202,
+      "method_drop_pct": 7.2546926430032785,
+      "criterion": "method > baseline",
+      "status": "PASS"
+    },
+    {
+      "test": "R4",
+      "severity": "hard",
+      "baseline_mean": 0.5723666666666666,
+      "method_mean": 0.6299666666666667,
+      "baseline_drop_pct": 19.604648331788272,
+      "method_drop_pct": 15.93719419980428,
+      "criterion": "method >= baseline",
+      "status": "PASS"
+    }
+  ],
+  "all_required_pass": true
+}

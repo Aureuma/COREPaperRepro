@@ -1,0 +1,20 @@
+{
+  "updated_at": "2026-02-17",
+  "cycle_window_hours": "48-72",
+  "decision_thresholds": {
+    "maximize": {
+      "green_delta": 0.02,
+      "yellow_delta": 0.005
+    },
+    "minimize": {
+      "green_delta": 0.02,
+      "yellow_delta": 0.005
+    }
+  },
+  "actions": {
+    "green": "continue_and_scale",
+    "yellow": "iterate_targeted_fix",
+    "red": "pivot_or_kill"
+  }
+}
+

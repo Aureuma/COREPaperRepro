@@ -1,0 +1,31 @@
+{
+  "thresholds": {
+    "mean_gap_threshold": 0.06,
+    "floor_gap_threshold": 0.03,
+    "ceiling_mean_threshold": 0.62
+  },
+  "stress_track": {
+    "top_variant": "method",
+    "runner_up_variant": "adaptmanip",
+    "top_mean": 0.6651957142857147,
+    "runner_up_mean": 0.6581128571428572,
+    "top_mean_gap": 0.0070828571428575016,
+    "top_floor_gap_min": 0.007896428571428804
+  },
+  "metaworld_n30_track": {
+    "reference_variant": "method",
+    "comparator_variant": "latency_aware",
+    "reference_mean": 0.7133333333333334,
+    "mean_gap": 0.053333333333333344,
+    "floor_gap_min": 0.0,
+    "mean_near_parity": true,
+    "floor_separation_positive": false,
+    "ceiling_level_high": true,
+    "expected_ceiling_regime": false,
+    "p_two_sided": 0.1875
+  },
+  "interpretation": {
+    "summary": "Ceiling-regime criteria are not fully satisfied under configured thresholds.",
+    "recommendation": "Prioritize worst-seed/CVaR and tail-risk metrics over mean-only interpretation."
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420">
+<rect x="0" y="0" width="1120" height="420" fill="#F4F7FB"/>
+<text x="560.0" y="44" fill="#0F172A" font-size="24" text-anchor="middle" font-family="DejaVu Sans">F1: Closed Research Loop Pipeline</text>
+<rect x="50" y="140" width="180" height="90" rx="10" fill="#E6EDF7" stroke="#334155" stroke-width="2"/>
+<text x="140.0" y="178" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Literature</text>
+<text x="140.0" y="202" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Ingestion</text>
+<line x1="240" y1="185.0" x2="264" y2="185.0" stroke="#334155" stroke-width="3"/>
+<polygon points="264,179.0 264,191.0 274,185.0" fill="#334155"/>
+<rect x="270" y="140" width="180" height="90" rx="10" fill="#E6EDF7" stroke="#334155" stroke-width="2"/>
+<text x="360.0" y="178" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Hypothesis</text>
+<text x="360.0" y="202" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">&amp; Theory</text>
+<line x1="460" y1="185.0" x2="484" y2="185.0" stroke="#334155" stroke-width="3"/>
+<polygon points="484,179.0 484,191.0 494,185.0" fill="#334155"/>
+<rect x="490" y="140" width="180" height="90" rx="10" fill="#E6EDF7" stroke="#334155" stroke-width="2"/>
+<text x="580.0" y="178" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Experiment</text>
+<text x="580.0" y="202" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Harness</text>
+<line x1="680" y1="185.0" x2="704" y2="185.0" stroke="#334155" stroke-width="3"/>
+<polygon points="704,179.0 704,191.0 714,185.0" fill="#334155"/>
+<rect x="710" y="140" width="180" height="90" rx="10" fill="#E6EDF7" stroke="#334155" stroke-width="2"/>
+<text x="800.0" y="178" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Cycle</text>
+<text x="800.0" y="202" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Decision</text>
+<line x1="900" y1="185.0" x2="924" y2="185.0" stroke="#334155" stroke-width="3"/>
+<polygon points="924,179.0 924,191.0 934,185.0" fill="#334155"/>
+<rect x="930" y="140" width="180" height="90" rx="10" fill="#E6EDF7" stroke="#334155" stroke-width="2"/>
+<text x="1020.0" y="178" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Paper</text>
+<text x="1020.0" y="202" fill="#0F172A" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Assets</text>
+<text x="560.0" y="330" fill="#334155" font-size="16" text-anchor="middle" font-family="DejaVu Sans">Cycle links evidence, theory updates, and manuscript claims.</text>
+</svg>

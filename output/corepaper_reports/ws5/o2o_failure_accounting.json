@@ -1,0 +1,108 @@
+{
+  "logs_dir": "output/corepaper_logs/experiments/o2o_proxy_latest",
+  "reference_group": "method",
+  "summary": {
+    "adaptmanip": {
+      "n": 60,
+      "mean_online": 0.6817588666666669,
+      "mean_offline": 0.65006705,
+      "mean_gain": 0.03169173333333334,
+      "mean_interventions": 3.1,
+      "mean_catastrophic_events": 0.36666666666666664,
+      "catastrophic_total": 22,
+      "interventions_total": 186
+    },
+    "baseline": {
+      "n": 60,
+      "mean_online": 0.63409455,
+      "mean_offline": 0.6094581833333333,
+      "mean_gain": 0.024636383333333334,
+      "mean_interventions": 2.9,
+      "mean_catastrophic_events": 0.26666666666666666,
+      "catastrophic_total": 16,
+      "interventions_total": 174
+    },
+    "ext2": {
+      "n": 60,
+      "mean_online": 0.6715886666666665,
+      "mean_offline": 0.6443209333333333,
+      "mean_gain": 0.027267733333333325,
+      "mean_interventions": 3.0833333333333335,
+      "mean_catastrophic_events": 0.36666666666666664,
+      "catastrophic_total": 22,
+      "interventions_total": 185
+    },
+    "latency_aware": {
+      "n": 60,
+      "mean_online": 0.6697754000000001,
+      "mean_offline": 0.6437091999999999,
+      "mean_gain": 0.026066216666666676,
+      "mean_interventions": 3.1666666666666665,
+      "mean_catastrophic_events": 0.3333333333333333,
+      "catastrophic_total": 20,
+      "interventions_total": 190
+    },
+    "method": {
+      "n": 60,
+      "mean_online": 0.6998414,
+      "mean_offline": 0.6618483000000001,
+      "mean_gain": 0.03799303333333333,
+      "mean_interventions": 3.566666666666667,
+      "mean_catastrophic_events": 0.26666666666666666,
+      "catastrophic_total": 16,
+      "interventions_total": 214
+    },
+    "robust_cp": {
+      "n": 60,
+      "mean_online": 0.67785395,
+      "mean_offline": 0.64805635,
+      "mean_gain": 0.029797433333333345,
+      "mean_interventions": 3.2,
+      "mean_catastrophic_events": 0.43333333333333335,
+      "catastrophic_total": 26,
+      "interventions_total": 192
+    }
+  },
+  "comparisons": [
+    {
+      "reference_group": "method",
+      "comparator_group": "baseline",
+      "delta_online": 0.06574684999999991,
+      "delta_gain": 0.013356649999999994,
+      "delta_interventions": 0.666666666666667,
+      "delta_catastrophic_events": 0.0
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "ext2",
+      "delta_online": 0.028252733333333446,
+      "delta_gain": 0.010725300000000004,
+      "delta_interventions": 0.4833333333333334,
+      "delta_catastrophic_events": -0.09999999999999998
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "latency_aware",
+      "delta_online": 0.030065999999999815,
+      "delta_gain": 0.011926816666666652,
+      "delta_interventions": 0.40000000000000036,
+      "delta_catastrophic_events": -0.06666666666666665
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "adaptmanip",
+      "delta_online": 0.018082533333333095,
+      "delta_gain": 0.006301299999999989,
+      "delta_interventions": 0.4666666666666668,
+      "delta_catastrophic_events": -0.09999999999999998
+    },
+    {
+      "reference_group": "method",
+      "comparator_group": "robust_cp",
+      "delta_online": 0.02198744999999991,
+      "delta_gain": 0.008195599999999983,
+      "delta_interventions": 0.3666666666666667,
+      "delta_catastrophic_events": -0.16666666666666669
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "suite_name": "ws3-metaworld-recent-baselines",
+  "tasks": [
+    "reach-v3",
+    "push-v3",
+    "button-press-v3",
+    "button-press-topdown-v3",
+    "faucet-open-v3",
+    "hammer-v3",
+    "pick-place-v3",
+    "soccer-v3",
+    "peg-insert-side-v3",
+    "push-wall-v3"
+  ],
+  "variants": [
+    "baseline",
+    "ext1",
+    "ext2",
+    "latency_aware",
+    "adaptmanip",
+    "robust_cp",
+    "history_keyframe",
+    "constrained_flow",
+    "method"
+  ],
+  "scenarios": [
+    "nominal",
+    "shifted"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "max_steps": 80,
+  "physics_randomization": {
+    "enabled": true,
+    "mass_scale_range": [
+      0.8,
+      1.2
+    ],
+    "friction_scale_range": [
+      0.8,
+      1.2
+    ]
+  },
+  "shift_scale": {
+    "nominal": 0.0,
+    "shifted": 1.0
+  }
+}

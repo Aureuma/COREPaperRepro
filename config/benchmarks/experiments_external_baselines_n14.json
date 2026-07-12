@@ -1,0 +1,285 @@
+{
+  "suite_name": "ws3-external-baselines-n14",
+  "runs": [
+    {
+      "id": "baseline-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s1 --variant baseline --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s2 --variant baseline --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s3 --variant baseline --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s4 --variant baseline --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s5 --variant baseline --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s6 --variant baseline --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s7 --variant baseline --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s8 --variant baseline --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s9 --variant baseline --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s10 --variant baseline --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s11 --variant baseline --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s12 --variant baseline --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s13 --variant baseline --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "baseline-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id baseline-s14 --variant baseline --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s1 --variant method --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s2 --variant method --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s3 --variant method --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s4 --variant method --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s5 --variant method --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s6 --variant method --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s7 --variant method --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s8 --variant method --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s9 --variant method --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s10 --variant method --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s11 --variant method --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s12 --variant method --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s13 --variant method --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "method-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id method-s14 --variant method --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s1 --variant ext1 --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s2 --variant ext1 --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s3 --variant ext1 --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s4 --variant ext1 --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s5 --variant ext1 --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s6 --variant ext1 --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s7 --variant ext1 --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s8 --variant ext1 --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s9 --variant ext1 --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s10 --variant ext1 --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s11 --variant ext1 --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s12 --variant ext1 --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s13 --variant ext1 --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "ext1-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext1-s14 --variant ext1 --scenario nominal --seed 14",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s1",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s1 --variant ext2 --scenario nominal --seed 1",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s2",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s2 --variant ext2 --scenario nominal --seed 2",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s3",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s3 --variant ext2 --scenario nominal --seed 3",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s4",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s4 --variant ext2 --scenario nominal --seed 4",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s5",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s5 --variant ext2 --scenario nominal --seed 5",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s6",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s6 --variant ext2 --scenario nominal --seed 6",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s7",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s7 --variant ext2 --scenario nominal --seed 7",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s8",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s8 --variant ext2 --scenario nominal --seed 8",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s9",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s9 --variant ext2 --scenario nominal --seed 9",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s10",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s10 --variant ext2 --scenario nominal --seed 10",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s11",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s11 --variant ext2 --scenario nominal --seed 11",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s12",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s12 --variant ext2 --scenario nominal --seed 12",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s13",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s13 --variant ext2 --scenario nominal --seed 13",
+      "expected_status": 0
+    },
+    {
+      "id": "ext2-s14",
+      "command": "python3 scripts/experiments/software_benchmark.py --run-id ext2-s14 --variant ext2 --scenario nominal --seed 14",
+      "expected_status": 0
+    }
+  ]
+}
